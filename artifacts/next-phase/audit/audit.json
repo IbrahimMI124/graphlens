@@ -1,0 +1,218 @@
+{
+  "dataset": {
+    "counts": {
+      "test": 1828,
+      "test_negatives": 1828,
+      "train": 32888,
+      "valid": 1827,
+      "valid_negatives": 1827
+    },
+    "dataset": "CoDEx-S",
+    "excerpt": false,
+    "sha256": {
+      "test": "27127fcb34688c4778e88a39ef3c9b540807da846021e9d9685660ac1838aca1",
+      "test_negatives": "d3fb32c41f3be26d09484ace571965806f1ade0ca712551b0de684c283cdbb22",
+      "train": "64f93b7f314f3936a6f65739721429db3f6a7c8f5a1e1104ec3bb544f7434f59",
+      "valid": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+      "valid_negatives": "c1d84860d6ee786419f1f118d0e9479c6614283b3e267afc158734389036901f"
+    },
+    "source": {
+      "commit": "3132e426c2a6b643b70bad679905a3a6270be440",
+      "sha256": {
+        "test": "27127fcb34688c4778e88a39ef3c9b540807da846021e9d9685660ac1838aca1",
+        "test_negatives": "d3fb32c41f3be26d09484ace571965806f1ade0ca712551b0de684c283cdbb22",
+        "train": "64f93b7f314f3936a6f65739721429db3f6a7c8f5a1e1104ec3bb544f7434f59",
+        "valid": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+        "valid_negatives": "c1d84860d6ee786419f1f118d0e9479c6614283b3e267afc158734389036901f"
+      },
+      "size": "s",
+      "urls": {
+        "test": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/test.txt",
+        "test_negatives": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/test_negatives.txt",
+        "train": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/train.txt",
+        "valid": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/valid.txt",
+        "valid_negatives": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/valid_negatives.txt"
+      }
+    },
+    "training_graph_sha256": "06174716084ef88870e109b2f575344b0ed8398814d9e26234a02a1034d110f3"
+  },
+  "grounded_cyclic": "serialized rules do not establish mining provenance; native Uc/Ud and explicit structural proxies are separate, not interchangeable labels",
+  "legacy_definitions": {
+    "confidence": "legacy strong evidence uses raw mining confidence/support; native ranking uses smoothed, weighted confidence",
+    "mixed": "more than one legacy kind among rules attributed to returned candidates, not an intrinsic query category",
+    "relational_path": "legacy all-terms-single-uppercase-variable syntax; includes reflexive XXud and does not identify native B family",
+    "remaining_dependence": "shared entities, relations and masked queries across different test triples are not independent graph samples; triple bootstrap does not model all graph dependence",
+    "rule_covered": "nonempty candidates before evaluator filtering, independent of correctness",
+    "truth_dependencies": [
+      "rule_truth_diagnostic",
+      "true_returned",
+      "best truth confidence/support",
+      "target degree",
+      "paths to truth",
+      "error category",
+      "oracle"
+    ],
+    "uncertainty": "head/tail kept within triple clusters; neural seeds resampled; fixed symbolic model gives no mining-variability estimate; conditional strata may vary by seed"
+  },
+  "previous_artifacts_modified": false,
+  "probes": {
+    "family_confidence_probes": {
+      "B": {
+        "classification_via_prediction_handler_supported": true,
+        "expected_score": 0.4,
+        "native_score": 0.4,
+        "qa_generation_discrepancy": false,
+        "qa_score": 0.4,
+        "raw_confidence": 0.5
+      },
+      "Uc": {
+        "classification_via_prediction_handler_supported": true,
+        "expected_score": 0.4,
+        "native_score": 0.4,
+        "qa_generation_discrepancy": false,
+        "qa_score": 0.4,
+        "raw_confidence": 0.5
+      },
+      "Ud": {
+        "classification_via_prediction_handler_supported": true,
+        "expected_score": 0.04,
+        "native_score": 0.04000000000000001,
+        "qa_generation_discrepancy": false,
+        "qa_score": 0.04000000000000001,
+        "raw_confidence": 0.5
+      },
+      "XXuc": {
+        "classification_via_prediction_handler_supported": true,
+        "expected_score": 0.4,
+        "native_score": 0.4,
+        "qa_generation_discrepancy": true,
+        "qa_score": null,
+        "raw_confidence": 0.5
+      },
+      "XXud": {
+        "classification_via_prediction_handler_supported": true,
+        "expected_score": 0.4,
+        "native_score": 0.4,
+        "qa_generation_discrepancy": true,
+        "qa_score": null,
+        "raw_confidence": 0.5
+      },
+      "Z": {
+        "classification_via_prediction_handler_supported": false,
+        "expected_score": 0.004,
+        "native_score": 0.004,
+        "qa_generation_discrepancy": false,
+        "qa_score": 0.004,
+        "raw_confidence": 0.5
+      }
+    },
+    "filter_probe": "gold kept, 149 alternative positives removed",
+    "loader_defaults": {
+      "b_max_branching_factor": 1000,
+      "b_max_length": -1,
+      "b_min_conf": 0.0001,
+      "b_min_preds": -1,
+      "b_min_support": -1,
+      "b_num_unseen": 5,
+      "c_max_length": -1,
+      "c_min_conf": 0.0001,
+      "c_min_preds": -1,
+      "c_min_support": -1,
+      "c_num_unseen": 5,
+      "d_max_branching_factor": -1,
+      "d_max_length": -1,
+      "d_min_conf": 0.0001,
+      "d_min_preds": -1,
+      "d_min_support": -1,
+      "d_num_unseen": 5,
+      "d_weight": 0.1,
+      "load_b_rules": true,
+      "load_u_c_rules": true,
+      "load_u_d_rules": true,
+      "load_u_xxc_rules": true,
+      "load_u_xxd_rules": true,
+      "load_zero_rules": true,
+      "num_threads": -1,
+      "verbose": true,
+      "xxc_min_conf": 0.0001,
+      "xxc_min_preds": -1,
+      "xxc_min_support": -1,
+      "xxc_num_unseen": 5,
+      "xxd_min_conf": 0.0001,
+      "xxd_min_preds": -1,
+      "xxd_min_support": -1,
+      "xxd_num_unseen": 5,
+      "z_min_conf": 0.0001,
+      "z_min_preds": -1,
+      "z_min_support": -1,
+      "z_num_unseen": 5,
+      "z_weight": 0.01
+    },
+    "multi_rule_counterexample": {
+      "interpretation": "topk can stop processing later rules even when one rule overruns it; old lists remain censored",
+      "topk10_returned": 150,
+      "universe_plus_one_returned": 300
+    },
+    "source_references": [
+      "https://github.com/symbolic-kg/PyClause/blob/master/src/c_clause/features/Application.cpp",
+      "https://github.com/symbolic-kg/PyClause/blob/master/clause/config-default.yaml"
+    ],
+    "topk_probe": {
+      "interpretation": "single-rule overrun is not proof of exhaustive multi-rule search",
+      "matches_top_k_1000": true,
+      "supported_candidates_returned": 150,
+      "top_k_requested": 10
+    }
+  },
+  "ranking_conclusion": "Old lists correctly remain censored. A single-rule synthetic probe returning 150 candidates under topk=10 DOES NOT prove completeness: real multi-rule queries returned different supports at topk100/1000. New runs require topk greater than the entire entity universe, disabled pruning/stopping, plus enlarged-limit equality checks before certifying abstaining supported-candidate Hits. This is not full-universe zero-tie MRR. Legacy files remain unchanged.",
+  "runs": [
+    {
+      "mode": "development",
+      "n_distinct_masked_inputs": 2015,
+      "n_test_triples": 1828,
+      "n_unique_test_queries": 3656,
+      "path": "runs/codex-s-cpu-pilot-refined/seed-0",
+      "status": "matching official splits, positive training graph hashes, test-query identities and vocabulary"
+    },
+    {
+      "mode": "development",
+      "n_distinct_masked_inputs": 2015,
+      "n_test_triples": 1828,
+      "n_unique_test_queries": 3656,
+      "path": "runs/codex-s-cpu-pilot-refined/seed-1",
+      "status": "matching official splits, positive training graph hashes, test-query identities and vocabulary"
+    },
+    {
+      "mode": "development",
+      "n_distinct_masked_inputs": 2015,
+      "n_test_triples": 1828,
+      "n_unique_test_queries": 3656,
+      "path": "runs/codex-s-cpu-pilot-refined/seed-2",
+      "status": "matching official splits, positive training graph hashes, test-query identities and vocabulary"
+    },
+    {
+      "mode": "development",
+      "n_distinct_masked_inputs": 2015,
+      "n_test_triples": 1828,
+      "n_unique_test_queries": 3656,
+      "path": "runs/codex-s-rule-length-pilot-retry/D-length1-s0",
+      "status": "matching official splits, positive training graph hashes, test-query identities and vocabulary"
+    },
+    {
+      "mode": "development",
+      "n_distinct_masked_inputs": 2015,
+      "n_test_triples": 1828,
+      "n_unique_test_queries": 3656,
+      "path": "runs/codex-s-rule-length-pilot-retry/D-length2-s0",
+      "status": "matching official splits, positive training graph hashes, test-query identities and vocabulary"
+    },
+    {
+      "mode": "development",
+      "n_distinct_masked_inputs": 2015,
+      "n_test_triples": 1828,
+      "n_unique_test_queries": 3656,
+      "path": "runs/codex-s-rule-length-pilot-retry/D-length3-s0",
+      "status": "matching official splits, positive training graph hashes, test-query identities and vocabulary"
+    }
+  ]
+}

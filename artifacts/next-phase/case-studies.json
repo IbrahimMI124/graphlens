@@ -1,0 +1,7293 @@
+[
+  {
+    "category": "embedding_only_vs_general_rule",
+    "embedding": {
+      "backend_metadata": {
+        "head_policy": "inverse relation tail score",
+        "score_type": "raw"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 1855,
+      "head": "Q948",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1006:head",
+      "rank": 1.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 1.0,
+      "relation": "P463",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_candidates": [
+        [
+          "Q948",
+          5.335060119628906
+        ],
+        [
+          "Q1045",
+          5.312686443328857
+        ],
+        [
+          "Q230",
+          5.145418643951416
+        ],
+        [
+          "Q241",
+          5.041609764099121
+        ],
+        [
+          "Q921",
+          4.958892822265625
+        ],
+        [
+          "Q710",
+          4.754800796508789
+        ],
+        [
+          "Q678",
+          4.713204383850098
+        ],
+        [
+          "Q865",
+          4.659717559814453
+        ],
+        [
+          "Q709",
+          4.659672260284424
+        ],
+        [
+          "Q697",
+          4.634345054626465
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 5.335060119628906,
+      "support_complete": true,
+      "tail": "Q1043527",
+      "top_predictions": [
+        [
+          "Q948",
+          5.335060119628906
+        ],
+        [
+          "Q1045",
+          5.312686443328857
+        ],
+        [
+          "Q230",
+          5.145418643951416
+        ],
+        [
+          "Q241",
+          5.041609764099121
+        ],
+        [
+          "Q921",
+          4.958892822265625
+        ],
+        [
+          "Q710",
+          4.754800796508789
+        ],
+        [
+          "Q678",
+          4.713204383850098
+        ],
+        [
+          "Q865",
+          4.659717559814453
+        ],
+        [
+          "Q709",
+          4.659672260284424
+        ],
+        [
+          "Q697",
+          4.634345054626465
+        ]
+      ],
+      "triple_id": "test:1006",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 12,
+      "head_degree": 52,
+      "head_in_degree": 17,
+      "head_out_degree": 35,
+      "heads_per_tail": 56.64772727272727,
+      "known_degree_group": "high",
+      "relation_frequency": 4985,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 163,
+      "tail_in_degree": 163,
+      "tail_out_degree": 0,
+      "tails_per_head": 7.9001584786053884,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 15
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q948",
+          "P463",
+          "Q1043527"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.6536868268434134,
+            "constant_bearing": false,
+            "expression": "P463(X,Y) <= P463(X,A), P361(B,A), P463(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q948",
+                  "P463",
+                  "Q7159"
+                ],
+                [
+                  "Q1037",
+                  "P361",
+                  "Q7159"
+                ],
+                [
+                  "Q1037",
+                  "P463",
+                  "Q1043527"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 1207,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 789,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5736585365853658,
+            "constant_bearing": false,
+            "expression": "P463(X,Y) <= P463(X,A), P530(B,A), P463(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q948",
+                  "P463",
+                  "Q7159"
+                ],
+                [
+                  "Q155",
+                  "P530",
+                  "Q7159"
+                ],
+                [
+                  "Q155",
+                  "P463",
+                  "Q1043527"
+                ]
+              ],
+              [
+                [
+                  "Q948",
+                  "P463",
+                  "Q7172"
+                ],
+                [
+                  "Q159",
+                  "P530",
+                  "Q7172"
+                ],
+                [
+                  "Q159",
+                  "P463",
+                  "Q1043527"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 1025,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 588,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.495,
+            "constant_bearing": false,
+            "expression": "P463(X,Y) <= P37(X,A), P37(B,A), P463(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q948",
+                  "P37",
+                  "Q13955"
+                ],
+                [
+                  "Q398",
+                  "P37",
+                  "Q13955"
+                ],
+                [
+                  "Q398",
+                  "P463",
+                  "Q1043527"
+                ]
+              ],
+              [
+                [
+                  "Q948",
+                  "P37",
+                  "Q13955"
+                ],
+                [
+                  "Q1028",
+                  "P37",
+                  "Q13955"
+                ],
+                [
+                  "Q1028",
+                  "P463",
+                  "Q1043527"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 990,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q948",
+          "P463",
+          "Q1043527"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q1045",
+          "P463",
+          "Q1043527"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.6887755102040817,
+            "constant_bearing": false,
+            "expression": "P463(X,Y) <= P361(X,A), P361(B,A), P463(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q1045",
+                  "P361",
+                  "Q27407"
+                ],
+                [
+                  "Q1020",
+                  "P361",
+                  "Q27407"
+                ],
+                [
+                  "Q1020",
+                  "P463",
+                  "Q1043527"
+                ]
+              ],
+              [
+                [
+                  "Q1045",
+                  "P361",
+                  "Q27407"
+                ],
+                [
+                  "Q958",
+                  "P361",
+                  "Q27407"
+                ],
+                [
+                  "Q958",
+                  "P463",
+                  "Q1043527"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 784,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 540,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.6062992125984252,
+            "constant_bearing": false,
+            "expression": "P463(X,Y) <= P30(X,A), P138(B,A), P463(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q1045",
+                  "P30",
+                  "Q15"
+                ],
+                [
+                  "Q258",
+                  "P138",
+                  "Q15"
+                ],
+                [
+                  "Q258",
+                  "P463",
+                  "Q1043527"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 635,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 385,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5736585365853658,
+            "constant_bearing": false,
+            "expression": "P463(X,Y) <= P463(X,A), P530(B,A), P463(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q1045",
+                  "P463",
+                  "Q7172"
+                ],
+                [
+                  "Q159",
+                  "P530",
+                  "Q7172"
+                ],
+                [
+                  "Q159",
+                  "P463",
+                  "Q1043527"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 1025,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 588,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q1045",
+          "P463",
+          "Q1043527"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q219060",
+          "P463",
+          "Q1043527"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.6887755102040817,
+            "constant_bearing": false,
+            "expression": "P463(X,Y) <= P361(X,A), P361(B,A), P463(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q219060",
+                  "P361",
+                  "Q7204"
+                ],
+                [
+                  "Q398",
+                  "P361",
+                  "Q7204"
+                ],
+                [
+                  "Q398",
+                  "P463",
+                  "Q1043527"
+                ]
+              ],
+              [
+                [
+                  "Q219060",
+                  "P361",
+                  "Q7204"
+                ],
+                [
+                  "Q43",
+                  "P361",
+                  "Q7204"
+                ],
+                [
+                  "Q43",
+                  "P463",
+                  "Q1043527"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 784,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 540,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5736585365853658,
+            "constant_bearing": false,
+            "expression": "P463(X,Y) <= P463(X,A), P530(B,A), P463(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q219060",
+                  "P463",
+                  "Q7172"
+                ],
+                [
+                  "Q159",
+                  "P530",
+                  "Q7172"
+                ],
+                [
+                  "Q159",
+                  "P463",
+                  "Q1043527"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 1025,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 588,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.495,
+            "constant_bearing": false,
+            "expression": "P463(X,Y) <= P37(X,A), P37(B,A), P463(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q219060",
+                  "P37",
+                  "Q13955"
+                ],
+                [
+                  "Q398",
+                  "P37",
+                  "Q13955"
+                ],
+                [
+                  "Q398",
+                  "P463",
+                  "Q1043527"
+                ]
+              ],
+              [
+                [
+                  "Q219060",
+                  "P37",
+                  "Q13955"
+                ],
+                [
+                  "Q1028",
+                  "P37",
+                  "Q13955"
+                ],
+                [
+                  "Q1028",
+                  "P463",
+                  "Q1043527"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 990,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q219060",
+          "P463",
+          "Q1043527"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 465,
+      "head": "Q948",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1006:head",
+      "rank": 4,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P463",
+      "retrieved_reciprocal_rank": 0.25,
+      "returned_count": 644,
+      "score": 0.650990099009901,
+      "support_complete": true,
+      "tail": "Q1043527",
+      "top_predictions": [
+        [
+          "Q1045",
+          0.6844106463878327
+        ],
+        [
+          "Q219060",
+          0.6844106463878327
+        ],
+        [
+          "Q241",
+          0.6844106463878327
+        ],
+        [
+          "Q948",
+          0.650990099009901
+        ],
+        [
+          "Q672",
+          0.650990099009901
+        ],
+        [
+          "Q921",
+          0.650990099009901
+        ],
+        [
+          "Q697",
+          0.650990099009901
+        ],
+        [
+          "Q710",
+          0.650990099009901
+        ],
+        [
+          "Q200464",
+          0.6015625
+        ],
+        [
+          "Q21",
+          0.5051546391752577
+        ]
+      ],
+      "triple_id": "test:1006",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "subset": "general"
+  },
+  {
+    "category": "embedding_only_vs_general_rule",
+    "embedding": {
+      "backend_metadata": {
+        "probability": false,
+        "score_type": "raw model score"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 1890,
+      "head": "Q159",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1016:tail",
+      "rank": 1.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 1.0,
+      "relation": "P530",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_candidates": [
+        [
+          "Q27",
+          6.786959648132324
+        ],
+        [
+          "Q851",
+          6.443085670471191
+        ],
+        [
+          "Q230",
+          6.3300275802612305
+        ],
+        [
+          "Q929",
+          6.0704345703125
+        ],
+        [
+          "Q794",
+          5.945697784423828
+        ],
+        [
+          "Q826",
+          5.8832502365112305
+        ],
+        [
+          "Q224",
+          5.746358394622803
+        ],
+        [
+          "Q213",
+          5.342777252197266
+        ],
+        [
+          "Q159",
+          5.336238861083984
+        ],
+        [
+          "Q730",
+          5.188092231750488
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 6.786959648132324,
+      "support_complete": true,
+      "tail": "Q27",
+      "top_predictions": [
+        [
+          "Q27",
+          6.786959648132324
+        ],
+        [
+          "Q851",
+          6.443085670471191
+        ],
+        [
+          "Q230",
+          6.3300275802612305
+        ],
+        [
+          "Q929",
+          6.0704345703125
+        ],
+        [
+          "Q794",
+          5.945697784423828
+        ],
+        [
+          "Q826",
+          5.8832502365112305
+        ],
+        [
+          "Q224",
+          5.746358394622803
+        ],
+        [
+          "Q213",
+          5.342777252197266
+        ],
+        [
+          "Q159",
+          5.336238861083984
+        ],
+        [
+          "Q730",
+          5.188092231750488
+        ]
+      ],
+      "triple_id": "test:1016",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 23,
+      "head_degree": 345,
+      "head_in_degree": 191,
+      "head_out_degree": 154,
+      "heads_per_tail": 26.364928909952607,
+      "known_degree_group": "high",
+      "relation_frequency": 5563,
+      "symmetry_strength": 0.8765054826532447,
+      "symmetry_support": 4876,
+      "tail_degree": 88,
+      "tail_in_degree": 35,
+      "tail_out_degree": 53,
+      "tails_per_head": 27.269607843137255,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 43
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q159",
+          "P530",
+          "Q27"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8694665153234961,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(Y,X)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q27",
+                  "P530",
+                  "Q159"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 1,
+            "native_family": "B",
+            "predictions": 1762,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 1532,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3253012048192771,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(X,A), P361(B,A), P530(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q159",
+                  "P530",
+                  "Q458"
+                ],
+                [
+                  "Q145",
+                  "P361",
+                  "Q458"
+                ],
+                [
+                  "Q145",
+                  "P530",
+                  "Q27"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 415,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 135,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3205,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(X,A), P530(A,B), P530(Y,B)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q159",
+                  "P530",
+                  "Q739"
+                ],
+                [
+                  "Q739",
+                  "P530",
+                  "Q865"
+                ],
+                [
+                  "Q27",
+                  "P530",
+                  "Q865"
+                ]
+              ],
+              [
+                [
+                  "Q159",
+                  "P530",
+                  "Q739"
+                ],
+                [
+                  "Q739",
+                  "P530",
+                  "Q230"
+                ],
+                [
+                  "Q27",
+                  "P530",
+                  "Q230"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 641,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q159",
+          "P530",
+          "Q27"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q159",
+          "P530",
+          "Q851"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8694665153234961,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(Y,X)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q851",
+                  "P530",
+                  "Q159"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 1,
+            "native_family": "B",
+            "predictions": 1762,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 1532,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3269786250722126,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(X,A), P361(A,B), P361(Y,B)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q159",
+                  "P530",
+                  "Q398"
+                ],
+                [
+                  "Q398",
+                  "P361",
+                  "Q7204"
+                ],
+                [
+                  "Q851",
+                  "P361",
+                  "Q7204"
+                ]
+              ],
+              [
+                [
+                  "Q159",
+                  "P530",
+                  "Q43"
+                ],
+                [
+                  "Q43",
+                  "P361",
+                  "Q7204"
+                ],
+                [
+                  "Q851",
+                  "P361",
+                  "Q7204"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 1731,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 566,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3205,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(X,A), P530(A,B), P530(Y,B)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q159",
+                  "P530",
+                  "Q739"
+                ],
+                [
+                  "Q739",
+                  "P530",
+                  "Q865"
+                ],
+                [
+                  "Q851",
+                  "P530",
+                  "Q865"
+                ]
+              ],
+              [
+                [
+                  "Q159",
+                  "P530",
+                  "Q739"
+                ],
+                [
+                  "Q739",
+                  "P530",
+                  "Q213"
+                ],
+                [
+                  "Q851",
+                  "P530",
+                  "Q213"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 641,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q159",
+          "P530",
+          "Q851"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 751,
+      "head": "Q159",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1016:tail",
+      "rank": 2,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P530",
+      "retrieved_reciprocal_rank": 0.5,
+      "returned_count": 895,
+      "score": 0.8670062252405206,
+      "support_complete": true,
+      "tail": "Q27",
+      "top_predictions": [
+        [
+          "Q851",
+          0.8670062252405206
+        ],
+        [
+          "Q27",
+          0.8670062252405206
+        ],
+        [
+          "Q929",
+          0.8670062252405206
+        ],
+        [
+          "Q826",
+          0.8670062252405206
+        ],
+        [
+          "Q794",
+          0.37898089171974525
+        ],
+        [
+          "Q1246",
+          0.37898089171974525
+        ],
+        [
+          "Q347",
+          0.37898089171974525
+        ],
+        [
+          "Q34266",
+          0.3383458646616541
+        ],
+        [
+          "Q15180",
+          0.3383458646616541
+        ],
+        [
+          "Q2305208",
+          0.3383458646616541
+        ]
+      ],
+      "triple_id": "test:1016",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "subset": "general"
+  },
+  {
+    "category": "general_only_vs_constant",
+    "embedding": {
+      "backend_metadata": {
+        "head_policy": "inverse relation tail score",
+        "score_type": "raw"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 1890,
+      "head": "Q32",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1008:head",
+      "rank": 1.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 1.0,
+      "relation": "P530",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_candidates": [
+        [
+          "Q32",
+          6.578068256378174
+        ],
+        [
+          "Q865",
+          6.324450969696045
+        ],
+        [
+          "Q142",
+          6.2258195877075195
+        ],
+        [
+          "Q794",
+          6.064562797546387
+        ],
+        [
+          "Q15",
+          5.964903831481934
+        ],
+        [
+          "Q148",
+          5.795302867889404
+        ],
+        [
+          "Q230",
+          5.727921485900879
+        ],
+        [
+          "Q739",
+          5.642817497253418
+        ],
+        [
+          "Q115",
+          5.606024265289307
+        ],
+        [
+          "Q1009",
+          5.5019989013671875
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 6.578068256378174,
+      "support_complete": true,
+      "tail": "Q148",
+      "top_predictions": [
+        [
+          "Q32",
+          6.578068256378174
+        ],
+        [
+          "Q865",
+          6.324450969696045
+        ],
+        [
+          "Q142",
+          6.2258195877075195
+        ],
+        [
+          "Q794",
+          6.064562797546387
+        ],
+        [
+          "Q15",
+          5.964903831481934
+        ],
+        [
+          "Q148",
+          5.795302867889404
+        ],
+        [
+          "Q230",
+          5.727921485900879
+        ],
+        [
+          "Q739",
+          5.642817497253418
+        ],
+        [
+          "Q115",
+          5.606024265289307
+        ],
+        [
+          "Q1009",
+          5.5019989013671875
+        ]
+      ],
+      "triple_id": "test:1008",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 6,
+      "head_degree": 55,
+      "head_in_degree": 12,
+      "head_out_degree": 43,
+      "heads_per_tail": 26.364928909952607,
+      "known_degree_group": "high",
+      "relation_frequency": 5563,
+      "symmetry_strength": 0.8765054826532447,
+      "symmetry_support": 4876,
+      "tail_degree": 282,
+      "tail_in_degree": 130,
+      "tail_out_degree": 152,
+      "tails_per_head": 27.269607843137255,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 21
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q32",
+          "P530",
+          "Q148"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8694665153234961,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(Y,X)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q148",
+                  "P530",
+                  "Q32"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 1,
+            "native_family": "B",
+            "predictions": 1762,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 1532,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.7528089887640449,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(A,X), P30(A,B), P530(Y,B)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q38",
+                  "P530",
+                  "Q32"
+                ],
+                [
+                  "Q38",
+                  "P30",
+                  "Q15"
+                ],
+                [
+                  "Q148",
+                  "P530",
+                  "Q15"
+                ]
+              ],
+              [
+                [
+                  "Q142",
+                  "P530",
+                  "Q32"
+                ],
+                [
+                  "Q142",
+                  "P30",
+                  "Q15"
+                ],
+                [
+                  "Q148",
+                  "P530",
+                  "Q15"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 89,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 67,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3253012048192771,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(X,A), P361(B,A), P530(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q32",
+                  "P530",
+                  "Q458"
+                ],
+                [
+                  "Q145",
+                  "P361",
+                  "Q458"
+                ],
+                [
+                  "Q145",
+                  "P530",
+                  "Q148"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 415,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 135,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q32",
+          "P530",
+          "Q148"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q15",
+          "P530",
+          "Q148"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8694665153234961,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(Y,X)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q148",
+                  "P530",
+                  "Q15"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 1,
+            "native_family": "B",
+            "predictions": 1762,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 1532,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q15",
+          "P530",
+          "Q148"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 173,
+      "head": "Q32",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1008:head",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P530",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 317,
+      "score": 0.8670062252405206,
+      "support_complete": true,
+      "tail": "Q148",
+      "top_predictions": [
+        [
+          "Q32",
+          0.8670062252405206
+        ],
+        [
+          "Q15",
+          0.8670062252405206
+        ],
+        [
+          "Q142",
+          0.7127659574468085
+        ],
+        [
+          "Q965",
+          0.7127659574468085
+        ],
+        [
+          "Q115",
+          0.7127659574468085
+        ],
+        [
+          "Q1009",
+          0.7127659574468085
+        ],
+        [
+          "Q15180",
+          0.7127659574468085
+        ],
+        [
+          "Q822",
+          0.7127659574468085
+        ],
+        [
+          "Q794",
+          0.7127659574468085
+        ],
+        [
+          "Q1032",
+          0.7127659574468085
+        ]
+      ],
+      "triple_id": "test:1008",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "subset": "general"
+  },
+  {
+    "category": "general_only_vs_constant",
+    "embedding": {
+      "backend_metadata": {
+        "probability": false,
+        "score_type": "raw model score"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 2018,
+      "head": "Q49001",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1011:tail",
+      "rank": 2.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 0.5,
+      "relation": "P106",
+      "retrieved_reciprocal_rank": 0.5,
+      "returned_candidates": [
+        [
+          "Q33999",
+          7.274650573730469
+        ],
+        [
+          "Q36180",
+          6.567312240600586
+        ],
+        [
+          "Q639669",
+          5.946191787719727
+        ],
+        [
+          "Q4610556",
+          5.71968936920166
+        ],
+        [
+          "Q1930187",
+          5.708714485168457
+        ],
+        [
+          "Q753110",
+          5.434785842895508
+        ],
+        [
+          "Q3455803",
+          5.273012638092041
+        ],
+        [
+          "Q2526255",
+          5.263434886932373
+        ],
+        [
+          "Q5716684",
+          5.203773021697998
+        ],
+        [
+          "Q183945",
+          5.013094902038574
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 6.567312240600586,
+      "support_complete": true,
+      "tail": "Q36180",
+      "top_predictions": [
+        [
+          "Q33999",
+          7.274650573730469
+        ],
+        [
+          "Q36180",
+          6.567312240600586
+        ],
+        [
+          "Q639669",
+          5.946191787719727
+        ],
+        [
+          "Q4610556",
+          5.71968936920166
+        ],
+        [
+          "Q1930187",
+          5.708714485168457
+        ],
+        [
+          "Q753110",
+          5.434785842895508
+        ],
+        [
+          "Q3455803",
+          5.273012638092041
+        ],
+        [
+          "Q2526255",
+          5.263434886932373
+        ],
+        [
+          "Q5716684",
+          5.203773021697998
+        ],
+        [
+          "Q183945",
+          5.013094902038574
+        ]
+      ],
+      "triple_id": "test:1011",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 0,
+      "head_degree": 24,
+      "head_in_degree": 0,
+      "head_out_degree": 24,
+      "heads_per_tail": 86.41525423728814,
+      "known_degree_group": "high",
+      "relation_frequency": 10197,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 574,
+      "tail_in_degree": 574,
+      "tail_out_degree": 0,
+      "tails_per_head": 7.309677419354839,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 0
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q49001",
+          "P106",
+          "Q36180"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.277,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P101(X,A), P101(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q217427",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q36180"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q1744",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q1744",
+                  "P106",
+                  "Q36180"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 554,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.273,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P1303(X,A), P1303(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q318509",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q318509",
+                  "P106",
+                  "Q36180"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q217427",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q36180"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 546,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.266,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P264(X,A), P264(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q1350303",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q1350303",
+                  "P106",
+                  "Q36180"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q726071",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q726071",
+                  "P106",
+                  "Q36180"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 532,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q49001",
+          "P106",
+          "Q36180"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q49001",
+          "P106",
+          "Q33999"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.277,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P101(X,A), P101(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q217427",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q33999"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q1624891",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q1624891",
+                  "P106",
+                  "Q33999"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 554,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.273,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P1303(X,A), P1303(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q221364",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q221364",
+                  "P106",
+                  "Q33999"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q217427",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q33999"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 546,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.266,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P264(X,A), P264(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q12003",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q12003",
+                  "P106",
+                  "Q33999"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q162667",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q162667",
+                  "P106",
+                  "Q33999"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 532,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q49001",
+          "P106",
+          "Q33999"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 129,
+      "head": "Q49001",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1011:tail",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P106",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 145,
+      "score": 0.27630922693266835,
+      "support_complete": true,
+      "tail": "Q36180",
+      "top_predictions": [
+        [
+          "Q36180",
+          0.27630922693266835
+        ],
+        [
+          "Q33999",
+          0.27630922693266835
+        ],
+        [
+          "Q2526255",
+          0.27630922693266835
+        ],
+        [
+          "Q639669",
+          0.27630922693266835
+        ],
+        [
+          "Q1028181",
+          0.27630922693266835
+        ],
+        [
+          "Q486748",
+          0.27630922693266835
+        ],
+        [
+          "Q578109",
+          0.27630922693266835
+        ],
+        [
+          "Q753110",
+          0.27630922693266835
+        ],
+        [
+          "Q183945",
+          0.27630922693266835
+        ],
+        [
+          "Q855091",
+          0.27630922693266835
+        ]
+      ],
+      "triple_id": "test:1011",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "subset": "general"
+  },
+  {
+    "category": "general_rule_only_vs_embedding",
+    "embedding": {
+      "backend_metadata": {
+        "probability": false,
+        "score_type": "raw model score"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 2018,
+      "head": "Q49001",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1011:tail",
+      "rank": 2.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 0.5,
+      "relation": "P106",
+      "retrieved_reciprocal_rank": 0.5,
+      "returned_candidates": [
+        [
+          "Q33999",
+          7.274650573730469
+        ],
+        [
+          "Q36180",
+          6.567312240600586
+        ],
+        [
+          "Q639669",
+          5.946191787719727
+        ],
+        [
+          "Q4610556",
+          5.71968936920166
+        ],
+        [
+          "Q1930187",
+          5.708714485168457
+        ],
+        [
+          "Q753110",
+          5.434785842895508
+        ],
+        [
+          "Q3455803",
+          5.273012638092041
+        ],
+        [
+          "Q2526255",
+          5.263434886932373
+        ],
+        [
+          "Q5716684",
+          5.203773021697998
+        ],
+        [
+          "Q183945",
+          5.013094902038574
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 6.567312240600586,
+      "support_complete": true,
+      "tail": "Q36180",
+      "top_predictions": [
+        [
+          "Q33999",
+          7.274650573730469
+        ],
+        [
+          "Q36180",
+          6.567312240600586
+        ],
+        [
+          "Q639669",
+          5.946191787719727
+        ],
+        [
+          "Q4610556",
+          5.71968936920166
+        ],
+        [
+          "Q1930187",
+          5.708714485168457
+        ],
+        [
+          "Q753110",
+          5.434785842895508
+        ],
+        [
+          "Q3455803",
+          5.273012638092041
+        ],
+        [
+          "Q2526255",
+          5.263434886932373
+        ],
+        [
+          "Q5716684",
+          5.203773021697998
+        ],
+        [
+          "Q183945",
+          5.013094902038574
+        ]
+      ],
+      "triple_id": "test:1011",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 0,
+      "head_degree": 24,
+      "head_in_degree": 0,
+      "head_out_degree": 24,
+      "heads_per_tail": 86.41525423728814,
+      "known_degree_group": "high",
+      "relation_frequency": 10197,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 574,
+      "tail_in_degree": 574,
+      "tail_out_degree": 0,
+      "tails_per_head": 7.309677419354839,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 0
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q49001",
+          "P106",
+          "Q36180"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.277,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P101(X,A), P101(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q217427",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q36180"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q1744",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q1744",
+                  "P106",
+                  "Q36180"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 554,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.273,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P1303(X,A), P1303(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q318509",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q318509",
+                  "P106",
+                  "Q36180"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q217427",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q36180"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 546,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.266,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P264(X,A), P264(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q1350303",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q1350303",
+                  "P106",
+                  "Q36180"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q726071",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q726071",
+                  "P106",
+                  "Q36180"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 532,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q49001",
+          "P106",
+          "Q36180"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q49001",
+          "P106",
+          "Q33999"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.277,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P101(X,A), P101(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q217427",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q33999"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q1624891",
+                  "P101",
+                  "Q207628"
+                ],
+                [
+                  "Q1624891",
+                  "P106",
+                  "Q33999"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 554,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.273,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P1303(X,A), P1303(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q221364",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q221364",
+                  "P106",
+                  "Q33999"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q217427",
+                  "P1303",
+                  "Q17172850"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q33999"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 546,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.266,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P264(X,A), P264(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q49001",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q12003",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q12003",
+                  "P106",
+                  "Q33999"
+                ]
+              ],
+              [
+                [
+                  "Q49001",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q162667",
+                  "P264",
+                  "Q2338889"
+                ],
+                [
+                  "Q162667",
+                  "P106",
+                  "Q33999"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 532,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q49001",
+          "P106",
+          "Q33999"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 129,
+      "head": "Q49001",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1011:tail",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P106",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 145,
+      "score": 0.27630922693266835,
+      "support_complete": true,
+      "tail": "Q36180",
+      "top_predictions": [
+        [
+          "Q36180",
+          0.27630922693266835
+        ],
+        [
+          "Q33999",
+          0.27630922693266835
+        ],
+        [
+          "Q2526255",
+          0.27630922693266835
+        ],
+        [
+          "Q639669",
+          0.27630922693266835
+        ],
+        [
+          "Q1028181",
+          0.27630922693266835
+        ],
+        [
+          "Q486748",
+          0.27630922693266835
+        ],
+        [
+          "Q578109",
+          0.27630922693266835
+        ],
+        [
+          "Q753110",
+          0.27630922693266835
+        ],
+        [
+          "Q183945",
+          0.27630922693266835
+        ],
+        [
+          "Q855091",
+          0.27630922693266835
+        ]
+      ],
+      "triple_id": "test:1011",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "subset": "general"
+  },
+  {
+    "category": "general_rule_only_vs_embedding",
+    "embedding": {
+      "backend_metadata": {
+        "probability": false,
+        "score_type": "raw model score"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 2024,
+      "head": "Q430922",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1025:tail",
+      "rank": 3.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 0.3333333333333333,
+      "relation": "P106",
+      "retrieved_reciprocal_rank": 0.3333333333333333,
+      "returned_candidates": [
+        [
+          "Q177220",
+          6.1238603591918945
+        ],
+        [
+          "Q639669",
+          5.948569297790527
+        ],
+        [
+          "Q36180",
+          5.3720293045043945
+        ],
+        [
+          "Q488205",
+          5.351545810699463
+        ],
+        [
+          "Q2405480",
+          5.284895896911621
+        ],
+        [
+          "Q183945",
+          4.950235366821289
+        ],
+        [
+          "Q2526255",
+          4.901698589324951
+        ],
+        [
+          "Q245068",
+          4.553526401519775
+        ],
+        [
+          "Q5716684",
+          4.475029468536377
+        ],
+        [
+          "Q15981151",
+          4.354166030883789
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 5.3720293045043945,
+      "support_complete": true,
+      "tail": "Q36180",
+      "top_predictions": [
+        [
+          "Q177220",
+          6.1238603591918945
+        ],
+        [
+          "Q639669",
+          5.948569297790527
+        ],
+        [
+          "Q36180",
+          5.3720293045043945
+        ],
+        [
+          "Q488205",
+          5.351545810699463
+        ],
+        [
+          "Q2405480",
+          5.284895896911621
+        ],
+        [
+          "Q183945",
+          4.950235366821289
+        ],
+        [
+          "Q2526255",
+          4.901698589324951
+        ],
+        [
+          "Q245068",
+          4.553526401519775
+        ],
+        [
+          "Q5716684",
+          4.475029468536377
+        ],
+        [
+          "Q15981151",
+          4.354166030883789
+        ]
+      ],
+      "triple_id": "test:1025",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 0,
+      "head_degree": 11,
+      "head_in_degree": 0,
+      "head_out_degree": 11,
+      "heads_per_tail": 86.41525423728814,
+      "known_degree_group": "low",
+      "relation_frequency": 10197,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 574,
+      "tail_in_degree": 574,
+      "tail_out_degree": 0,
+      "tails_per_head": 7.309677419354839,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 0
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q430922",
+          "P106",
+          "Q36180"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.2015,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P106(X,A), P106(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q430922",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q36180"
+                ]
+              ],
+              [
+                [
+                  "Q430922",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q443995",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q443995",
+                  "P106",
+                  "Q36180"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 403,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.186,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P172(X,A), P172(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q430922",
+                  "P172",
+                  "Q678551"
+                ],
+                [
+                  "Q25089",
+                  "P172",
+                  "Q678551"
+                ],
+                [
+                  "Q25089",
+                  "P106",
+                  "Q36180"
+                ]
+              ],
+              [
+                [
+                  "Q430922",
+                  "P172",
+                  "Q678551"
+                ],
+                [
+                  "Q186485",
+                  "P172",
+                  "Q678551"
+                ],
+                [
+                  "Q186485",
+                  "P106",
+                  "Q36180"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 372,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.16336633663366337,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P106(X,A), P101(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q430922",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q47899",
+                  "P101",
+                  "Q33999"
+                ],
+                [
+                  "Q47899",
+                  "P106",
+                  "Q36180"
+                ]
+              ],
+              [
+                [
+                  "Q430922",
+                  "P106",
+                  "Q36834"
+                ],
+                [
+                  "Q154770",
+                  "P101",
+                  "Q36834"
+                ],
+                [
+                  "Q154770",
+                  "P106",
+                  "Q36180"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 1212,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 198,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q430922",
+          "P106",
+          "Q36180"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q430922",
+          "P106",
+          "Q177220"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.2015,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P106(X,A), P106(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q430922",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q221364",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q221364",
+                  "P106",
+                  "Q177220"
+                ]
+              ],
+              [
+                [
+                  "Q430922",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q217427",
+                  "P106",
+                  "Q177220"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 403,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.186,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P172(X,A), P172(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q430922",
+                  "P172",
+                  "Q678551"
+                ],
+                [
+                  "Q186485",
+                  "P172",
+                  "Q678551"
+                ],
+                [
+                  "Q186485",
+                  "P106",
+                  "Q177220"
+                ]
+              ],
+              [
+                [
+                  "Q430922",
+                  "P172",
+                  "Q678551"
+                ],
+                [
+                  "Q362332",
+                  "P172",
+                  "Q678551"
+                ],
+                [
+                  "Q362332",
+                  "P106",
+                  "Q177220"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 372,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.16336633663366337,
+            "constant_bearing": false,
+            "expression": "P106(X,Y) <= P106(X,A), P101(B,A), P106(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q430922",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q11637",
+                  "P101",
+                  "Q33999"
+                ],
+                [
+                  "Q11637",
+                  "P106",
+                  "Q177220"
+                ]
+              ],
+              [
+                [
+                  "Q430922",
+                  "P106",
+                  "Q33999"
+                ],
+                [
+                  "Q47899",
+                  "P101",
+                  "Q33999"
+                ],
+                [
+                  "Q47899",
+                  "P106",
+                  "Q177220"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 1212,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 198,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q430922",
+          "P106",
+          "Q177220"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 131,
+      "head": "Q430922",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1025:tail",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P106",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 141,
+      "score": 0.20099750623441395,
+      "support_complete": true,
+      "tail": "Q36180",
+      "top_predictions": [
+        [
+          "Q36180",
+          0.20099750623441395
+        ],
+        [
+          "Q177220",
+          0.20099750623441395
+        ],
+        [
+          "Q639669",
+          0.20099750623441395
+        ],
+        [
+          "Q2405480",
+          0.20099750623441395
+        ],
+        [
+          "Q18814623",
+          0.20099750623441395
+        ],
+        [
+          "Q4610556",
+          0.20099750623441395
+        ],
+        [
+          "Q1930187",
+          0.20099750623441395
+        ],
+        [
+          "Q1622272",
+          0.20099750623441395
+        ],
+        [
+          "Q2526255",
+          0.20099750623441395
+        ],
+        [
+          "Q15981151",
+          0.20099750623441395
+        ]
+      ],
+      "triple_id": "test:1025",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "subset": "general"
+  },
+  {
+    "category": "constant_only_vs_general",
+    "embedding": {
+      "backend_metadata": {
+        "head_policy": "inverse relation tail score",
+        "score_type": "raw"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 1981,
+      "head": "Q945",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1018:head",
+      "rank": 1.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 1.0,
+      "relation": "P463",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_candidates": [
+        [
+          "Q945",
+          5.714731216430664
+        ],
+        [
+          "Q858",
+          4.829095363616943
+        ],
+        [
+          "Q878",
+          4.815865516662598
+        ],
+        [
+          "Q155",
+          4.569484710693359
+        ],
+        [
+          "Q796",
+          4.388493537902832
+        ],
+        [
+          "Q817",
+          4.291385650634766
+        ],
+        [
+          "Q805",
+          4.290977478027344
+        ],
+        [
+          "Q842",
+          4.274359703063965
+        ],
+        [
+          "Q424",
+          4.273212432861328
+        ],
+        [
+          "Q851",
+          4.204016208648682
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 5.714731216430664,
+      "support_complete": true,
+      "tail": "Q7159",
+      "top_predictions": [
+        [
+          "Q945",
+          5.714731216430664
+        ],
+        [
+          "Q858",
+          4.829095363616943
+        ],
+        [
+          "Q878",
+          4.815865516662598
+        ],
+        [
+          "Q155",
+          4.569484710693359
+        ],
+        [
+          "Q796",
+          4.388493537902832
+        ],
+        [
+          "Q817",
+          4.291385650634766
+        ],
+        [
+          "Q805",
+          4.290977478027344
+        ],
+        [
+          "Q842",
+          4.274359703063965
+        ],
+        [
+          "Q424",
+          4.273212432861328
+        ],
+        [
+          "Q851",
+          4.204016208648682
+        ]
+      ],
+      "triple_id": "test:1018",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 1,
+      "head_degree": 28,
+      "head_in_degree": 3,
+      "head_out_degree": 25,
+      "heads_per_tail": 56.64772727272727,
+      "known_degree_group": "high",
+      "relation_frequency": 4985,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 51,
+      "tail_in_degree": 51,
+      "tail_out_degree": 0,
+      "tails_per_head": 7.9001584786053884,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 1
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q945",
+          "P463",
+          "Q7159"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.9090909090909091,
+            "constant_bearing": true,
+            "expression": "P463(X,Q7159) <= P463(X,Q3348506)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q945",
+                  "P463",
+                  "Q3348506"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 22,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 20,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.7924528301886793,
+            "constant_bearing": true,
+            "expression": "P463(X,Q7159) <= P30(X,Q15)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q945",
+                  "P30",
+                  "Q15"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 53,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 42,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.875,
+            "constant_bearing": true,
+            "expression": "P463(Q945,Y) <= P463(Q967,Y)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q967",
+                  "P463",
+                  "Q7159"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 16,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 14,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q945",
+          "P463",
+          "Q7159"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q29",
+          "P463",
+          "Q7159"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.7924528301886793,
+            "constant_bearing": true,
+            "expression": "P463(X,Q7159) <= P30(X,Q15)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q29",
+                  "P30",
+                  "Q15"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 53,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 42,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.9166666666666666,
+            "constant_bearing": true,
+            "expression": "P463(Q29,Y) <= P463(Q986,Y)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q986",
+                  "P463",
+                  "Q7159"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 12,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 11,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8235294117647058,
+            "constant_bearing": true,
+            "expression": "P463(Q29,Y) <= P463(Q1036,Y)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q1036",
+                  "P463",
+                  "Q7159"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 17,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 14,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q29",
+          "P463",
+          "Q7159"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 682,
+      "head": "Q945",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1018:head",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P463",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 735,
+      "score": 0.7407407407407407,
+      "support_complete": true,
+      "tail": "Q7159",
+      "top_predictions": [
+        [
+          "Q945",
+          0.7407407407407407
+        ],
+        [
+          "Q29",
+          0.7241379310344828
+        ],
+        [
+          "Q142",
+          0.7241379310344828
+        ],
+        [
+          "Q29999",
+          0.7241379310344828
+        ],
+        [
+          "Q38",
+          0.7241379310344828
+        ],
+        [
+          "Q805",
+          0.7241379310344828
+        ],
+        [
+          "Q200464",
+          0.7241379310344828
+        ],
+        [
+          "Q878",
+          0.7083333333333334
+        ],
+        [
+          "Q902",
+          0.6818181818181818
+        ],
+        [
+          "Q691",
+          0.6666666666666666
+        ]
+      ],
+      "triple_id": "test:1018",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "subset": "constants"
+  },
+  {
+    "category": "constant_only_vs_general",
+    "embedding": {
+      "backend_metadata": {
+        "probability": false,
+        "score_type": "raw model score"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 2015,
+      "head": "Q945",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1018:tail",
+      "rank": 1.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 1.0,
+      "relation": "P463",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_candidates": [
+        [
+          "Q7159",
+          6.532474994659424
+        ],
+        [
+          "Q5611262",
+          6.015997886657715
+        ],
+        [
+          "Q496967",
+          5.222217559814453
+        ],
+        [
+          "Q188822",
+          4.8377580642700195
+        ],
+        [
+          "Q7785",
+          4.617946624755859
+        ],
+        [
+          "Q233611",
+          4.489040374755859
+        ],
+        [
+          "Q816706",
+          3.8297200202941895
+        ],
+        [
+          "Q81299",
+          3.404971122741699
+        ],
+        [
+          "Q8908",
+          3.0551910400390625
+        ],
+        [
+          "Q7172",
+          2.9568982124328613
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 6.532474994659424,
+      "support_complete": true,
+      "tail": "Q7159",
+      "top_predictions": [
+        [
+          "Q7159",
+          6.532474994659424
+        ],
+        [
+          "Q5611262",
+          6.015997886657715
+        ],
+        [
+          "Q496967",
+          5.222217559814453
+        ],
+        [
+          "Q188822",
+          4.8377580642700195
+        ],
+        [
+          "Q7785",
+          4.617946624755859
+        ],
+        [
+          "Q233611",
+          4.489040374755859
+        ],
+        [
+          "Q816706",
+          3.8297200202941895
+        ],
+        [
+          "Q81299",
+          3.404971122741699
+        ],
+        [
+          "Q8908",
+          3.0551910400390625
+        ],
+        [
+          "Q7172",
+          2.9568982124328613
+        ]
+      ],
+      "triple_id": "test:1018",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 1,
+      "head_degree": 28,
+      "head_in_degree": 3,
+      "head_out_degree": 25,
+      "heads_per_tail": 56.64772727272727,
+      "known_degree_group": "high",
+      "relation_frequency": 4985,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 51,
+      "tail_in_degree": 51,
+      "tail_out_degree": 0,
+      "tails_per_head": 7.9001584786053884,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 1
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q945",
+          "P463",
+          "Q7159"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.9090909090909091,
+            "constant_bearing": true,
+            "expression": "P463(X,Q7159) <= P463(X,Q3348506)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q945",
+                  "P463",
+                  "Q3348506"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 22,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 20,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.7924528301886793,
+            "constant_bearing": true,
+            "expression": "P463(X,Q7159) <= P30(X,Q15)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q945",
+                  "P30",
+                  "Q15"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 53,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 42,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.875,
+            "constant_bearing": true,
+            "expression": "P463(Q945,Y) <= P463(Q967,Y)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q967",
+                  "P463",
+                  "Q7159"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 16,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 14,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q945",
+          "P463",
+          "Q7159"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q945",
+          "P463",
+          "Q5611262"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8095238095238095,
+            "constant_bearing": true,
+            "expression": "P463(Q945,Y) <= P463(Q912,Y)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q912",
+                  "P463",
+                  "Q5611262"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 21,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 17,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8333333333333334,
+            "constant_bearing": true,
+            "expression": "P463(Q945,Y) <= P463(Q1041,Y)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q1041",
+                  "P463",
+                  "Q5611262"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 18,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 15,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8,
+            "constant_bearing": true,
+            "expression": "P463(Q945,Y) <= P463(Q965,Y)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q965",
+                  "P463",
+                  "Q5611262"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 20,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 16,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q945",
+          "P463",
+          "Q5611262"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 69,
+      "head": "Q945",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:1018:tail",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P463",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 88,
+      "score": 0.7407407407407407,
+      "support_complete": true,
+      "tail": "Q7159",
+      "top_predictions": [
+        [
+          "Q7159",
+          0.7407407407407407
+        ],
+        [
+          "Q5611262",
+          0.6538461538461539
+        ],
+        [
+          "Q816706",
+          0.625
+        ],
+        [
+          "Q496967",
+          0.6190476190476191
+        ],
+        [
+          "Q7172",
+          0.6
+        ],
+        [
+          "Q1137381",
+          0.6
+        ],
+        [
+          "Q624307",
+          0.6
+        ],
+        [
+          "Q123759",
+          0.5882352941176471
+        ],
+        [
+          "Q3369762",
+          0.5882352941176471
+        ],
+        [
+          "Q233611",
+          0.5833333333333334
+        ]
+      ],
+      "triple_id": "test:1018",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "subset": "constants"
+  },
+  {
+    "category": "longer_general_1_to_3_improves",
+    "embedding": {
+      "backend_metadata": {
+        "probability": false,
+        "score_type": "raw model score"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 2034,
+      "head": "Q206832",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:0:tail",
+      "rank": 1.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 1.0,
+      "relation": "P27",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_candidates": [
+        [
+          "Q142",
+          7.451595306396484
+        ],
+        [
+          "Q29",
+          6.6829609870910645
+        ],
+        [
+          "Q183",
+          5.8928914070129395
+        ],
+        [
+          "Q414",
+          4.9225873947143555
+        ],
+        [
+          "Q41304",
+          4.79959774017334
+        ],
+        [
+          "Q40",
+          4.756706237792969
+        ],
+        [
+          "Q36",
+          4.477521896362305
+        ],
+        [
+          "Q174193",
+          4.46840238571167
+        ],
+        [
+          "Q155",
+          4.416758060455322
+        ],
+        [
+          "Q865",
+          4.368542671203613
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 7.451595306396484,
+      "support_complete": true,
+      "tail": "Q142",
+      "top_predictions": [
+        [
+          "Q142",
+          7.451595306396484
+        ],
+        [
+          "Q29",
+          6.6829609870910645
+        ],
+        [
+          "Q183",
+          5.8928914070129395
+        ],
+        [
+          "Q414",
+          4.9225873947143555
+        ],
+        [
+          "Q41304",
+          4.79959774017334
+        ],
+        [
+          "Q40",
+          4.756706237792969
+        ],
+        [
+          "Q36",
+          4.477521896362305
+        ],
+        [
+          "Q174193",
+          4.46840238571167
+        ],
+        [
+          "Q155",
+          4.416758060455322
+        ],
+        [
+          "Q865",
+          4.368542671203613
+        ]
+      ],
+      "triple_id": "test:0",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-one",
+      "directed_twohop_paths_to_truth": 2,
+      "head_degree": 13,
+      "head_in_degree": 0,
+      "head_out_degree": 13,
+      "heads_per_tail": 20.6,
+      "known_degree_group": "low",
+      "relation_frequency": 1648,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 325,
+      "tail_in_degree": 203,
+      "tail_out_degree": 122,
+      "tails_per_head": 1.3068992862807296,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 2
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q206832",
+          "P27",
+          "Q142"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5555555555555556,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P20(X,A), P159(B,A), P17(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q206832",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q161806",
+                  "P159",
+                  "Q90"
+                ],
+                [
+                  "Q161806",
+                  "P17",
+                  "Q142"
+                ]
+              ],
+              [
+                [
+                  "Q206832",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q188771",
+                  "P159",
+                  "Q90"
+                ],
+                [
+                  "Q188771",
+                  "P17",
+                  "Q142"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 216,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 120,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.4444444444444444,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P20(X,A), P17(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q206832",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q90",
+                  "P17",
+                  "Q142"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 333,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 148,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3723196881091618,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P20(X,A), P20(B,A), P27(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q206832",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q16409",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q16409",
+                  "P27",
+                  "Q142"
+                ]
+              ],
+              [
+                [
+                  "Q206832",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q1698",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q1698",
+                  "P27",
+                  "Q142"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 513,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 191,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q206832",
+          "P27",
+          "Q142"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q206832",
+          "P27",
+          "Q30"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3723196881091618,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P20(X,A), P20(B,A), P27(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q206832",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q44301",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q44301",
+                  "P27",
+                  "Q30"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 513,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 191,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.36944444444444446,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P20(X,A), P19(B,A), P27(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q206832",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q230068",
+                  "P19",
+                  "Q90"
+                ],
+                [
+                  "Q230068",
+                  "P27",
+                  "Q30"
+                ]
+              ],
+              [
+                [
+                  "Q206832",
+                  "P20",
+                  "Q90"
+                ],
+                [
+                  "Q110462",
+                  "P19",
+                  "Q90"
+                ],
+                [
+                  "Q110462",
+                  "P27",
+                  "Q30"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 360,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 133,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3611111111111111,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P119(X,A), P119(B,A), P27(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q206832",
+                  "P119",
+                  "Q311"
+                ],
+                [
+                  "Q44301",
+                  "P119",
+                  "Q311"
+                ],
+                [
+                  "Q44301",
+                  "P27",
+                  "Q30"
+                ]
+              ],
+              [
+                [
+                  "Q206832",
+                  "P119",
+                  "Q311"
+                ],
+                [
+                  "Q313281",
+                  "P119",
+                  "Q311"
+                ],
+                [
+                  "Q313281",
+                  "P27",
+                  "Q30"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 180,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 65,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q206832",
+          "P27",
+          "Q30"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 242,
+      "head": "Q206832",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:0:tail",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P27",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 242,
+      "score": 0.5429864253393665,
+      "support_complete": true,
+      "tail": "Q142",
+      "top_predictions": [
+        [
+          "Q142",
+          0.5429864253393665
+        ],
+        [
+          "Q30",
+          0.3687258687258687
+        ],
+        [
+          "Q145",
+          0.3687258687258687
+        ],
+        [
+          "Q39",
+          0.3687258687258687
+        ],
+        [
+          "Q38",
+          0.3687258687258687
+        ],
+        [
+          "Q34266",
+          0.3687258687258687
+        ],
+        [
+          "Q36",
+          0.3687258687258687
+        ],
+        [
+          "Q174193",
+          0.3687258687258687
+        ],
+        [
+          "Q155",
+          0.3687258687258687
+        ],
+        [
+          "Q414",
+          0.3687258687258687
+        ]
+      ],
+      "triple_id": "test:0",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "short_max_length": 1,
+    "short_rule": {
+      "covered": false,
+      "direction": "tail",
+      "filtered_returned_count": 0,
+      "head": "Q206832",
+      "hits1": 0,
+      "hits10": 0,
+      "hits_certified": true,
+      "query_id": "test:0:tail",
+      "rank": null,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P27",
+      "retrieved_reciprocal_rank": 0.0,
+      "returned_count": 0,
+      "score": null,
+      "support_complete": true,
+      "tail": "Q142",
+      "top_predictions": [],
+      "triple_id": "test:0",
+      "true_returned": false
+    },
+    "subset": "general_le3"
+  },
+  {
+    "category": "longer_general_1_to_3_hurts",
+    "embedding": {
+      "backend_metadata": {
+        "head_policy": "inverse relation tail score",
+        "score_type": "raw"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 1845,
+      "head": "Q29",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:51:head",
+      "rank": 1.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 1.0,
+      "relation": "P530",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_candidates": [
+        [
+          "Q29",
+          7.274780750274658
+        ],
+        [
+          "Q183",
+          6.640718936920166
+        ],
+        [
+          "Q970",
+          5.715208053588867
+        ],
+        [
+          "Q219060",
+          5.62603235244751
+        ],
+        [
+          "Q769",
+          5.560116767883301
+        ],
+        [
+          "Q757",
+          5.367790222167969
+        ],
+        [
+          "Q784",
+          5.182619094848633
+        ],
+        [
+          "Q781",
+          5.145230293273926
+        ],
+        [
+          "Q8646",
+          5.018233299255371
+        ],
+        [
+          "Q159583",
+          5.008094787597656
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 7.274780750274658,
+      "support_complete": true,
+      "tail": "Q183",
+      "top_predictions": [
+        [
+          "Q29",
+          7.274780750274658
+        ],
+        [
+          "Q183",
+          6.640718936920166
+        ],
+        [
+          "Q970",
+          5.715208053588867
+        ],
+        [
+          "Q219060",
+          5.62603235244751
+        ],
+        [
+          "Q769",
+          5.560116767883301
+        ],
+        [
+          "Q757",
+          5.367790222167969
+        ],
+        [
+          "Q784",
+          5.182619094848633
+        ],
+        [
+          "Q781",
+          5.145230293273926
+        ],
+        [
+          "Q8646",
+          5.018233299255371
+        ],
+        [
+          "Q159583",
+          5.008094787597656
+        ]
+      ],
+      "triple_id": "test:51",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 41,
+      "head_degree": 137,
+      "head_in_degree": 60,
+      "head_out_degree": 77,
+      "heads_per_tail": 26.364928909952607,
+      "known_degree_group": "high",
+      "relation_frequency": 5563,
+      "symmetry_strength": 0.8765054826532447,
+      "symmetry_support": 4876,
+      "tail_degree": 480,
+      "tail_in_degree": 279,
+      "tail_out_degree": 201,
+      "tails_per_head": 27.269607843137255,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 74
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q29",
+          "P530",
+          "Q183"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.6644444444444444,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(A,X), P495(B,A), P495(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q408",
+                  "P530",
+                  "Q29"
+                ],
+                [
+                  "Q220192",
+                  "P495",
+                  "Q408"
+                ],
+                [
+                  "Q220192",
+                  "P495",
+                  "Q183"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 450,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 299,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8694665153234961,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(Y,X)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q183",
+                  "P530",
+                  "Q29"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 1,
+            "native_family": "B",
+            "predictions": 1762,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 1532,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3333333333333333,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(X,A), P119(B,A), P27(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q29",
+                  "P530",
+                  "Q36"
+                ],
+                [
+                  "Q61863",
+                  "P119",
+                  "Q36"
+                ],
+                [
+                  "Q61863",
+                  "P27",
+                  "Q183"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 252,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 84,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q29",
+          "P530",
+          "Q183"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q159583",
+          "P530",
+          "Q183"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.6644444444444444,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(A,X), P495(B,A), P495(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q408",
+                  "P530",
+                  "Q159583"
+                ],
+                [
+                  "Q220192",
+                  "P495",
+                  "Q408"
+                ],
+                [
+                  "Q220192",
+                  "P495",
+                  "Q183"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 450,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 299,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.8694665153234961,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(Y,X)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q183",
+                  "P530",
+                  "Q159583"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 1,
+            "native_family": "B",
+            "predictions": 1762,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 1532,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3339449541284404,
+            "constant_bearing": false,
+            "expression": "P530(X,Y) <= P530(A,X), P551(B,A), P27(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q38",
+                  "P530",
+                  "Q159583"
+                ],
+                [
+                  "Q7302",
+                  "P551",
+                  "Q38"
+                ],
+                [
+                  "Q7302",
+                  "P27",
+                  "Q183"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 545,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 182,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q159583",
+          "P530",
+          "Q183"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 164,
+      "head": "Q29",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:51:head",
+      "rank": 2,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P530",
+      "retrieved_reciprocal_rank": 0.5,
+      "returned_count": 353,
+      "score": 0.8670062252405206,
+      "support_complete": true,
+      "tail": "Q183",
+      "top_predictions": [
+        [
+          "Q159583",
+          0.8670062252405206
+        ],
+        [
+          "Q29",
+          0.8670062252405206
+        ],
+        [
+          "Q34266",
+          0.6571428571428571
+        ],
+        [
+          "Q781",
+          0.6571428571428571
+        ],
+        [
+          "Q219060",
+          0.6571428571428571
+        ],
+        [
+          "Q1042",
+          0.6571428571428571
+        ],
+        [
+          "Q970",
+          0.6571428571428571
+        ],
+        [
+          "Q769",
+          0.6571428571428571
+        ],
+        [
+          "Q784",
+          0.6571428571428571
+        ],
+        [
+          "Q757",
+          0.6571428571428571
+        ]
+      ],
+      "triple_id": "test:51",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "short_max_length": 1,
+    "short_rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 2,
+      "head": "Q29",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:51:head",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P530",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 164,
+      "score": 0.8670062252405206,
+      "support_complete": true,
+      "tail": "Q183",
+      "top_predictions": [
+        [
+          "Q29",
+          0.8670062252405206
+        ],
+        [
+          "Q159583",
+          0.8670062252405206
+        ]
+      ],
+      "triple_id": "test:51",
+      "true_returned": true
+    },
+    "subset": "general_le3"
+  },
+  {
+    "category": "longer_fixed_constants_general_1_to_3_improves",
+    "embedding": {
+      "backend_metadata": {
+        "head_policy": "inverse relation tail score",
+        "score_type": "raw"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 2020,
+      "head": "Q210172",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:12:head",
+      "rank": 1.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 1.0,
+      "relation": "P264",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_candidates": [
+        [
+          "Q210172",
+          6.941536903381348
+        ],
+        [
+          "Q122020",
+          6.060158729553223
+        ],
+        [
+          "Q242792",
+          6.012055397033691
+        ],
+        [
+          "Q344983",
+          5.965039253234863
+        ],
+        [
+          "Q26876",
+          5.956334114074707
+        ],
+        [
+          "Q181683",
+          5.732956886291504
+        ],
+        [
+          "Q233541",
+          5.695466995239258
+        ],
+        [
+          "Q42493",
+          5.638028144836426
+        ],
+        [
+          "Q131324",
+          5.55795955657959
+        ],
+        [
+          "Q230943",
+          5.553435325622559
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 6.941536903381348,
+      "support_complete": true,
+      "tail": "Q387539",
+      "top_predictions": [
+        [
+          "Q210172",
+          6.941536903381348
+        ],
+        [
+          "Q122020",
+          6.060158729553223
+        ],
+        [
+          "Q242792",
+          6.012055397033691
+        ],
+        [
+          "Q344983",
+          5.965039253234863
+        ],
+        [
+          "Q26876",
+          5.956334114074707
+        ],
+        [
+          "Q181683",
+          5.732956886291504
+        ],
+        [
+          "Q233541",
+          5.695466995239258
+        ],
+        [
+          "Q42493",
+          5.638028144836426
+        ],
+        [
+          "Q131324",
+          5.55795955657959
+        ],
+        [
+          "Q230943",
+          5.553435325622559
+        ]
+      ],
+      "triple_id": "test:12",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-many",
+      "directed_twohop_paths_to_truth": 2,
+      "head_degree": 23,
+      "head_in_degree": 2,
+      "head_out_degree": 21,
+      "heads_per_tail": 27.46875,
+      "known_degree_group": "low",
+      "relation_frequency": 879,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 15,
+      "tail_in_degree": 13,
+      "tail_out_degree": 2,
+      "tails_per_head": 1.8583509513742071,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 3
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q210172",
+          "P264",
+          "Q387539"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.4583333333333333,
+            "constant_bearing": false,
+            "expression": "P264(X,Y) <= P3373(A,X), P451(A,B), P264(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q201656",
+                  "P3373",
+                  "Q210172"
+                ],
+                [
+                  "Q201656",
+                  "P451",
+                  "Q83287"
+                ],
+                [
+                  "Q83287",
+                  "P264",
+                  "Q387539"
+                ]
+              ],
+              [
+                [
+                  "Q191088",
+                  "P3373",
+                  "Q210172"
+                ],
+                [
+                  "Q191088",
+                  "P451",
+                  "Q41173"
+                ],
+                [
+                  "Q41173",
+                  "P264",
+                  "Q387539"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 24,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 11,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3870967741935484,
+            "constant_bearing": false,
+            "expression": "P264(X,Y) <= P3373(X,A), P264(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q210172",
+                  "P3373",
+                  "Q201656"
+                ],
+                [
+                  "Q201656",
+                  "P264",
+                  "Q387539"
+                ]
+              ],
+              [
+                [
+                  "Q210172",
+                  "P3373",
+                  "Q191088"
+                ],
+                [
+                  "Q191088",
+                  "P264",
+                  "Q387539"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 62,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 24,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3508771929824561,
+            "constant_bearing": false,
+            "expression": "P264(X,Y) <= P3373(A,X), P264(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q201656",
+                  "P3373",
+                  "Q210172"
+                ],
+                [
+                  "Q201656",
+                  "P264",
+                  "Q387539"
+                ]
+              ],
+              [
+                [
+                  "Q191088",
+                  "P3373",
+                  "Q210172"
+                ],
+                [
+                  "Q191088",
+                  "P264",
+                  "Q387539"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 57,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 20,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q210172",
+          "P264",
+          "Q387539"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q34086",
+          "P264",
+          "Q387539"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3888888888888889,
+            "constant_bearing": false,
+            "expression": "P264(X,Y) <= P451(X,A), P264(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q34086",
+                  "P451",
+                  "Q83287"
+                ],
+                [
+                  "Q83287",
+                  "P264",
+                  "Q387539"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 36,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 14,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.23076923076923078,
+            "constant_bearing": false,
+            "expression": "P264(X,Y) <= P451(A,X), P264(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q83287",
+                  "P451",
+                  "Q34086"
+                ],
+                [
+                  "Q83287",
+                  "P264",
+                  "Q387539"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 52,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 12,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.07936507936507936,
+            "constant_bearing": true,
+            "expression": "P264(X,Q387539) <= P136(X,Q850412)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q34086",
+                  "P136",
+                  "Q850412"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 63,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 5,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q34086",
+          "P264",
+          "Q387539"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q294144",
+          "P264",
+          "Q387539"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.0675,
+            "constant_bearing": false,
+            "expression": "P264(X,Y) <= P136(X,A), P136(B,A), P264(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q294144",
+                  "P136",
+                  "Q850412"
+                ],
+                [
+                  "Q201656",
+                  "P136",
+                  "Q850412"
+                ],
+                [
+                  "Q201656",
+                  "P264",
+                  "Q387539"
+                ]
+              ],
+              [
+                [
+                  "Q294144",
+                  "P136",
+                  "Q850412"
+                ],
+                [
+                  "Q123174",
+                  "P136",
+                  "Q850412"
+                ],
+                [
+                  "Q123174",
+                  "P264",
+                  "Q387539"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 2000,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 135,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.35714285714285715,
+            "constant_bearing": true,
+            "expression": "P264(X,Q387539) <= P264(X,Q54860)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q294144",
+                  "P264",
+                  "Q54860"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 14,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 5,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.11428571428571428,
+            "constant_bearing": true,
+            "expression": "P264(Q294144,Y) <= P17(Y,Q30)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q387539",
+                  "P17",
+                  "Q30"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 35,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 4,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q294144",
+          "P264",
+          "Q387539"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 1410,
+      "head": "Q210172",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:12:head",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P264",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 1424,
+      "score": 0.3793103448275862,
+      "support_complete": true,
+      "tail": "Q387539",
+      "top_predictions": [
+        [
+          "Q210172",
+          0.3793103448275862
+        ],
+        [
+          "Q34086",
+          0.34146341463414637
+        ],
+        [
+          "Q26876",
+          0.3142857142857143
+        ],
+        [
+          "Q294144",
+          0.2631578947368421
+        ],
+        [
+          "Q230943",
+          0.2631578947368421
+        ],
+        [
+          "Q122020",
+          0.2631578947368421
+        ],
+        [
+          "Q213736",
+          0.2631578947368421
+        ],
+        [
+          "Q204005",
+          0.2631578947368421
+        ],
+        [
+          "Q256708",
+          0.2631578947368421
+        ],
+        [
+          "Q242792",
+          0.2631578947368421
+        ]
+      ],
+      "triple_id": "test:12",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "short_max_length": 1,
+    "short_rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 1406,
+      "head": "Q210172",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:12:head",
+      "rank": 2,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P264",
+      "retrieved_reciprocal_rank": 0.5,
+      "returned_count": 1420,
+      "score": 0.2631578947368421,
+      "support_complete": true,
+      "tail": "Q387539",
+      "top_predictions": [
+        [
+          "Q294144",
+          0.2631578947368421
+        ],
+        [
+          "Q210172",
+          0.2631578947368421
+        ],
+        [
+          "Q230943",
+          0.2631578947368421
+        ],
+        [
+          "Q122020",
+          0.2631578947368421
+        ],
+        [
+          "Q213736",
+          0.2631578947368421
+        ],
+        [
+          "Q204005",
+          0.2631578947368421
+        ],
+        [
+          "Q256708",
+          0.2631578947368421
+        ],
+        [
+          "Q242792",
+          0.2631578947368421
+        ],
+        [
+          "Q26876",
+          0.25
+        ],
+        [
+          "Q12003",
+          0.125
+        ]
+      ],
+      "triple_id": "test:12",
+      "true_returned": true
+    },
+    "subset": "fixed_constants_general_le3"
+  },
+  {
+    "category": "longer_fixed_constants_general_1_to_3_hurts",
+    "embedding": {
+      "backend_metadata": {
+        "head_policy": "inverse relation tail score",
+        "score_type": "raw"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 2012,
+      "head": "Q44086",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:37:head",
+      "rank": 1.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 1.0,
+      "relation": "P27",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_candidates": [
+        [
+          "Q44086",
+          6.874216079711914
+        ],
+        [
+          "Q9387",
+          6.830778121948242
+        ],
+        [
+          "Q77060",
+          6.674202919006348
+        ],
+        [
+          "Q78704",
+          5.911527633666992
+        ],
+        [
+          "Q9061",
+          5.826463222503662
+        ],
+        [
+          "Q60884",
+          5.783493518829346
+        ],
+        [
+          "Q78505",
+          5.702402114868164
+        ],
+        [
+          "Q60285",
+          5.617934226989746
+        ],
+        [
+          "Q44426",
+          5.593105316162109
+        ],
+        [
+          "Q84423",
+          5.5002121925354
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 6.874216079711914,
+      "support_complete": true,
+      "tail": "Q43287",
+      "top_predictions": [
+        [
+          "Q44086",
+          6.874216079711914
+        ],
+        [
+          "Q9387",
+          6.830778121948242
+        ],
+        [
+          "Q77060",
+          6.674202919006348
+        ],
+        [
+          "Q78704",
+          5.911527633666992
+        ],
+        [
+          "Q9061",
+          5.826463222503662
+        ],
+        [
+          "Q60884",
+          5.783493518829346
+        ],
+        [
+          "Q78505",
+          5.702402114868164
+        ],
+        [
+          "Q60285",
+          5.617934226989746
+        ],
+        [
+          "Q44426",
+          5.593105316162109
+        ],
+        [
+          "Q84423",
+          5.5002121925354
+        ]
+      ],
+      "triple_id": "test:37",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-one",
+      "directed_twohop_paths_to_truth": 1,
+      "head_degree": 17,
+      "head_in_degree": 0,
+      "head_out_degree": 17,
+      "heads_per_tail": 20.6,
+      "known_degree_group": "high",
+      "relation_frequency": 1648,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 27,
+      "tail_in_degree": 25,
+      "tail_out_degree": 2,
+      "tails_per_head": 1.3068992862807296,
+      "target_degree_group": "medium",
+      "undirected_common_neighbors_to_truth": 2
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q44086",
+          "P27",
+          "Q43287"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.47115384615384615,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P19(X,A), P17(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q44086",
+                  "P19",
+                  "Q1726"
+                ],
+                [
+                  "Q1726",
+                  "P17",
+                  "Q43287"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 312,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 147,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.7,
+            "constant_bearing": true,
+            "expression": "P27(X,Q43287) <= P27(X,Q7318)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q44086",
+                  "P27",
+                  "Q7318"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 10,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 7,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.4444444444444444,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P20(X,A), P17(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q44086",
+                  "P20",
+                  "Q1726"
+                ],
+                [
+                  "Q1726",
+                  "P17",
+                  "Q43287"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 333,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 148,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q44086",
+          "P27",
+          "Q43287"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q61597",
+          "P27",
+          "Q43287"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.64,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P40(A,X), P27(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q37030",
+                  "P40",
+                  "Q61597"
+                ],
+                [
+                  "Q37030",
+                  "P27",
+                  "Q43287"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 25,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 16,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5714285714285714,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P3373(X,A), P27(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q61597",
+                  "P3373",
+                  "Q77087"
+                ],
+                [
+                  "Q77087",
+                  "P27",
+                  "Q43287"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 35,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 20,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.47115384615384615,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P19(X,A), P17(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q61597",
+                  "P19",
+                  "Q1726"
+                ],
+                [
+                  "Q1726",
+                  "P17",
+                  "Q43287"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 312,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 147,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q61597",
+          "P27",
+          "Q43287"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q77109",
+          "P27",
+          "Q43287"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.64,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P40(A,X), P27(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q37030",
+                  "P40",
+                  "Q77109"
+                ],
+                [
+                  "Q37030",
+                  "P27",
+                  "Q43287"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 25,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 16,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5714285714285714,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P3373(X,A), P27(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q77109",
+                  "P3373",
+                  "Q77087"
+                ],
+                [
+                  "Q77087",
+                  "P27",
+                  "Q43287"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 35,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 20,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.47115384615384615,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P19(X,A), P17(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q77109",
+                  "P19",
+                  "Q1726"
+                ],
+                [
+                  "Q1726",
+                  "P17",
+                  "Q43287"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 312,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 147,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q77109",
+          "P27",
+          "Q43287"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 1593,
+      "head": "Q44086",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:37:head",
+      "rank": 5,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P27",
+      "retrieved_reciprocal_rank": 0.2,
+      "returned_count": 1615,
+      "score": 0.4666666666666667,
+      "support_complete": true,
+      "tail": "Q43287",
+      "top_predictions": [
+        [
+          "Q61597",
+          0.5333333333333333
+        ],
+        [
+          "Q77109",
+          0.5333333333333333
+        ],
+        [
+          "Q214191",
+          0.5333333333333333
+        ],
+        [
+          "Q102813",
+          0.5161290322580645
+        ],
+        [
+          "Q44086",
+          0.4666666666666667
+        ],
+        [
+          "Q77060",
+          0.4666666666666667
+        ],
+        [
+          "Q157318",
+          0.4666666666666667
+        ],
+        [
+          "Q6694",
+          0.4637223974763407
+        ],
+        [
+          "Q154203",
+          0.4637223974763407
+        ],
+        [
+          "Q61813",
+          0.4637223974763407
+        ]
+      ],
+      "triple_id": "test:37",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "short_max_length": 1,
+    "short_rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 1593,
+      "head": "Q44086",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:37:head",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P27",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 1615,
+      "score": 0.4666666666666667,
+      "support_complete": true,
+      "tail": "Q43287",
+      "top_predictions": [
+        [
+          "Q44086",
+          0.4666666666666667
+        ],
+        [
+          "Q77060",
+          0.4666666666666667
+        ],
+        [
+          "Q157318",
+          0.4666666666666667
+        ],
+        [
+          "Q9387",
+          0.43478260869565216
+        ],
+        [
+          "Q78505",
+          0.43478260869565216
+        ],
+        [
+          "Q78704",
+          0.43478260869565216
+        ],
+        [
+          "Q84423",
+          0.43478260869565216
+        ],
+        [
+          "Q60197",
+          0.25
+        ],
+        [
+          "Q57619",
+          0.25
+        ],
+        [
+          "Q103835",
+          0.25
+        ]
+      ],
+      "triple_id": "test:37",
+      "true_returned": true
+    },
+    "subset": "fixed_constants_general_le3"
+  },
+  {
+    "category": "longer_fixed_constants_general_2_to_3_improves",
+    "embedding": {
+      "backend_metadata": {
+        "probability": false,
+        "score_type": "raw model score"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 2032,
+      "head": "Q17455",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:568:tail",
+      "rank": 7.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 0.14285714285714285,
+      "relation": "P27",
+      "retrieved_reciprocal_rank": 0.14285714285714285,
+      "returned_candidates": [
+        [
+          "Q41304",
+          8.360123634338379
+        ],
+        [
+          "Q183",
+          7.840424537658691
+        ],
+        [
+          "Q36",
+          6.957963943481445
+        ],
+        [
+          "Q131964",
+          6.822065353393555
+        ],
+        [
+          "Q43287",
+          6.780540943145752
+        ],
+        [
+          "Q174193",
+          6.7350664138793945
+        ],
+        [
+          "Q28",
+          6.613022327423096
+        ],
+        [
+          "Q40",
+          6.432121276855469
+        ],
+        [
+          "Q142",
+          6.395842552185059
+        ],
+        [
+          "Q145",
+          6.242291450500488
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 6.613022327423096,
+      "support_complete": true,
+      "tail": "Q28",
+      "top_predictions": [
+        [
+          "Q41304",
+          8.360123634338379
+        ],
+        [
+          "Q183",
+          7.840424537658691
+        ],
+        [
+          "Q36",
+          6.957963943481445
+        ],
+        [
+          "Q131964",
+          6.822065353393555
+        ],
+        [
+          "Q43287",
+          6.780540943145752
+        ],
+        [
+          "Q174193",
+          6.7350664138793945
+        ],
+        [
+          "Q28",
+          6.613022327423096
+        ],
+        [
+          "Q40",
+          6.432121276855469
+        ],
+        [
+          "Q142",
+          6.395842552185059
+        ],
+        [
+          "Q145",
+          6.242291450500488
+        ]
+      ],
+      "triple_id": "test:568",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-one",
+      "directed_twohop_paths_to_truth": 2,
+      "head_degree": 23,
+      "head_in_degree": 0,
+      "head_out_degree": 23,
+      "heads_per_tail": 20.6,
+      "known_degree_group": "high",
+      "relation_frequency": 1648,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 200,
+      "tail_in_degree": 82,
+      "tail_out_degree": 118,
+      "tails_per_head": 1.3068992862807296,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 2
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q17455",
+          "P27",
+          "Q28"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5454545454545454,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P19(X,A), P159(B,A), P17(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q17455",
+                  "P19",
+                  "Q1781"
+                ],
+                [
+                  "Q265058",
+                  "P159",
+                  "Q1781"
+                ],
+                [
+                  "Q265058",
+                  "P17",
+                  "Q28"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 220,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 120,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.47115384615384615,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P19(X,A), P17(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q17455",
+                  "P19",
+                  "Q1781"
+                ],
+                [
+                  "Q1781",
+                  "P17",
+                  "Q28"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 312,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 147,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.6666666666666666,
+            "constant_bearing": true,
+            "expression": "P27(X,Q28) <= P19(X,Q1781)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q17455",
+                  "P19",
+                  "Q1781"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 9,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 6,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q17455",
+          "P27",
+          "Q28"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q17455",
+          "P27",
+          "Q183"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.4159090909090909,
+            "constant_bearing": false,
+            "expression": "P27(X,Y) <= P19(X,A), P19(B,A), P27(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q17455",
+                  "P19",
+                  "Q1781"
+                ],
+                [
+                  "Q76823",
+                  "P19",
+                  "Q1781"
+                ],
+                [
+                  "Q76823",
+                  "P27",
+                  "Q183"
+                ]
+              ],
+              [
+                [
+                  "Q17455",
+                  "P19",
+                  "Q1781"
+                ],
+                [
+                  "Q153238",
+                  "P19",
+                  "Q1781"
+                ],
+                [
+                  "Q153238",
+                  "P27",
+                  "Q183"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 440,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 183,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5862068965517241,
+            "constant_bearing": true,
+            "expression": "P27(X,Q183) <= P69(X,Q152838)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q17455",
+                  "P69",
+                  "Q152838"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 29,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 17,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5,
+            "constant_bearing": true,
+            "expression": "P27(X,Q183) <= P108(X,Q152087)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q17455",
+                  "P108",
+                  "Q152087"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 28,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 14,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q17455",
+          "P27",
+          "Q183"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 398,
+      "head": "Q17455",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:568:tail",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P27",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 400,
+      "score": 0.5333333333333333,
+      "support_complete": true,
+      "tail": "Q28",
+      "top_predictions": [
+        [
+          "Q28",
+          0.5333333333333333
+        ],
+        [
+          "Q183",
+          0.5
+        ],
+        [
+          "Q142",
+          0.4492753623188406
+        ],
+        [
+          "Q41304",
+          0.41123595505617977
+        ],
+        [
+          "Q145",
+          0.41123595505617977
+        ],
+        [
+          "Q174193",
+          0.41123595505617977
+        ],
+        [
+          "Q43287",
+          0.41123595505617977
+        ],
+        [
+          "Q131964",
+          0.41123595505617977
+        ],
+        [
+          "Q31",
+          0.41123595505617977
+        ],
+        [
+          "Q34266",
+          0.3026634382566586
+        ]
+      ],
+      "triple_id": "test:568",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "short_max_length": 2,
+    "short_rule": {
+      "covered": true,
+      "direction": "tail",
+      "filtered_returned_count": 316,
+      "head": "Q17455",
+      "hits1": 0,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:568:tail",
+      "rank": 2,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P27",
+      "retrieved_reciprocal_rank": 0.5,
+      "returned_count": 318,
+      "score": 0.4637223974763407,
+      "support_complete": true,
+      "tail": "Q28",
+      "top_predictions": [
+        [
+          "Q183",
+          0.5
+        ],
+        [
+          "Q28",
+          0.4637223974763407
+        ],
+        [
+          "Q142",
+          0.4492753623188406
+        ],
+        [
+          "Q55",
+          0.2647058823529412
+        ],
+        [
+          "Q41304",
+          0.2222222222222222
+        ],
+        [
+          "Q16957",
+          0.2222222222222222
+        ],
+        [
+          "Q131964",
+          0.21739130434782608
+        ],
+        [
+          "Q145",
+          0.17567567567567569
+        ],
+        [
+          "Q43287",
+          0.14705882352941177
+        ],
+        [
+          "Q174193",
+          0.14634146341463414
+        ]
+      ],
+      "triple_id": "test:568",
+      "true_returned": true
+    },
+    "subset": "fixed_constants_general_le3"
+  },
+  {
+    "category": "longer_fixed_constants_general_2_to_3_hurts",
+    "embedding": {
+      "backend_metadata": {
+        "head_policy": "inverse relation tail score",
+        "score_type": "raw"
+      },
+      "candidate_evidence": {},
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 2025,
+      "head": "Q574",
+      "hits1": 0,
+      "hits10": 0,
+      "hits_certified": true,
+      "query_id": "test:50:head",
+      "rank": 96.0,
+      "rank_policy": "realistic average-score ties",
+      "ranking_exact": true,
+      "reciprocal_rank": 0.010416666666666666,
+      "relation": "P37",
+      "retrieved_reciprocal_rank": 0.010416666666666666,
+      "returned_candidates": [
+        [
+          "Q1041",
+          6.278402805328369
+        ],
+        [
+          "Q1025",
+          6.134648323059082
+        ],
+        [
+          "Q962",
+          6.106264114379883
+        ],
+        [
+          "Q1008",
+          6.099182605743408
+        ],
+        [
+          "Q1032",
+          5.910440444946289
+        ],
+        [
+          "Q414",
+          5.847170829772949
+        ],
+        [
+          "Q945",
+          5.826173782348633
+        ],
+        [
+          "Q1042",
+          5.774250030517578
+        ],
+        [
+          "Q77",
+          5.766571044921875
+        ],
+        [
+          "Q786",
+          5.742912292480469
+        ]
+      ],
+      "returned_count": 2034,
+      "score": 3.6937665939331055,
+      "support_complete": true,
+      "tail": "Q5146",
+      "top_predictions": [
+        [
+          "Q1041",
+          6.278402805328369
+        ],
+        [
+          "Q1025",
+          6.134648323059082
+        ],
+        [
+          "Q962",
+          6.106264114379883
+        ],
+        [
+          "Q1008",
+          6.099182605743408
+        ],
+        [
+          "Q1032",
+          5.910440444946289
+        ],
+        [
+          "Q414",
+          5.847170829772949
+        ],
+        [
+          "Q945",
+          5.826173782348633
+        ],
+        [
+          "Q1042",
+          5.774250030517578
+        ],
+        [
+          "Q77",
+          5.766571044921875
+        ],
+        [
+          "Q786",
+          5.742912292480469
+        ]
+      ],
+      "triple_id": "test:50",
+      "true_returned": true
+    },
+    "graph_features": {
+      "cardinality": "many-to-one",
+      "directed_twohop_paths_to_truth": 3,
+      "head_degree": 35,
+      "head_in_degree": 12,
+      "head_out_degree": 23,
+      "heads_per_tail": 13.0,
+      "known_degree_group": "high",
+      "relation_frequency": 182,
+      "symmetry_strength": 0.0,
+      "symmetry_support": 0,
+      "tail_degree": 28,
+      "tail_in_degree": 28,
+      "tail_out_degree": 0,
+      "tails_per_head": 1.1666666666666667,
+      "target_degree_group": "high",
+      "undirected_common_neighbors_to_truth": 3
+    },
+    "predictions": [
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q574",
+          "P37",
+          "Q5146"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.20967741935483872,
+            "constant_bearing": false,
+            "expression": "P37(X,Y) <= P17(X,A), P17(B,A), P37(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q574",
+                  "P17",
+                  "Q200464"
+                ],
+                [
+                  "Q1007",
+                  "P17",
+                  "Q200464"
+                ],
+                [
+                  "Q1007",
+                  "P37",
+                  "Q5146"
+                ]
+              ],
+              [
+                [
+                  "Q574",
+                  "P17",
+                  "Q200464"
+                ],
+                [
+                  "Q983",
+                  "P17",
+                  "Q200464"
+                ],
+                [
+                  "Q983",
+                  "P37",
+                  "Q5146"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 62,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 13,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5833333333333334,
+            "constant_bearing": true,
+            "expression": "P37(X,Q5146) <= P17(X,Q200464)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q574",
+                  "P17",
+                  "Q200464"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 12,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 7,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.19327731092436976,
+            "constant_bearing": false,
+            "expression": "P37(X,Y) <= P530(A,X), P37(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q45",
+                  "P530",
+                  "Q574"
+                ],
+                [
+                  "Q45",
+                  "P37",
+                  "Q5146"
+                ]
+              ],
+              [
+                [
+                  "Q155",
+                  "P530",
+                  "Q574"
+                ],
+                [
+                  "Q155",
+                  "P37",
+                  "Q5146"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 476,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 92,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q574",
+          "P37",
+          "Q5146"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q117",
+          "P37",
+          "Q5146"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.45222929936305734,
+            "constant_bearing": false,
+            "expression": "P37(X,Y) <= P361(X,A), P361(B,A), P37(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q117",
+                  "P361",
+                  "Q4412"
+                ],
+                [
+                  "Q1007",
+                  "P361",
+                  "Q4412"
+                ],
+                [
+                  "Q1007",
+                  "P37",
+                  "Q5146"
+                ]
+              ],
+              [
+                [
+                  "Q117",
+                  "P361",
+                  "Q4412"
+                ],
+                [
+                  "Q1011",
+                  "P361",
+                  "Q4412"
+                ],
+                [
+                  "Q1011",
+                  "P37",
+                  "Q5146"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 157,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 71,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.5833333333333334,
+            "constant_bearing": true,
+            "expression": "P37(X,Q5146) <= P17(X,Q200464)",
+            "general_relational": false,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q117",
+                  "P17",
+                  "Q200464"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "constant",
+            "length": 1,
+            "native_family": "Uc",
+            "predictions": 12,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 7,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.20967741935483872,
+            "constant_bearing": false,
+            "expression": "P37(X,Y) <= P17(X,A), P17(B,A), P37(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q117",
+                  "P17",
+                  "Q200464"
+                ],
+                [
+                  "Q1007",
+                  "P17",
+                  "Q200464"
+                ],
+                [
+                  "Q1007",
+                  "P37",
+                  "Q5146"
+                ]
+              ],
+              [
+                [
+                  "Q117",
+                  "P17",
+                  "Q200464"
+                ],
+                [
+                  "Q983",
+                  "P17",
+                  "Q200464"
+                ],
+                [
+                  "Q983",
+                  "P37",
+                  "Q5146"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 62,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 13,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q117",
+          "P37",
+          "Q5146"
+        ]
+      },
+      {
+        "all_groundings_training_checked": true,
+        "labels": [
+          "Q739",
+          "P37",
+          "Q5146"
+        ],
+        "rules": [
+          {
+            "body_has_cycle": false,
+            "confidence": 0.45222929936305734,
+            "constant_bearing": false,
+            "expression": "P37(X,Y) <= P361(X,A), P361(B,A), P37(B,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q739",
+                  "P361",
+                  "Q12585"
+                ],
+                [
+                  "Q155",
+                  "P361",
+                  "Q12585"
+                ],
+                [
+                  "Q155",
+                  "P37",
+                  "Q5146"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 3,
+            "native_family": "B",
+            "predictions": 157,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 71,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.3790322580645161,
+            "constant_bearing": false,
+            "expression": "P37(X,Y) <= P27(A,X), P1412(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q34424",
+                  "P27",
+                  "Q739"
+                ],
+                [
+                  "Q34424",
+                  "P1412",
+                  "Q5146"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 124,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 47,
+            "unconditional_prior": false
+          },
+          {
+            "body_has_cycle": false,
+            "confidence": 0.19327731092436976,
+            "constant_bearing": false,
+            "expression": "P37(X,Y) <= P530(A,X), P37(A,Y)",
+            "general_relational": true,
+            "grounded_cyclic_mining_origin": "not identifiable from serialized rules",
+            "groundings": [
+              [
+                [
+                  "Q155",
+                  "P530",
+                  "Q739"
+                ],
+                [
+                  "Q155",
+                  "P37",
+                  "Q5146"
+                ]
+              ]
+            ],
+            "head_constant_in_body": false,
+            "kind": "relational_path",
+            "length": 2,
+            "native_family": "B",
+            "predictions": 476,
+            "reflexive_head": false,
+            "statistics_status": "resolved against frozen source expression",
+            "support": 92,
+            "unconditional_prior": false
+          }
+        ],
+        "triple": [
+          "Q739",
+          "P37",
+          "Q5146"
+        ]
+      }
+    ],
+    "rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 788,
+      "head": "Q574",
+      "hits1": 0,
+      "hits10": 0,
+      "hits_certified": true,
+      "query_id": "test:50:head",
+      "rank": 42,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P37",
+      "retrieved_reciprocal_rank": 0.023809523809523808,
+      "returned_count": 797,
+      "score": 0.4117647058823529,
+      "support_complete": true,
+      "tail": "Q5146",
+      "top_predictions": [
+        [
+          "Q117",
+          0.4382716049382716
+        ],
+        [
+          "Q739",
+          0.4382716049382716
+        ],
+        [
+          "Q414",
+          0.4382716049382716
+        ],
+        [
+          "Q1042",
+          0.4382716049382716
+        ],
+        [
+          "Q241",
+          0.4382716049382716
+        ],
+        [
+          "Q962",
+          0.4382716049382716
+        ],
+        [
+          "Q1020",
+          0.4382716049382716
+        ],
+        [
+          "Q953",
+          0.4382716049382716
+        ],
+        [
+          "Q958",
+          0.4382716049382716
+        ],
+        [
+          "Q954",
+          0.4382716049382716
+        ]
+      ],
+      "triple_id": "test:50",
+      "true_returned": true
+    },
+    "sampling": "first two query IDs per complementarity category; first query per length gain/loss; up to three native supporting rules (prioritize one longer rule in length cases) and first two groundings; illustrative not exhaustive; neural seed0",
+    "short_max_length": 2,
+    "short_rule": {
+      "covered": true,
+      "direction": "head",
+      "filtered_returned_count": 788,
+      "head": "Q574",
+      "hits1": 1,
+      "hits10": 1,
+      "hits_certified": true,
+      "query_id": "test:50:head",
+      "rank": 1,
+      "rank_policy": "backend native lexicographic",
+      "ranking_exact": false,
+      "reciprocal_rank": null,
+      "relation": "P37",
+      "retrieved_reciprocal_rank": 1.0,
+      "returned_count": 797,
+      "score": 0.4117647058823529,
+      "support_complete": true,
+      "tail": "Q5146",
+      "top_predictions": [
+        [
+          "Q574",
+          0.4117647058823529
+        ],
+        [
+          "Q244",
+          0.4117647058823529
+        ],
+        [
+          "Q117",
+          0.4117647058823529
+        ],
+        [
+          "Q826",
+          0.4117647058823529
+        ],
+        [
+          "Q854",
+          0.4117647058823529
+        ],
+        [
+          "Q34266",
+          0.3643410852713178
+        ],
+        [
+          "Q142",
+          0.3643410852713178
+        ],
+        [
+          "Q30",
+          0.3643410852713178
+        ],
+        [
+          "Q29",
+          0.3643410852713178
+        ],
+        [
+          "Q16",
+          0.3643410852713178
+        ]
+      ],
+      "triple_id": "test:50",
+      "true_returned": true
+    },
+    "subset": "fixed_constants_general_le3"
+  }
+]

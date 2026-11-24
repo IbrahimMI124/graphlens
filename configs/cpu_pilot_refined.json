@@ -1,0 +1,75 @@
+{
+  "anyburl": {
+    "evidence_mode": "references",
+    "heap": "2G",
+    "jar": "vendor/AnyBURL-23-1x.jar",
+    "max_length": 3,
+    "min_support": 2,
+    "seconds": 10,
+    "threads": 1,
+    "top_k": 100,
+    "zero_rules": false,
+    "pretrained_rules": "runs/codex-s-cpu-pilot/seed-0/rules/rules-10"
+  },
+  "case_groundings": true,
+  "classification": true,
+  "embedding": {
+    "batch_size": 256,
+    "device": "cpu",
+    "embedding_dim": 128,
+    "epochs": 10,
+    "learning_rate": 0.01,
+    "loss": "SoftplusLoss",
+    "model": "ComplEx",
+    "num_negs_per_pos": 2,
+    "seed": 0,
+    "threads": 1,
+    "model_kwargs": {
+      "entity_initializer": "xavier_uniform_",
+      "relation_initializer": "xavier_uniform_"
+    }
+  },
+  "evaluation_limit": null,
+  "local_target_fraction": 0.1,
+  "mode": "development",
+  "perturbation_seeds": [
+    11
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "selection": {
+    "metric": "Hits@1 (rules: retrieved-list proxy)",
+    "n_candidates": 3,
+    "split": "valid",
+    "status": "fixed before test evaluation",
+    "test_access": "none",
+    "validation_sha256": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+    "winners": {
+      "embedding": 2,
+      "rules": 1
+    },
+    "search_seeds": [
+      0
+    ],
+    "final_pilot_seeds": [
+      0,
+      1,
+      2
+    ],
+    "initialization_followup": {
+      "split": "valid",
+      "artifact": "runs/codex-s-validation-initializer-check/validation.json",
+      "rationale": "Near-chance validation rankings after 10 epochs prompted a same-budget initialization check. This adaptive validation search is exploratory.",
+      "test_used_for_selection": false
+    }
+  },
+  "strong_confidence": 0.5,
+  "strong_support": 5,
+  "study_stage": "exploratory_cpu_pilot_validation_refined_initialization",
+  "prediction_cache_size": 256,
+  "progress_every": 500,
+  "uncertainty_scope": "three neural seeds and paired test-triple resampling; symbolic model held fixed; mining variability not estimated"
+}

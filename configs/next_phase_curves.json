@@ -1,0 +1,96 @@
+{
+  "stage": "bounded exploratory validation search",
+  "budgets_fixed_before_test": true,
+  "final_seeds": [
+    0,
+    1,
+    2
+  ],
+  "maximum_neural_epochs_including_reused_seed": 200,
+  "recipes": [
+    {
+      "model": "ComplEx",
+      "seed": 0,
+      "embedding_dim": 128,
+      "learning_rate": 0.01,
+      "device": "cpu",
+      "threads": 1,
+      "objective": "slcwa",
+      "loss": "SoftplusLoss",
+      "reciprocal": false,
+      "budgets": [
+        5,
+        10,
+        20,
+        40
+      ],
+      "batch_size": 256,
+      "entity_dropout": 0,
+      "relation_dropout": 0,
+      "model_kwargs": {
+        "entity_initializer": "xavier_uniform_",
+        "relation_initializer": "xavier_uniform_"
+      },
+      "early_stopping_checks": 3,
+      "name": "slcwa-control",
+      "num_negs_per_pos": 2
+    },
+    {
+      "model": "ComplEx",
+      "seed": 0,
+      "embedding_dim": 256,
+      "learning_rate": 0.00033858206813454155,
+      "device": "cpu",
+      "threads": 1,
+      "objective": "1vsAll",
+      "loss": "CrossEntropyLoss",
+      "reciprocal": true,
+      "budgets": [
+        5,
+        10,
+        20,
+        40
+      ],
+      "batch_size": 1024,
+      "entity_dropout": 0.07931799348443747,
+      "relation_dropout": 0.05643956921994686,
+      "model_kwargs": {
+        "regularizer": null,
+        "entity_initializer": "xavier_normal_",
+        "relation_initializer": "xavier_normal_"
+      },
+      "early_stopping_checks": 3,
+      "name": "reciprocal-ce-official-lr"
+    },
+    {
+      "model": "ComplEx",
+      "seed": 0,
+      "embedding_dim": 256,
+      "learning_rate": 0.003,
+      "device": "cpu",
+      "threads": 1,
+      "objective": "1vsAll",
+      "loss": "CrossEntropyLoss",
+      "reciprocal": true,
+      "budgets": [
+        5,
+        10,
+        20,
+        40
+      ],
+      "batch_size": 1024,
+      "entity_dropout": 0.07931799348443747,
+      "relation_dropout": 0.05643956921994686,
+      "model_kwargs": {
+        "regularizer": null,
+        "entity_initializer": "xavier_normal_",
+        "relation_initializer": "xavier_normal_"
+      },
+      "early_stopping_checks": 3,
+      "name": "reciprocal-ce-fast-lr"
+    }
+  ],
+  "selection": "full validation filtered MRR; earliest qualifying best checkpoint; ties use recipe order",
+  "resource_scope": "CPU one thread; maximum40 epochs per run; no400-epoch reproduction",
+  "adaptive_history": "one real-data 1-epoch recipe smoke inspected validation only before fixing recipes"
+}

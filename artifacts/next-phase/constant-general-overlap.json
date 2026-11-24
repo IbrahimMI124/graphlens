@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "both_correct": 771,
+    "both_incorrect": 2250,
+    "only_embeddings": 401,
+    "only_rules": 234
+  },
+  "error_jaccard": 0.779896013864818,
+  "interpretation": "unique standalone successes within these two subsets, not additive credit in their maxplus union",
+  "k": 1,
+  "labels": {
+    "embedding": "constant-bearing implications",
+    "rules": "general variable-only relational"
+  },
+  "mean_candidate_jaccard_including_empty_both_as_one": 0.6431024520780815,
+  "n_queries": 3656,
+  "n_unique_queries": 3656,
+  "oracle_status": "diagnostic upper bound for recorded successes; not deployable",
+  "oracle_union_success": 0.38457330415754926,
+  "proportions": {
+    "both_correct": 0.21088621444201314,
+    "both_incorrect": 0.6154266958424508,
+    "only_embeddings": 0.10968271334792122,
+    "only_rules": 0.06400437636761488
+  },
+  "ranking_status": "exact"
+}

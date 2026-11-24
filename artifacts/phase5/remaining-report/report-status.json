@@ -1,0 +1,135 @@
+{
+  "all_declared_frozen_cells_complete": false,
+  "all_primary_cells_complete": false,
+  "cells": [
+    {
+      "component": "neural-0",
+      "condition": "original",
+      "status": "complete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "original",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "random_global",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "random_global",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "random_relation_stratified",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "random_relation_stratified",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "targeted_local",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "targeted_local",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "targeted_relation_matched_control",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "targeted_relation_matched_control",
+      "status": "pending/incomplete"
+    }
+  ],
+  "frozen_families": [
+    "general",
+    "constants"
+  ],
+  "frozen_family_cells": [
+    {
+      "condition": "original",
+      "family": "general",
+      "status": "complete"
+    },
+    {
+      "condition": "original",
+      "family": "constants",
+      "status": "complete"
+    },
+    {
+      "condition": "random_global",
+      "family": "general",
+      "status": "complete"
+    },
+    {
+      "condition": "random_global",
+      "family": "constants",
+      "status": "pending/incomplete"
+    },
+    {
+      "condition": "random_relation_stratified",
+      "family": "general",
+      "status": "complete"
+    },
+    {
+      "condition": "random_relation_stratified",
+      "family": "constants",
+      "status": "pending/incomplete"
+    },
+    {
+      "condition": "targeted_local",
+      "family": "general",
+      "status": "complete"
+    },
+    {
+      "condition": "targeted_local",
+      "family": "constants",
+      "status": "pending/incomplete"
+    },
+    {
+      "condition": "targeted_relation_matched_control",
+      "family": "general",
+      "status": "complete"
+    },
+    {
+      "condition": "targeted_relation_matched_control",
+      "family": "constants",
+      "status": "pending/incomplete"
+    }
+  ],
+  "frozen_support_counts_by_family": [
+    {
+      "family": "general",
+      "n_candidate_support_monotonicity_violations": 0,
+      "n_condition_query_records": 18280,
+      "n_triples": 1828,
+      "n_unique_queries": 3656
+    },
+    {
+      "family": "constants",
+      "n_candidate_support_monotonicity_violations": 0,
+      "n_condition_query_records": 3656,
+      "n_triples": 1828,
+      "n_unique_queries": 3656
+    }
+  ],
+  "independent_miners_per_graph": 1,
+  "n_joined_rows": 0,
+  "neural_seeds": [
+    0
+  ],
+  "root": "runs/phase5-90",
+  "smoke": false
+}

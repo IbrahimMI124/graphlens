@@ -1,0 +1,62 @@
+{
+  "all_primary_cells_complete": false,
+  "cells": [
+    {
+      "component": "neural-0",
+      "condition": "original",
+      "status": "complete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "original",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "random_global",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "random_global",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "random_relation_stratified",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "random_relation_stratified",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "targeted_local",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "targeted_local",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "targeted_relation_matched_control",
+      "status": "pending/incomplete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "targeted_relation_matched_control",
+      "status": "pending/incomplete"
+    }
+  ],
+  "independent_miners_per_graph": 1,
+  "n_joined_rows": 0,
+  "neural_seeds": [
+    0
+  ],
+  "root": "runs/phase5-90",
+  "smoke": false
+}

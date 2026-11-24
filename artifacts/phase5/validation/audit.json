@@ -1,0 +1,184 @@
+{
+  "checks": {
+    "candidate_vocabulary_unchanged": true,
+    "exact_relation_counts_match_targeted_control": true,
+    "held_out_splits_unchanged": true,
+    "original_positive_evaluator_filters_fixed": true,
+    "reproduced_training_only_masks": true
+  },
+  "conditions": [
+    {
+      "condition": "original",
+      "degree_quantiles": [
+        10.0,
+        15.0,
+        17.0,
+        25.0,
+        1008.0
+      ],
+      "global_typed_threehop_walks": 30859263,
+      "global_typed_twohop_walks": 688733,
+      "mean_degree": 32.33824975417896,
+      "mean_test_endpoint_typed_threehop_walks": 260.11706783369806,
+      "mean_test_endpoint_typed_twohop_walks": 5.241247264770241,
+      "median_degree": 17.0,
+      "n_active_relations": 42,
+      "n_edges": 32888,
+      "n_entities_in_universe": 2034,
+      "n_isolated": 0,
+      "n_relations_in_universe": 42,
+      "n_test_facts_losing_twohop_walks": 0,
+      "relation_frequency_total_variation": 0.0,
+      "retention": 1.0,
+      "target_incident_edges_removed": 0,
+      "training_graph_sha256": "06174716084ef88870e109b2f575344b0ed8398814d9e26234a02a1034d110f3"
+    },
+    {
+      "condition": "random_global",
+      "degree_quantiles": [
+        8.0,
+        13.0,
+        16.0,
+        23.0,
+        918.0
+      ],
+      "global_typed_threehop_walks": 22421207,
+      "global_typed_twohop_walks": 560486,
+      "mean_degree": 29.104228121927235,
+      "mean_test_endpoint_typed_threehop_walks": 189.75711159737418,
+      "mean_test_endpoint_typed_twohop_walks": 4.303610503282275,
+      "median_degree": 16.0,
+      "n_active_relations": 41,
+      "n_edges": 29599,
+      "n_entities_in_universe": 2034,
+      "n_isolated": 0,
+      "n_relations_in_universe": 42,
+      "n_test_facts_losing_twohop_walks": 489,
+      "relation_frequency_total_variation": 0.0030378347030253793,
+      "retention": 0.8999939187545609,
+      "target_incident_edges_removed": 654,
+      "training_graph_sha256": "f0dccb0503b55301a297586499cc74dd15f2532f38ff01a611d09e8d0a63d668"
+    },
+    {
+      "condition": "random_relation_stratified",
+      "degree_quantiles": [
+        8.0,
+        13.0,
+        16.0,
+        23.0,
+        904.0
+      ],
+      "global_typed_threehop_walks": 22716791,
+      "global_typed_twohop_walks": 560470,
+      "mean_degree": 29.104228121927235,
+      "mean_test_endpoint_typed_threehop_walks": 189.51422319474835,
+      "mean_test_endpoint_typed_twohop_walks": 4.222647702407002,
+      "median_degree": 16.0,
+      "n_active_relations": 42,
+      "n_edges": 29599,
+      "n_entities_in_universe": 2034,
+      "n_isolated": 0,
+      "n_relations_in_universe": 42,
+      "n_test_facts_losing_twohop_walks": 490,
+      "relation_frequency_total_variation": 0.0001945581468024235,
+      "retention": 0.8999939187545609,
+      "target_incident_edges_removed": 634,
+      "training_graph_sha256": "a25b0fc294970624a5269890eb2271ee786cd4f0b6d9e0c16565015abddcbfee"
+    },
+    {
+      "condition": "targeted_local",
+      "degree_quantiles": [
+        2.0,
+        13.0,
+        16.0,
+        23.0,
+        696.0
+      ],
+      "global_typed_threehop_walks": 21605602,
+      "global_typed_twohop_walks": 507626,
+      "mean_degree": 29.104228121927235,
+      "mean_test_endpoint_typed_threehop_walks": 210.7155361050328,
+      "mean_test_endpoint_typed_twohop_walks": 4.535010940919038,
+      "median_degree": 16.0,
+      "n_active_relations": 42,
+      "n_edges": 29599,
+      "n_entities_in_universe": 2034,
+      "n_isolated": 0,
+      "n_relations_in_universe": 42,
+      "n_test_facts_losing_twohop_walks": 430,
+      "relation_frequency_total_variation": 0.016060027010353264,
+      "retention": 0.8999939187545609,
+      "target_incident_edges_removed": 3289,
+      "training_graph_sha256": "c3d9e0ba444fb4e276e8ae83fffa4d0508dacabb5594cd7a968fa2bd56c3a05c"
+    },
+    {
+      "condition": "targeted_relation_matched_control",
+      "degree_quantiles": [
+        7.0,
+        13.0,
+        16.0,
+        23.0,
+        801.0
+      ],
+      "global_typed_threehop_walks": 22686646,
+      "global_typed_twohop_walks": 546113,
+      "mean_degree": 29.104228121927235,
+      "mean_test_endpoint_typed_threehop_walks": 202.07822757111597,
+      "mean_test_endpoint_typed_twohop_walks": 4.426695842450766,
+      "median_degree": 16.0,
+      "n_active_relations": 42,
+      "n_edges": 29599,
+      "n_entities_in_universe": 2034,
+      "n_isolated": 0,
+      "n_relations_in_universe": 42,
+      "n_test_facts_losing_twohop_walks": 486,
+      "relation_frequency_total_variation": 0.016060027010353264,
+      "retention": 0.8999939187545609,
+      "target_incident_edges_removed": 787,
+      "training_graph_sha256": "8c21457059ae7752adbc0fc1f1bef49d2b00b00af93923b428543e230794dd9b"
+    }
+  ],
+  "official_splits": {
+    "counts": {
+      "test": 1828,
+      "test_negatives": 1828,
+      "train": 32888,
+      "valid": 1827,
+      "valid_negatives": 1827
+    },
+    "dataset": "CoDEx-S",
+    "excerpt": false,
+    "sha256": {
+      "test": "27127fcb34688c4778e88a39ef3c9b540807da846021e9d9685660ac1838aca1",
+      "test_negatives": "d3fb32c41f3be26d09484ace571965806f1ade0ca712551b0de684c283cdbb22",
+      "train": "64f93b7f314f3936a6f65739721429db3f6a7c8f5a1e1104ec3bb544f7434f59",
+      "valid": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+      "valid_negatives": "c1d84860d6ee786419f1f118d0e9479c6614283b3e267afc158734389036901f"
+    },
+    "source": {
+      "commit": "3132e426c2a6b643b70bad679905a3a6270be440",
+      "sha256": {
+        "test": "27127fcb34688c4778e88a39ef3c9b540807da846021e9d9685660ac1838aca1",
+        "test_negatives": "d3fb32c41f3be26d09484ace571965806f1ade0ca712551b0de684c283cdbb22",
+        "train": "64f93b7f314f3936a6f65739721429db3f6a7c8f5a1e1104ec3bb544f7434f59",
+        "valid": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+        "valid_negatives": "c1d84860d6ee786419f1f118d0e9479c6614283b3e267afc158734389036901f"
+      },
+      "size": "s",
+      "urls": {
+        "test": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/test.txt",
+        "test_negatives": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/test_negatives.txt",
+        "train": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/train.txt",
+        "valid": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/valid.txt",
+        "valid_negatives": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/valid_negatives.txt"
+      }
+    },
+    "training_graph_sha256": "06174716084ef88870e109b2f575344b0ed8398814d9e26234a02a1034d110f3"
+  },
+  "path_definition": "exact forward-directed typed length2/3 walks, repeated entities allowed; excludes inverse-oriented rule bodies; held-out endpoints used only for diagnostics; not total relational evidence or native rule groundings",
+  "prepared_plan_sha256": "b2db53bb9aa87c05f64b166ee032c493f8410f64d3b4955f8ff811d455955aa0",
+  "prepared_root": "runs/next-phase-sparsity-prepared",
+  "query_sequence_sha256": "4cef9626f767defb1779a85deac6fed8b363518e337168b77cfdd7123d83e106",
+  "replication_limit": "one prepared perturbation realization; no population-level causal generalization",
+  "selection_scope": "interventions(graph: TrainGraph) receives no held-out facts; target_seed101, removal_seed11"
+}

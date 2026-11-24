@@ -1,0 +1,56 @@
+{
+  "status": "paused at user request: laptop heated",
+  "timestamp_utc": "2026-11-23T01:47:38.710025+00:00",
+  "active_training_stopped": true,
+  "active_rule_evaluation_stopped": true,
+  "stop_exit_codes": {
+    "neural": 130,
+    "rules": 130
+  },
+  "completed_final_neural_seeds": [
+    "seed-0",
+    "seed-1"
+  ],
+  "completed_rule_conditions": [
+    "all",
+    "constants",
+    "general",
+    "zero",
+    "reflexive",
+    "Uc",
+    "Ud"
+  ],
+  "saved_curves": [
+    {
+      "path": "runs/next-phase-neural/search/slcwa-control/curve.json",
+      "saved_status": "complete",
+      "best_epoch": 5,
+      "best_validation_mrr": 0.20927868631319432
+    },
+    {
+      "path": "runs/next-phase-neural/search/reciprocal-ce-official-lr/curve.json",
+      "saved_status": "complete",
+      "best_epoch": 40,
+      "best_validation_mrr": 0.3698604724271622
+    },
+    {
+      "path": "runs/next-phase-neural/search/reciprocal-ce-fast-lr/curve.json",
+      "saved_status": "complete",
+      "best_epoch": 40,
+      "best_validation_mrr": 0.390106238633406
+    },
+    {
+      "path": "runs/next-phase-neural/final/seed-1/curve.json",
+      "saved_status": "complete",
+      "best_epoch": 20,
+      "best_validation_mrr": 0.38924554180186577
+    },
+    {
+      "path": "runs/next-phase-neural/final/seed-2/curve.json",
+      "saved_status": "running",
+      "best_epoch": 10,
+      "best_validation_mrr": 0.38827227768722866
+    }
+  ],
+  "resume_notes": "Inspect partial directories before restarting. Best model weights are saved; optimizer/RNG state is not checkpointed, so interrupted neural training requires a newly labelled restart rather than claimed exact continuation. Preserve partial outputs. The report is currently partial and must be regenerated after remaining runs. No further computation until user resumes."
+}

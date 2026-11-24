@@ -1,0 +1,9 @@
+{
+  "all_training_and_rule_application_jobs_finished": true,
+  "completion": "artifacts/next-phase/completion.json",
+  "preserved_pause_state": "artifacts/next-phase/pause-state.json",
+  "resource_policy": "serial single-thread jobs with cooling pauses",
+  "restart": "runs/next-phase-neural/restart-after-user-pause.json",
+  "status": "bounded next-phase work finished",
+  "unchanged_selection": "runs/next-phase-neural/selection.json"
+}

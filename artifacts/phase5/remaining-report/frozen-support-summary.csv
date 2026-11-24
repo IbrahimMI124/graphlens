@@ -1,0 +1,7 @@
+family,condition,n_queries,n_unique_queries,n_triples,candidate_supports_lost,new_candidate_supports,queries_losing_candidate_support,certified_gold_support_disappeared,uncertified_gold_support_loss,top1_changed
+general,original,3656,3656,1828,0,0,0,0,0,0
+general,random_global,3656,3656,1828,71950,0,3401,0,0,792
+general,random_relation_stratified,3656,3656,1828,72963,0,3201,0,0,795
+general,targeted_local,3656,3656,1828,104354,0,3382,0,0,771
+general,targeted_relation_matched_control,3656,3656,1828,67473,0,3088,0,0,1043
+constants,original,3656,3656,1828,0,0,0,0,0,0

@@ -1,0 +1,7 @@
+condition,backend,replicate,best_epoch,completed_epochs,training_seconds,training_cpu_seconds,optimizer_updates,examples_seen,effective_training_facts,mining_seconds_requested,java_seed_controlled,stage_status
+original,ComplEx,0,1,1,8.298278863999258,8.16693204,65,65776,32888,,,
+original,AnyBURL,0,,,4.481274563999705,3.9765690000000005,,,,2,False,mining and application complete
+targeted_local,ComplEx,0,1,1,8.224801314999695,8.080731183000001,58,59198,29599,,,
+targeted_local,AnyBURL,0,,,4.532217775999925,4.997288999999999,,,,2,False,mining and application complete
+targeted_relation_matched_control,ComplEx,0,1,1,7.447576382000534,7.313229741000001,58,59198,29599,,,
+targeted_relation_matched_control,AnyBURL,0,,,4.578750684999704,4.866959000000001,,,,2,False,mining and application complete

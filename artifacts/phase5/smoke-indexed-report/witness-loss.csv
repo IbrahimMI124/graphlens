@@ -1,0 +1,3 @@
+condition,query_id,category,neural_seed,mining_realization_id,n_sampled_groundings,n_sampled_groundings_lost,sampled_grounding_loss,assessment
+targeted_local,test:0:head,targeted_known_endpoint_changed,0,0,0,0,,sampled native witnesses; surviving samples do not prove that no other grounding disappeared
+targeted_relation_matched_control,test:0:head,targeted_known_endpoint_changed,0,0,0,0,,sampled native witnesses; surviving samples do not prove that no other grounding disappeared

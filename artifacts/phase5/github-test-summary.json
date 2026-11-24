@@ -1,0 +1,19 @@
+{
+  "run_utc": "2026-11-24T17:20:54Z",
+  "command": "pytest -q -rs --junitxml=artifacts/phase5/work-handoff-tests.xml",
+  "environment": {
+    "python": "3.11.16",
+    "torch": "2.15.0+cpu",
+    "pykeen": "1.11.1",
+    "pyclause_commit": "87c82ec3dd904767741a493dcbdf7605377d4535",
+    "cpu_threads": 1
+  },
+  "result": {
+    "passed": 100,
+    "skipped": 1,
+    "subtests_passed": 38,
+    "skip_reason": "Complete official CoDEx-M data is unavailable",
+    "warnings": 29
+  },
+  "scope_note": "Correctness and small backend integration suite only; no full Phase 5 model training or perturbation matrix was run."
+}

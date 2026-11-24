@@ -1,0 +1,69 @@
+{
+  "commands": [
+    [
+      ".backend-venv/bin/python",
+      "-m",
+      "kgc.research.structure",
+      "run",
+      "--output",
+      "runs/phase5-replicated-prepared",
+      "--seeds",
+      "0",
+      "1",
+      "2",
+      "--rule-repetitions",
+      "2"
+    ],
+    [
+      ".backend-venv/bin/python",
+      "-m",
+      "kgc.research.structure",
+      "frozen",
+      "--output",
+      "runs/phase5-replicated-prepared",
+      "--families",
+      "constants"
+    ],
+    [
+      ".backend-venv/bin/python",
+      "-m",
+      "kgc.research.structure",
+      "report",
+      "--output",
+      "runs/phase5-replicated-prepared",
+      "--report-output",
+      "artifacts/phase5/replicated-report"
+    ]
+  ],
+  "compute_host": "unassigned; user compute choice pending",
+  "counts": {
+    "fresh_rule_family_applications": 30,
+    "graphs": 5,
+    "independent_mining_cells": 10,
+    "neural_cells": 15,
+    "neural_checkpoint_policy_evaluations": 45
+  },
+  "frozen_scope": "one established frozen catalog; family subsets are not independent learning realizations",
+  "later_work": [
+    "CoDEx-M replication",
+    "larger retention sweeps",
+    "additional perturbation draws"
+  ],
+  "preparation_environment": {
+    "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+    "python": "3.11.16",
+    "versions": {
+      "PyClause": "0.0.1",
+      "matplotlib": "3.11.2",
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "pykeen": "1.11.1",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "torch": "2.15.0+cpu"
+    }
+  },
+  "protocol_sha256": "1931612d0c89add4bdc887b17130f496e6a9ae0567c3fecfcb0ddf2f6501ea5f",
+  "status": "prepared; no training or mining started",
+  "training_control": "Retrain original controls and all modified graphs on the same selected compute environment; do not substitute laptop checkpoints or inventories."
+}

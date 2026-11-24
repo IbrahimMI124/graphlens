@@ -1,0 +1,8 @@
+aa	sym	bb
+bb	sym	aa
+aa	parent	bb
+bb	child	aa
+bb	parent	cc
+cc	child	bb
+aa	ancestor	cc
+aa	ancestor	bb

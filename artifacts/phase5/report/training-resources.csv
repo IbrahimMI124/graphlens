@@ -1,0 +1,3 @@
+condition,backend,replicate,best_epoch,completed_epochs,training_seconds,training_cpu_seconds,optimizer_updates,examples_seen,effective_training_facts,mining_seconds_requested,java_seed_controlled,stage_status
+original,ComplEx,0,40,40,284.82179232099594,278.617250509,2600,2631040,32888,,,
+original,AnyBURL,0,,,62.47480586399979,64.715147,,,,60,False,mining complete; application incomplete

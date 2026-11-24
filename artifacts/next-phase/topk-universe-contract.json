@@ -1,0 +1,82 @@
+[
+  {
+    "equal": true,
+    "n2035": 786,
+    "n4069": 786,
+    "query": {
+      "direction": "tail",
+      "known": "Q928",
+      "relation": "P530"
+    }
+  },
+  {
+    "equal": true,
+    "n2035": 317,
+    "n4069": 317,
+    "query": {
+      "direction": "head",
+      "known": "Q41",
+      "relation": "P530"
+    }
+  },
+  {
+    "equal": true,
+    "n2035": 152,
+    "n4069": 152,
+    "query": {
+      "direction": "tail",
+      "known": "Q443897",
+      "relation": "P101"
+    }
+  },
+  {
+    "equal": true,
+    "n2035": 1402,
+    "n4069": 1402,
+    "query": {
+      "direction": "head",
+      "known": "Q207628",
+      "relation": "P101"
+    }
+  },
+  {
+    "equal": true,
+    "n2035": 642,
+    "n4069": 642,
+    "query": {
+      "direction": "tail",
+      "known": "Q1014",
+      "relation": "P530"
+    }
+  },
+  {
+    "equal": true,
+    "n2035": 317,
+    "n4069": 317,
+    "query": {
+      "direction": "head",
+      "known": "Q148",
+      "relation": "P530"
+    }
+  },
+  {
+    "equal": true,
+    "n2035": 144,
+    "n4069": 144,
+    "query": {
+      "direction": "tail",
+      "known": "Q187019",
+      "relation": "P106"
+    }
+  },
+  {
+    "equal": true,
+    "n2035": 1588,
+    "n4069": 1588,
+    "query": {
+      "direction": "head",
+      "known": "Q18844224",
+      "relation": "P106"
+    }
+  }
+]

@@ -1,0 +1,7 @@
+condition,component,status
+original,neural-0,complete
+original,rules-0,complete
+targeted_local,neural-0,complete
+targeted_local,rules-0,complete
+targeted_relation_matched_control,neural-0,complete
+targeted_relation_matched_control,rules-0,complete

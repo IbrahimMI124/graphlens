@@ -1,0 +1,44 @@
+{
+  "mode": "full",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "perturbation_seeds": [
+    11,
+    23,
+    37
+  ],
+  "evaluation_limit": null,
+  "classification": true,
+  "local_target_fraction": 0.1,
+  "strong_confidence": 0.5,
+  "strong_support": 5,
+  "embedding": {
+    "model": "ComplEx",
+    "seed": 0,
+    "embedding_dim": 128,
+    "epochs": 100,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "num_negs_per_pos": 10,
+    "loss": "SoftplusLoss",
+    "threads": 1,
+    "device": "cpu"
+  },
+  "anyburl": {
+    "jar": "vendor/AnyBURL-23-1x.jar",
+    "seconds": 100,
+    "threads": 1,
+    "heap": "4G",
+    "max_length": 3,
+    "min_support": 2,
+    "top_k": 1000,
+    "zero_rules": false,
+    "evidence_mode": "references"
+  },
+  "case_groundings": true,
+  "prediction_cache_size": 256,
+  "progress_every": 500
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "bootstrap": "paired query/triple and neural seeds; independent graph-specific miner draws",
+    "ci_high": -0.0625,
+    "ci_low": -0.28125,
+    "control": "original",
+    "difference": -0.15625,
+    "estimand": "change in neural-minus-all-rules Hits@1 gap",
+    "n_control_miners": 1,
+    "n_neural_seeds": 1,
+    "n_treatment_miners": 1,
+    "n_triples": 16,
+    "n_unique_queries": 32,
+    "repetitions": 1000,
+    "rule_rankings_certified": true,
+    "treatment": "targeted_local"
+  },
+  {
+    "bootstrap": "paired query/triple and neural seeds; independent graph-specific miner draws",
+    "ci_high": 0.0,
+    "ci_low": -0.1875,
+    "control": "original",
+    "difference": -0.09375,
+    "estimand": "change in neural-minus-all-rules Hits@1 gap",
+    "n_control_miners": 1,
+    "n_neural_seeds": 1,
+    "n_treatment_miners": 1,
+    "n_triples": 16,
+    "n_unique_queries": 32,
+    "repetitions": 1000,
+    "rule_rankings_certified": true,
+    "treatment": "targeted_relation_matched_control"
+  },
+  {
+    "bootstrap": "paired query/triple and neural seeds; independent graph-specific miner draws",
+    "ci_high": 0.0625,
+    "ci_low": -0.1875,
+    "control": "targeted_relation_matched_control",
+    "difference": -0.0625,
+    "estimand": "change in neural-minus-all-rules Hits@1 gap",
+    "n_control_miners": 1,
+    "n_neural_seeds": 1,
+    "n_treatment_miners": 1,
+    "n_triples": 16,
+    "n_unique_queries": 32,
+    "repetitions": 1000,
+    "rule_rankings_certified": true,
+    "treatment": "targeted_local"
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "case_studies": 14,
+  "expensive_full_training_launched": false,
+  "final_neural_epoch_cap": 40,
+  "identical_fixed_constant_rule_count": 467989,
+  "n_directional_queries_per_condition": 3656,
+  "n_test_facts": 1828,
+  "neural_seeds": [
+    0,
+    1,
+    2
+  ],
+  "optional_catalog_tags_not_evaluated": [
+    "closed_body_structure",
+    "shared_constant_structure"
+  ],
+  "pending": [
+    "independent mining replication/convergence",
+    "grounded-cyclic mining provenance cannot be recovered from serialized rules",
+    "perturbed-model retraining smoke and larger interventions",
+    "historic LibKGE inherited-default verification",
+    "CoDEx-M"
+  ],
+  "previous_reports_retained": {
+    "artifacts/cpu-pilot-report/report.md": "5f4e63cb7ea844d7443fd9993abf7911ce116b4be44982f214795f32baa0e0d7",
+    "artifacts/rule-length-pilot-report/report.md": "557549cf4ae33938e1c2c3638bb087f598c79206cd7002b511f22abb09191b4d"
+  },
+  "real_checkpoint_roundtrip_verified": true,
+  "required_conditions": {
+    "Uc": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/Uc",
+      "subset_sha256": "7d6f6813161881c811b4223399f96e16a5da11a40f0a3b678ebf346745e474ed"
+    },
+    "Ud": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/Ud",
+      "subset_sha256": "a4a48c686a8f0b5149a64a0b07dbbbfac02b810fcecf26d482f8689e11be67fa"
+    },
+    "XXuc": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/reflexive",
+      "subset_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "XXud": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/reflexive",
+      "subset_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "all": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/all",
+      "subset_sha256": "073ef276d54f185f2c9001cc4c4c368616f86d9d0f7b7d8edac07f2d27bff362"
+    },
+    "constants": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/constants",
+      "subset_sha256": "c73d876d4529a4fdf845103cc63e0a73864d8ebed38dbc483ca793bb15b63ea6"
+    },
+    "constants_general": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/constants_general",
+      "subset_sha256": "7c4818f7934e29eedb1d511fa283568b2e3b8a847c0115106387ee310127667e"
+    },
+    "fixed_constants_general_le1": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/fixed_constants_general_le1",
+      "subset_sha256": "42dc7fbf95c37e70910a15c49ea9f7a2b9483463a4c6b03ab266ed343114d8b8"
+    },
+    "fixed_constants_general_le2": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/fixed_constants_general_le2",
+      "subset_sha256": "290581e6c5eb1521d21c3ad386aebda72620ec99e7b12da2213318c5223403fe"
+    },
+    "fixed_constants_general_le3": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/constants_general",
+      "subset_sha256": "7c4818f7934e29eedb1d511fa283568b2e3b8a847c0115106387ee310127667e"
+    },
+    "general": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/general",
+      "subset_sha256": "736dbc61ad5573209191ff551296271d20a0362f2f76c9c526c70b2c2ed3aada"
+    },
+    "general_le1": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/general_le1",
+      "subset_sha256": "d18c0a2c80c52424035f014a793f22451459901bda22f6338a07a13190bda5e1"
+    },
+    "general_le2": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/general_le2",
+      "subset_sha256": "98f772f2900f02dc9a2be681d8d880d5c6a4204e0d9c14e2201ad0250d79a195"
+    },
+    "general_le3": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/general",
+      "subset_sha256": "736dbc61ad5573209191ff551296271d20a0362f2f76c9c526c70b2c2ed3aada"
+    },
+    "reflexive": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/reflexive",
+      "subset_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "zero": {
+      "n_queries": 3656,
+      "result_source": "runs/next-phase-frozen/evaluations/zero",
+      "subset_sha256": "0f8d9eed9b5145bbde4c29e6a5f81db66bdd82c6f875962ca7e0f73461a458c0"
+    }
+  },
+  "selection_unchanged_by_filter_audit": true,
+  "status": "requested bounded baseline and frozen-family/length study executed; Phase5 prepared",
+  "tests": "51 passed, 1 skipped, 5 subtests passed"
+}

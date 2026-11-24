@@ -1,0 +1,42 @@
+{
+  "all_primary_cells_complete": true,
+  "cells": [
+    {
+      "component": "neural-0",
+      "condition": "original",
+      "status": "complete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "original",
+      "status": "complete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "targeted_local",
+      "status": "complete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "targeted_local",
+      "status": "complete"
+    },
+    {
+      "component": "neural-0",
+      "condition": "targeted_relation_matched_control",
+      "status": "complete"
+    },
+    {
+      "component": "rules-0",
+      "condition": "targeted_relation_matched_control",
+      "status": "complete"
+    }
+  ],
+  "independent_miners_per_graph": 1,
+  "n_joined_rows": 96,
+  "neural_seeds": [
+    0
+  ],
+  "root": "runs/phase5-smoke-indexed",
+  "smoke": true
+}

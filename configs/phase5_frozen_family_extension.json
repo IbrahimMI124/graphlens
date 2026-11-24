@@ -1,0 +1,32 @@
+{
+  "base_protocol_sha256": "1931612d0c89add4bdc887b17130f496e6a9ae0567c3fecfcb0ddf2f6501ea5f",
+  "conditions": [
+    "original",
+    "random_global",
+    "random_relation_stratified",
+    "targeted_local",
+    "targeted_relation_matched_control"
+  ],
+  "families": [
+    "constants"
+  ],
+  "native_vocabulary_sha256": "382f47a8a75991855be7f0c7639ed46dd130b815411cc3d2b73b48c818c0e313",
+  "query_limit_facts": null,
+  "schema_version": 1,
+  "scope": "additional inference-time evidence intervention; no retraining or new independent catalog replicate",
+  "semantics": "unchanged original expressions, confidences, support, smoothing, family weights, maxplus, frequency ties and candidate universe; constants exclude zero-body priors",
+  "source_catalogs": {
+    "constants": {
+      "n_rules": 467989,
+      "path": "runs/next-phase-frozen/subsets/constants.rules",
+      "sha256": "c73d876d4529a4fdf845103cc63e0a73864d8ebed38dbc483ca793bb15b63ea6"
+    }
+  },
+  "source_graph_sha256": {
+    "original": "06174716084ef88870e109b2f575344b0ed8398814d9e26234a02a1034d110f3",
+    "random_global": "f0dccb0503b55301a297586499cc74dd15f2532f38ff01a611d09e8d0a63d668",
+    "random_relation_stratified": "a25b0fc294970624a5269890eb2271ee786cd4f0b6d9e0c16565015abddcbfee",
+    "targeted_local": "c3d9e0ba444fb4e276e8ae83fffa4d0508dacabb5594cd7a968fa2bd56c3a05c",
+    "targeted_relation_matched_control": "8c21457059ae7752adbc0fc1f1bef49d2b00b00af93923b428543e230794dd9b"
+  }
+}

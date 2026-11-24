@@ -1,0 +1,11 @@
+{
+  "degree_tertiles_over_training_entities": [
+    16.0,
+    21.0
+  ],
+  "group_rule": "low <= first cutoff; medium <= second cutoff; high otherwise; cutoffs never use held-out outcomes",
+  "relation_frequency_tertiles_over_training_relations": [
+    41.0,
+    335.3333333333333
+  ]
+}

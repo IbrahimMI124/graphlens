@@ -1,0 +1,6 @@
+treatment,control,status,reason
+random_global,original,pending/not declared,Both frozen families and both graph conditions are required
+random_relation_stratified,original,pending/not declared,Both frozen families and both graph conditions are required
+targeted_local,original,pending/not declared,Both frozen families and both graph conditions are required
+targeted_relation_matched_control,original,pending/not declared,Both frozen families and both graph conditions are required
+targeted_local,targeted_relation_matched_control,pending/not declared,Both frozen families and both graph conditions are required

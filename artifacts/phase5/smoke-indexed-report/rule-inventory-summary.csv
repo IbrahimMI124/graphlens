@@ -1,0 +1,5 @@
+condition,mining_realization,native_family,body_length,n_rules,application_complete,median_raw_confidence,median_raw_support,raw_confidence_q25,raw_confidence_q75,raw_support_q25,raw_support_q75
+original,0,Z,0,70,True,0.030738809994607225,166.5,0.02125625183877611,0.05149957079240074,137.25,223.25
+targeted_local,0,B,3,890,True,0.10898802344823717,27.0,0.027050518134715026,0.25735320691981495,8.0,88.0
+targeted_relation_matched_control,0,Uc,1,30012,True,0.3888888888888889,8.0,0.19047619047619047,0.6066034260453123,3.0,18.0
+targeted_relation_matched_control,0,Ud,1,10176,True,0.05714285714285714,7.0,0.024390243902439025,0.11438812083973374,3.0,17.0

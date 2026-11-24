@@ -1,0 +1,7 @@
+condition,backend,replicate,catalog_rule_count,native_loaded_count,application_cpu_seconds,application_seconds_including_loading_and_cooling,inference_seconds
+original,Frozen general,0,2249,2249,31.86593966,98.1688056969997,83.32293655001831
+original,Frozen constants,0,467989,467989,158.184008805,815.5372571850003,563.0310262979001
+random_global,Frozen general,0,2249,2249,26.528274744,71.79540328099984,59.8862172469876
+random_relation_stratified,Frozen general,0,2249,2249,26.210789206,68.32963437199987,49.173821537001004
+targeted_local,Frozen general,0,2249,2249,25.959473528000004,71.1477659430002,51.52776388800703
+targeted_relation_matched_control,Frozen general,0,2249,2249,29.582769127000006,72.00774348699997,57.34110972399776

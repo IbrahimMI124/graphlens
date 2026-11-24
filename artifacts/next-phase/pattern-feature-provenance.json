@@ -1,0 +1,6 @@
+{
+  "policy": "training-only cached graph statistics; hash/frequency checks; no test outcomes in features",
+  "source": "runs/codex-s-cpu-pilot-refined/seed-0/graph_statistics.json",
+  "source_sha256": "82e930177d23a0f47ff8eb434170b4198a6f451482bfe4ba791af91c1c097116",
+  "training_graph_sha256": "06174716084ef88870e109b2f575344b0ed8398814d9e26234a02a1034d110f3"
+}

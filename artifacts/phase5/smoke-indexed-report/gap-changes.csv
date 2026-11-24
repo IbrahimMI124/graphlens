@@ -1,0 +1,4 @@
+treatment,control,estimand,difference,ci_low,ci_high,n_unique_queries,n_triples,rule_rankings_certified,n_neural_seeds,n_treatment_miners,n_control_miners,bootstrap,repetitions
+targeted_local,original,change in neural-minus-all-rules Hits@1 gap,-0.15625,-0.28125,-0.0625,32,16,True,1,1,1,paired query/triple and neural seeds; independent graph-specific miner draws,1000
+targeted_relation_matched_control,original,change in neural-minus-all-rules Hits@1 gap,-0.09375,-0.1875,0.0,32,16,True,1,1,1,paired query/triple and neural seeds; independent graph-specific miner draws,1000
+targeted_local,targeted_relation_matched_control,change in neural-minus-all-rules Hits@1 gap,-0.0625,-0.1875,0.0625,32,16,True,1,1,1,paired query/triple and neural seeds; independent graph-specific miner draws,1000

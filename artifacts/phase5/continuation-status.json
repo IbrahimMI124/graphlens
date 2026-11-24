@@ -1,0 +1,38 @@
+{
+  "updated_utc": "2026-11-24T14:20:20Z",
+  "status": "compute_destination_unavailable_user_marked_work_off_limits",
+  "off_limits_target": "configured SSH alias work",
+  "authorization": "user clarified that the configured work target cannot be used",
+  "alternate_compute_target": null,
+  "no_further_connection_attempts": true,
+  "local_research_training_started": false,
+  "handoff_archive": "artifacts/phase5/work-handoff.tar",
+  "handoff_sha256": "d67459ceb46b36da34eeef3eedcfa4dbc1dbbe1fd9860dd1823fd17d67394484",
+  "handoff_manifest": "artifacts/phase5/work-handoff.json",
+  "handoff_entries": 115,
+  "verified_manifest_inputs": 114,
+  "verify_only_status": "verified",
+  "verify_only_imported_models": false,
+  "verify_only_started_execution": false,
+  "full_test_suite": {
+    "passed": 100,
+    "skipped": 1,
+    "subtests_passed": 38,
+    "skip_reason": "Official complete CoDEx-M is unavailable",
+    "junit": "artifacts/phase5/work-handoff-tests.xml"
+  },
+  "scientific_work_still_incomplete": [
+    "Fresh full-budget five-graph retraining matrix: 15 ComplEx fits and 10 AnyBURL mining realizations",
+    "Fresh rule-family applications and primary intervention report for the replicated cohort",
+    "Four modified-graph frozen-constant applications",
+    "Expanded paired uncertainty and case-study outputs dependent on the new trained matrix"
+  ],
+  "existing_completed_results_preserved": [
+    "Earlier CoDEx-S ComplEx three-seed baseline",
+    "Earlier frozen AnyBURL family and fixed-inventory rule-length ablations",
+    "Original frozen-constant evaluation on 3656 queries with exact equivalence to prior raw candidate outputs",
+    "Frozen general-rule reapplication on all five graph conditions",
+    "Corrected-index bounded smoke experiment"
+  ],
+  "next_action": "Do not transfer or execute the handoff unless the user designates an allowed compute destination; account for prior laptop heat limits before any local full-budget run"
+}

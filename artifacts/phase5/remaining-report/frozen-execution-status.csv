@@ -1,0 +1,11 @@
+condition,family,status
+original,general,complete
+original,constants,complete
+random_global,general,complete
+random_global,constants,pending/incomplete
+random_relation_stratified,general,complete
+random_relation_stratified,constants,pending/incomplete
+targeted_local,general,complete
+targeted_local,constants,pending/incomplete
+targeted_relation_matched_control,general,complete
+targeted_relation_matched_control,constants,pending/incomplete

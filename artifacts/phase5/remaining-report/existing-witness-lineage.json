@@ -1,0 +1,21 @@
+{
+  "files": {
+    "frozen-case-studies.json": {
+      "sha256": "c1c7ec0e9d99de34ee448a9001223480496fe257e38ad5839e455225b63e1156",
+      "source": "artifacts/phase5/report/frozen-case-studies.json"
+    },
+    "frozen-cases.md": {
+      "sha256": "774ccb637a0e20e52f0d2b9e79c8570d7d4b7fe716810d54eb27135f12c2d238",
+      "source": "artifacts/phase5/report/frozen-cases.md"
+    },
+    "frozen-witness-checks.json": {
+      "sha256": "46e152b02b5125a5ee2762d6ca47e4741dcd53ca256779e94aed4e9a6b2a7946",
+      "source": "artifacts/phase5/report/frozen-witness-checks.json"
+    },
+    "frozen-witnesses.csv": {
+      "sha256": "c93db71e6241be2167d69f786c05669cad179e0db41cd514f1341264858b1092",
+      "source": "artifacts/phase5/report/frozen-witnesses.csv"
+    }
+  },
+  "scope": "same frozen general catalog and identical evidence graphs; existing illustrative samples reused as references, not new independent evidence"
+}

@@ -1,0 +1,5 @@
+{
+  "interpretation": "positive-body rule candidate support should not increase under deletions; violations require backend investigation before interpreting grounding loss",
+  "n_candidate_support_monotonicity_violations": 0,
+  "n_queries": 18280
+}

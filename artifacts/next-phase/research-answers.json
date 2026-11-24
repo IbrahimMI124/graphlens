@@ -1,0 +1,32 @@
+[
+  {
+    "answer": "The stronger recipe reaches mean test MRR 0.4535 versus pilot 0.2046. Extra epochs alone did not repair the sLCWA control: validation MRR fell from 0.2093 at epoch 5 to 0.1362 at epoch 40. The original comparison used a weak recipe/budget; no single changed setting is identified as the cause.",
+    "evidence_class": "Direct learning-curve observation; bounded validation-selected comparison",
+    "question": "Was the original ComplEx pilot undertrained?",
+    "source": "learning-curves.png; strongest-complex.json; runs/next-phase-neural/final-summary.json"
+  },
+  {
+    "answer": "Standalone constant Hits@1 0.3206, general-rule Hits@1 0.2749, all-rules Hits@1 0.3408. Both families contribute; union contrasts and unique successes quantify contribution without equating rule count with importance.",
+    "evidence_class": "Controlled frozen-rule-family subset evidence, one inventory",
+    "question": "How much rule success comes from constant implications?",
+    "source": "family-paired-intervals.json; constant-general-overlap.json"
+  },
+  {
+    "answer": "Maximum length 3 minus 1 changes Hits@1 by +0.0008, paired 95% interval [-0.0022, +0.0038], with 17 gains and 14 losses. This holds constants fixed and does not re-mine. The interval includes zero; a clear net improvement is not established. Without constants, the corresponding relational-only change is +0.1534. Mining-budget effects and inventory stability remain unresolved.",
+    "evidence_class": "Controlled inference-time subset intervention, one inventory",
+    "question": "Does greater available relational rule length help with fixed constants?",
+    "source": "length-paired-intervals.json; changed-predictions.csv"
+  },
+  {
+    "answer": "Across the three neural seeds, only general rules succeed on 0.0470 of directional observations, and only embeddings on 0.1284. Training-only degree/frequency/pattern associations and native groundings describe these cases; they do not identify causal mechanisms or provide a deployable oracle.",
+    "evidence_class": "Direct paired outcomes and exploratory graph associations",
+    "question": "Which cases are complementary?",
+    "source": "neural-rule-comparison.json; complementary-success-properties.csv; cases.md"
+  },
+  {
+    "answer": "Connectivity, sparsity and noise mechanisms require both-model retraining with matched graph controls. Independent mining replication and CoDEx-M generalization remain pending. Frequency/degree-adjusted strata are descriptive, not causal identification.",
+    "evidence_class": "Unresolved uncertainty; prepared design",
+    "question": "Which claims still need controlled interventions?",
+    "source": "runs/next-phase-sparsity-prepared/plan.json; execution.json"
+  }
+]

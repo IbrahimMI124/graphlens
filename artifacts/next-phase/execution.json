@@ -1,0 +1,31 @@
+{
+  "evaluated_conditions": [
+    "B",
+    "Uc",
+    "Ud",
+    "XXuc",
+    "XXud",
+    "Z",
+    "all",
+    "constants",
+    "constants_general",
+    "fixed_constants_general_le1",
+    "fixed_constants_general_le2",
+    "fixed_constants_general_le3",
+    "general",
+    "general_le1",
+    "general_le2",
+    "general_le3",
+    "reflexive",
+    "zero"
+  ],
+  "independent_rule_mining_repeats": 0,
+  "n_length_changes": 11522,
+  "neural_complete": true,
+  "pending_conditions": [
+    "closed_body_structure",
+    "shared_constant_structure"
+  ],
+  "perturbed_models_trained": false,
+  "previous_results_overwritten": false
+}

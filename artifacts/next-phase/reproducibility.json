@@ -1,0 +1,80 @@
+{
+  "current_source_sha256": {
+    "configs/next_phase_curves.json": "983e911047aa67bae3e73d039c2d2f728ba28d5c469e3d5a445641bf77f239a0",
+    "docs/NEXT_PHASE.md": "ab7a48502197a600544f62d0cb78edbc4dbd5d00b4687d0d2bd0d93b51893074",
+    "kgc/backends/anyburl.py": "892b19dbd5cbd08ca1f1bddb1c82c4fa078439e0834d1302f0246a980140df0b",
+    "kgc/classification.py": "b6b728a7f324c8557b32a9b1a4b95f8f37c9032a7e12b8133fb5883d3ccf496e",
+    "kgc/data.py": "67cfd79ab969ef9fb5aea5d72260f465af8667de897b8d63c8c7a5074cd618ca",
+    "kgc/evaluation.py": "6edb477d2ee3d54f5901403458d891df650ec4aed4374e9c3366b175706faf04",
+    "kgc/research/__init__.py": "9dc158acda2d9438d760896e75994ba54b8f34f470faca65155a470a68c9a8eb",
+    "kgc/research/audit.py": "f13c4f1b1b90535a7825ce3bd20c36be496aea58b6d868b07442bc48e03ec2af",
+    "kgc/research/cases.py": "3a501561c5e0a776ceaf4d8ce893a2dfc88532bc735d6c10075efeb282b280ae",
+    "kgc/research/curves.py": "d3ac55e9b791b131cd513cb783252f0070040353782689a16b2ac5a4a9dca39e",
+    "kgc/research/families.py": "23ae3f9173053e1edc1c2ec6b3034a3f3e47c9f4aa7fb2bcbb5093edef30c191",
+    "kgc/research/report.py": "c02222fedcd519d067cbc516cebc189a304c6281a05af42703bde4f477adb973",
+    "kgc/research/resources.py": "02334f6c2c0ae170aae01994fdbc6765d80491ed4ca7fb8daa7a96f7d0609a59",
+    "kgc/research/runner.py": "00a5aa4a6f3060b7d9e48bc64faa8a60aaa1fff6108d4c1195c45f972786b6d5",
+    "kgc/research/sparsity.py": "499cb14a77d1ee94407692262837a84f3a189ca12b95fe075fcccb166a541154"
+  },
+  "data": {
+    "counts": {
+      "test": 1828,
+      "test_negatives": 1828,
+      "train": 32888,
+      "valid": 1827,
+      "valid_negatives": 1827
+    },
+    "dataset": "CoDEx-S",
+    "excerpt": false,
+    "sha256": {
+      "test": "27127fcb34688c4778e88a39ef3c9b540807da846021e9d9685660ac1838aca1",
+      "test_negatives": "d3fb32c41f3be26d09484ace571965806f1ade0ca712551b0de684c283cdbb22",
+      "train": "64f93b7f314f3936a6f65739721429db3f6a7c8f5a1e1104ec3bb544f7434f59",
+      "valid": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+      "valid_negatives": "c1d84860d6ee786419f1f118d0e9479c6614283b3e267afc158734389036901f"
+    },
+    "source": {
+      "commit": "3132e426c2a6b643b70bad679905a3a6270be440",
+      "sha256": {
+        "test": "27127fcb34688c4778e88a39ef3c9b540807da846021e9d9685660ac1838aca1",
+        "test_negatives": "d3fb32c41f3be26d09484ace571965806f1ade0ca712551b0de684c283cdbb22",
+        "train": "64f93b7f314f3936a6f65739721429db3f6a7c8f5a1e1104ec3bb544f7434f59",
+        "valid": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+        "valid_negatives": "c1d84860d6ee786419f1f118d0e9479c6614283b3e267afc158734389036901f"
+      },
+      "size": "s",
+      "urls": {
+        "test": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/test.txt",
+        "test_negatives": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/test_negatives.txt",
+        "train": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/train.txt",
+        "valid": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/valid.txt",
+        "valid_negatives": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/valid_negatives.txt"
+      }
+    },
+    "training_graph_sha256": "06174716084ef88870e109b2f575344b0ed8398814d9e26234a02a1034d110f3"
+  },
+  "environment": {
+    "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+    "python": "3.11.16",
+    "versions": {
+      "PyClause": "0.0.1",
+      "matplotlib": "3.11.2",
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "pykeen": "1.11.1",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "torch": "2.15.0+cpu"
+    }
+  },
+  "frozen_catalog_sha256": "073ef276d54f185f2c9001cc4c4c368616f86d9d0f7b7d8edac07f2d27bff362",
+  "note": "Current reproducible source; earlier unpaced/uncached variants retain their original outputs and runtime metadata.",
+  "pyclause_install_source": {
+    "url": "https://github.com/symbolic-kg/PyClause.git",
+    "vcs_info": {
+      "commit_id": "87c82ec3dd904767741a493dcbdf7605377d4535",
+      "requested_revision": "87c82ec3dd904767741a493dcbdf7605377d4535",
+      "vcs": "git"
+    }
+  }
+}

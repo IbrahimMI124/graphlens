@@ -1,0 +1,5 @@
+[
+  {"embedding": {"embedding_dim": 64, "learning_rate": 0.001}, "anyburl": {"max_length": 2}},
+  {"embedding": {"embedding_dim": 128, "learning_rate": 0.001}, "anyburl": {"max_length": 3}},
+  {"embedding": {"embedding_dim": 128, "learning_rate": 0.01}, "anyburl": {"max_length": 3}}
+]

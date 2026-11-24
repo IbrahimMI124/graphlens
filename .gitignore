@@ -1,0 +1,54 @@
+# Local Python environments and caches
+.venv/
+.analysis-venv/
+.backend-venv/
+.download-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Credentials and machine-specific context
+.aws/
+.agents/
+.codex/
+.env
+.env.*
+!.env.example
+transcript.txt
+
+# Official CoDEx-S files are small, public inputs used by the checked-in configs.
+# Other downloaded datasets remain local.
+data/*
+!data/codex-s/
+data/codex-s/*
+!data/codex-s/*.txt
+!data/codex-s/source.json
+
+# Obtain the official AnyBURL binary as documented in docs/INSTALL.md.
+vendor/
+
+# Model checkpoints, generated runs and temporary handoff archives are not source.
+runs/
+*.pt
+*.pth
+*.ckpt
+*.tar
+*.tar.gz
+
+# Keep the reproducible reports and diagnostics; omit setup logs and duplicate runs.
+artifacts/*
+!artifacts/analysis-versions.json
+!artifacts/pyclause-revision.txt
+!artifacts/report/
+!artifacts/cpu-pilot-report/
+!artifacts/rule-length-pilot-report/
+!artifacts/next-phase/
+!artifacts/phase5/
+artifacts/phase5/*
+!artifacts/phase5/report/
+!artifacts/phase5/smoke-indexed-report/
+!artifacts/phase5/remaining-report/
+!artifacts/phase5/validation/
+!artifacts/phase5/continuation-status.json
+!artifacts/phase5/github-test-summary.json
