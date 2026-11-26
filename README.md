@@ -2,6 +2,9 @@
 
 Research question: **which measurable graph conditions favor embeddings or relational rules?**
 
+For a first-principles walkthrough of the study directions and current evidence,
+see the [research directions and progress guide](docs/RESEARCH_DIRECTIONS.md).
+
 The latest continuation is in the [remaining-work report](artifacts/phase5/remaining-report/report.md)
 and [Phase 5 compute status](docs/WORK_EXECUTION.md). The original constant-rule
 control reproduces all 3,656 prior candidate lists/ranks/scores exactly, with
