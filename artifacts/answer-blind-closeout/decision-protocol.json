@@ -1,0 +1,34 @@
+{
+  "choices_sha256": "f1d46d709c5636e682e545b8ae7a957dcd3c797481f616da08ee67ad56a6a6f0",
+  "evaluation_split": "CoDEx-S test, exploratory",
+  "fallback": "ComplEx",
+  "gap": "native first minus second score after filtering training positives",
+  "gap_model": {
+    "close": "ComplEx",
+    "wide": "ComplEx"
+  },
+  "gap_threshold": 0.05,
+  "inputs_sha256": {
+    "selector-predictions.csv": "462d3464cf242feace62a0452f00afcf9ef7bf04d8f881a69bf9287a4241a7a0",
+    "test-evidence-profiles.csv": "88a96147fe1a1cf6d728f52046e7e9b5fe47e389278f8cac5512003307deba34",
+    "validation-evidence-profiles.csv": "efcdbd957b2be47c2ea923b6154c28c88054fca7ad32fcba6e745f4ec20468fb",
+    "validation-outcomes.csv": "bebbbdbc665e1d4452926f9a6d881874bcec54e630d4d22e45fb295867e3c54b"
+  },
+  "split_for_fitting": "CoDEx-S validation",
+  "validation_groups": [
+    {
+      "anyburl_hits": 165,
+      "complex_hits": 202,
+      "group": "close",
+      "n": 2010,
+      "selected": "ComplEx"
+    },
+    {
+      "anyburl_hits": 55,
+      "complex_hits": 57,
+      "group": "wide",
+      "n": 374,
+      "selected": "ComplEx"
+    }
+  ]
+}

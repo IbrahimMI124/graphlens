@@ -1,0 +1,56 @@
+{
+  "smoke": {
+    "id": "6b0840b7b6a90bbe99809182",
+    "provider_status_observed": "COMPLETED",
+    "running_seconds": 298
+  },
+  "draws": [
+    {
+      "draw": 1,
+      "id": "6b084272b6a90bbe998096e3",
+      "removal_seed": 231,
+      "target_seed": 940,
+      "provider_status_observed": "COMPLETED",
+      "running_seconds": 5220,
+      "verified_stages": [
+        "fresh comparisons",
+        "frozen ranking",
+        "grounding loss",
+        "paired query outputs"
+      ]
+    },
+    {
+      "draw": 2,
+      "id": "6b084272d91f621b930b4388",
+      "removal_seed": 232,
+      "target_seed": 941,
+      "provider_status_observed": "COMPLETED",
+      "running_seconds": 5895,
+      "verified_stages": [
+        "fresh comparisons",
+        "frozen ranking",
+        "grounding loss",
+        "paired query outputs"
+      ]
+    },
+    {
+      "draw": 3,
+      "id": "6b084272b6a90bbe998096e5",
+      "removal_seed": 233,
+      "target_seed": 942,
+      "provider_status_observed": "COMPLETED",
+      "running_seconds": 6008,
+      "verified_stages": [
+        "fresh comparisons",
+        "frozen ranking",
+        "grounding loss",
+        "paired query outputs"
+      ]
+    }
+  ],
+  "namespace": "ibrahimmi124",
+  "bucket": "ibrahimmi124/jobs-artifacts",
+  "output_prefix": "removal-replication/jobs",
+  "flavor": "cpu-upgrade",
+  "timeout_minutes_per_full_draw": 150
+}

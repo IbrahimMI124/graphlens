@@ -1,0 +1,26 @@
+condition,backend,replicate,best_epoch,completed_epochs,training_seconds,training_cpu_seconds,optimizer_updates,examples_seen,effective_training_facts,mining_seconds_requested,java_seed_controlled,stage_status
+original,ComplEx,0,40,40,311.37241116900987,311.17734171300003,2600,2631040,32888,,,
+original,ComplEx,1,20,40,328.94553461892065,328.75922462200015,2600,2631040,32888,,,
+original,ComplEx,2,40,40,321.94295924897597,321.52913768400083,2600,2631040,32888,,,
+original,AnyBURL,0,,,62.603831100001116,66.316363,,,,60,False,mining and application complete
+original,AnyBURL,1,,,62.58901923400117,65.544086,,,,60,False,mining and application complete
+random_global,ComplEx,0,20,40,258.18347437396005,257.97294455400083,2320,2367920,29599,,,
+random_global,ComplEx,1,20,40,236.7425673249818,236.57360463800023,2320,2367920,29599,,,
+random_global,ComplEx,2,20,40,239.97739842500596,239.80404989,2320,2367920,29599,,,
+random_global,AnyBURL,0,,,62.54110350499104,64.58387100000002,,,,60,False,mining and application complete
+random_global,AnyBURL,1,,,62.577815668992116,65.44044299999999,,,,60,False,mining and application complete
+random_relation_stratified,ComplEx,0,20,40,237.29100419692986,237.1138026570011,2320,2367920,29599,,,
+random_relation_stratified,ComplEx,1,20,40,250.47417321203102,250.31115104099945,2320,2367920,29599,,,
+random_relation_stratified,ComplEx,2,20,40,253.25354679695738,253.06226549000166,2320,2367920,29599,,,
+random_relation_stratified,AnyBURL,0,,,62.58109185099602,65.18816600000002,,,,60,False,mining and application complete
+random_relation_stratified,AnyBURL,1,,,62.63271751100547,67.07538899999997,,,,60,False,mining and application complete
+targeted_local,ComplEx,0,20,40,311.0737808830454,310.89900424999905,2320,2367920,29599,,,
+targeted_local,ComplEx,1,20,40,341.62208721203206,341.425167125999,2320,2367920,29599,,,
+targeted_local,ComplEx,2,20,40,363.4759885599633,363.2807324919977,2320,2367920,29599,,,
+targeted_local,AnyBURL,0,,,62.81813215999864,67.342331,,,,60,False,mining and application complete
+targeted_local,AnyBURL,1,,,62.7604901589948,67.88652000000002,,,,60,False,mining and application complete
+targeted_relation_matched_control,ComplEx,0,40,40,320.0143104810122,319.81646369799546,2320,2367920,29599,,,
+targeted_relation_matched_control,ComplEx,1,10,40,328.0833551700489,327.92020755600424,2320,2367920,29599,,,
+targeted_relation_matched_control,ComplEx,2,20,40,333.3318026470224,333.1216388779976,2320,2367920,29599,,,
+targeted_relation_matched_control,AnyBURL,0,,,62.73085732200707,66.576866,,,,60,False,mining and application complete
+targeted_relation_matched_control,AnyBURL,1,,,62.63634630899469,67.04809499999999,,,,60,False,mining and application complete

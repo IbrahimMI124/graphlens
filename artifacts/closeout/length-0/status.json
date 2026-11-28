@@ -1,0 +1,8 @@
+{
+  "effects_sha256": "44eb5aa99ef8c51675538470d7ff43380153892585b98611e137759fc4d26cc8",
+  "independent_catalog": "/previous/runs/phase5-replicated-prepared/original/rules-0/mining",
+  "limit_facts": null,
+  "metrics_sha256": "3e41bfe030b0417d4a09472a9ec8a40cfa9b1631ad28c06cedb8bc4be9984903",
+  "source_sha256": "0f915b8b9748576676e6c53f6a67a13ad4e441d213fdc841dabe00da74d4a31b",
+  "status": "complete"
+}

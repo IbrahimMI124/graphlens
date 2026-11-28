@@ -1,0 +1,43 @@
+{
+  "draws": [
+    {
+      "audit_sha256": "5ce6cadc23fb886965d232d402157f9dacbc1a27e8bcaf4c769597b5c70317ae",
+      "difference": 0.022556390977443608,
+      "draw": 1,
+      "matched_all_lost": 23,
+      "n_eligible_audit": 133,
+      "n_eligible_fit": 156,
+      "n_removed": 187,
+      "passed": false,
+      "plan_sha256": "fbc2ef36dc73e64cb06e1c69ae74ec45d1da6ec60104e1a3aecebb8edf7b44d0",
+      "targeted_all_lost": 26
+    },
+    {
+      "audit_sha256": "32f6a9a9aeb8d14257c0f03e90f60ef9c31ed5339f6cdfcd7aca7e529c4d40d1",
+      "difference": 0.06293706293706294,
+      "draw": 2,
+      "matched_all_lost": 16,
+      "n_eligible_audit": 143,
+      "n_eligible_fit": 150,
+      "n_removed": 181,
+      "passed": false,
+      "plan_sha256": "504ea07d2da25e250c2bda79aec0ce2d71bf1ac6c74df237092bac474d843a87",
+      "targeted_all_lost": 25
+    },
+    {
+      "audit_sha256": "9ba598ef0b7a1c01b09eba6ea06fbb93cfc007d5bca6c1342e47017eca346d97",
+      "difference": 0.03305785123966942,
+      "draw": 3,
+      "matched_all_lost": 19,
+      "n_eligible_audit": 121,
+      "n_eligible_fit": 142,
+      "n_removed": 181,
+      "passed": false,
+      "plan_sha256": "61ca8cdbfcd49edeea625bcbf0b3c81b5573b7ef061aba0707f67e568a7c593d",
+      "targeted_all_lost": 23
+    }
+  ],
+  "gate_passed": false,
+  "protocol_sha256": "47f2348e67fa80fdb976e2d72baf5c91332c8f90bfe3f711fd7686ddd56b23de",
+  "status": "complete"
+}

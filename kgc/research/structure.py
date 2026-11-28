@@ -214,15 +214,38 @@ def frozen_evidence(dataset,prepared,output,conditions=None,families=None):
         "scope":"inference-time evidence intervention, not fresh model training","primary_results_substituted":False})
 
 
-def run(dataset,prepared,output,smoke=False,conditions=None,threads=1,seeds=(0,),rule_repetitions=1):
+def run(dataset,prepared,output,smoke=False,conditions=None,threads=1,seeds=(0,),rule_repetitions=1,
+        *, graph_pair=None, lightweight_rules=False):
     output=Path(output)
     if (output/"resource-stop.json").exists():
         raise RuntimeError("This cohort was resource-stopped. Review resource-stop.json before explicitly planning further full-budget work; use a separate directory for a smaller smoke cohort.")
     output.mkdir(parents=True,exist_ok=True)
-    graphs=prepared_graphs(dataset,prepared)
+    graphs=prepared_graphs(dataset,prepared) if graph_pair is None else graph_pair
     indices=native_vocabulary(dataset.graph)
     atomic_json(output/"native-vocabulary.json",indices)
     protocol=design(dataset,graphs,smoke,threads,seeds,rule_repetitions)
+    if graph_pair is not None:
+        local_pair = {"targeted_local", "targeted_relation_matched_control"}
+        evidence_pair = {"evidence_targeted", "evidence_matched"}
+        if set(graph_pair) not in (local_pair, evidence_pair):
+            raise ValueError("The replicated design requires exactly one targeted graph and its matched control")
+        is_evidence = set(graph_pair) == evidence_pair
+        intervention_metadata = graphs["evidence_targeted" if is_evidence else "targeted_local"][1]
+        protocol.update(
+            stage="SMOKE ONLY" if smoke else ("exploratory matched rule-body removal" if is_evidence
+                                               else "exploratory replicated matched removal"),
+            conditions=list(graph_pair),
+            perturbation_seed=intervention_metadata["seed"],
+            target_seed=intervention_metadata["target_seed"],
+            secondary_frozen_families=[],
+        )
+        if is_evidence:
+            protocol["hypotheses"] = {
+                "evidence_loss": "training-selected rule-body edge removal reduces frozen general grounding availability",
+                "ranking": "paired change in ComplEx minus AnyBURL Hits@1 relative to the matched graph",
+            }
+    if lightweight_rules:
+        protocol["native_application_storage"] = "metadata-light; full masked-query cache"
     if (output/"protocol.json").exists() and read(output/"protocol.json")!=protocol:
         raise ValueError("Cannot change a started experiment's design")
     atomic_json(output/"protocol.json",protocol)
@@ -298,7 +321,8 @@ def run(dataset,prepared,output,smoke=False,conditions=None,threads=1,seeds=(0,)
                     gate.thermal_rest()
                 catalog=inventory(trained["rules_file"],cell/"catalog")
                 for family in protocol["rule_families"]:
-                    apply_rules(modified,catalog["families"][family]["path"],cell/family,protocol["query_limit_facts"],indices)
+                    options = {"retain_catalog_metadata": False, "cache_size": 2 * len(dataset.test)} if lightweight_rules else {}
+                    apply_rules(modified,catalog["families"][family]["path"],cell/family,protocol["query_limit_facts"],indices,**options)
                 status.update({"status":"complete","training":trained})
                 atomic_json(cell/"manifest.json",status)
             except BaseException as e:

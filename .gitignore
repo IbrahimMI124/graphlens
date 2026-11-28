@@ -2,6 +2,9 @@
 .venv/
 .analysis-venv/
 .backend-venv/
+.hf-cli-venv/
+.hf-job-input/
+.hf-job-output/
 .download-cache/
 __pycache__/
 *.py[cod]
@@ -44,8 +47,17 @@ artifacts/*
 !artifacts/cpu-pilot-report/
 !artifacts/rule-length-pilot-report/
 !artifacts/next-phase/
+!artifacts/closeout/
+!artifacts/closeout-codex-m-validation.json
+!artifacts/evidence-intervention/
+!artifacts/removal-replication/
+!artifacts/evidence-advantage/
+!artifacts/rule-error-diagnosis/
+!artifacts/rule-rescues/
+!artifacts/answer-blind-closeout/
 !artifacts/phase5/
 artifacts/phase5/*
+!artifacts/phase5/replicated-report/
 !artifacts/phase5/report/
 !artifacts/phase5/smoke-indexed-report/
 !artifacts/phase5/remaining-report/

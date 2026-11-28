@@ -1,0 +1,8 @@
+{
+  "family": "constants",
+  "n_before_witnesses_lost": 39,
+  "n_cases": 16,
+  "n_sampled_witnesses": 236,
+  "n_support_loss_witness_conflicts": 0,
+  "sampling": "first three native rules, first two groundings per selected candidate/phase; not exhaustive"
+}

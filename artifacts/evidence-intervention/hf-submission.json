@@ -1,0 +1,24 @@
+{
+  "preparation": {
+    "id": "6b08685c6c5d61fff1861b8c",
+    "timeout_minutes": 40,
+    "provider_status_observed": "COMPLETED",
+    "running_seconds": 359,
+    "gate": "failed_all_three",
+    "metrics": "v1-prepared/verified-training-audit.csv"
+  },
+  "draws": [],
+  "namespace": "ibrahimmi124",
+  "hardware": "cpu-upgrade",
+  "input_overlay_sha256": "58988b04cad52d3dda0211ba411048944955fc984fff1252153650e8bc467887",
+  "marginal_coverage_preparation": {
+    "id": "6b086a0f6c5d61fff18621b2",
+    "timeout_minutes": 50,
+    "input_overlay_sha256": "0dc733f0f97ccc1b6d7f31882e8a59dfb13d94eeca1e5631ba20574df23bc119",
+    "provider_status_observed": "COMPLETED",
+    "running_seconds": 862,
+    "gate": "failed_all_three",
+    "metrics": "v2-prepared/verified-training-audit.csv"
+  },
+  "full_comparison": "not launched because neither design passed the training audit"
+}

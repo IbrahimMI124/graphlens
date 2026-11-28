@@ -1,12 +1,97 @@
 # Implementation and verification status
 
-## Continuation: compute target off-limits; matrix pending
+## Latest: CoDEx-S research closeout
+
+The [last-proof protocol](LAST_PROOF_PROTOCOL.md) used three disjoint
+training audits and a frozen catalog of 651 general two-hop rules.
+Eligible counts were 133, 143, and 121. Targeted deletions erased all of
+the selected two-hop proofs **2.26, 6.29, and 3.31 percentage points**
+more often than matched deletions. All three contrasts fell below the
+predeclared eight-point threshold. Each exhausted case retained a
+nontrivial proof from the broader general catalog and from the frozen
+constant-bearing catalog. The [verified audit](../artifacts/closeout/last-proof/verified-summary.csv)
+is a feasibility result. No benchmark models were trained for those masks.
+
+The official [CoDEx-M splits validated](../artifacts/closeout-codex-m-validation.json)
+against the pinned upstream revision. The [closeout suite](../artifacts/closeout/tests.xml)
+passed 110 tests and 38 subtests without skips, including the CoDEx-M loader.
+The [evidence index](../artifacts/closeout/verified-evidence.json) checks saved
+CoDEx-S cohorts, artifact hashes and the ranking certification. Full model
+replication on CoDEx-M is outside the completed CoDEx-S cohort.
+
+The rule-length comparison was repeated on two independent 60-second
+catalogs already mined on the original graph. All twelve applications
+covered the full query set. Across the original and two repeat catalogs,
+raising the general rule length cap from one to three increased Hits@1 by
+**14.72–15.34 percentage points** for general rules alone and
+**0.08–0.19 points** with constants held fixed. All three within-catalog
+intervals for the latter contrast included zero. See the [three-catalog
+comparison](../artifacts/closeout/rule-length-comparison.csv).
+
+The [noise proposals audit](../artifacts/closeout/noise-design-audit.csv)
+rejected 17 of 18 configured graphs at the held-out split check. No noise
+performance results are claimed. The completed hard-negative evaluation
+is a separate experiment. Larger retention sweeps remain outside the completed
+cohort.
+
+## Direct rule-body deletion pilots complete
+
+The [rule evidence protocol](RULE_EVIDENCE_INTERVENTION.md) scores training
+edges by their participation in frozen general-rule groundings. The control
+matches relation and the original degree bins of both endpoints. Three fixed
+graph draws must pass an independent training audit before full fitting.
+The additive incidence and marginal grounding loss designs both missed the
+five-point threshold on all three draws. The [pilot report](../artifacts/evidence-intervention/report.md)
+records the verified masks and paired grounding losses. The comparison of
+retrained models remains gated on a stronger evidence contrast.
+Both cloud jobs completed and are recorded in the
+[cloud run registry](../artifacts/evidence-intervention/hf-submission.json).
+
+## Independent matched removal draws complete
+
+The [matched removal protocol](REMOVAL_REPLICATION.md) fixes three new graph
+draws and a native general-rule grounding loss measurement. The [graph audit](../artifacts/removal-replication/planned-graph-audit.csv)
+confirms exact within-pair relation matching and no entity isolation. Hugging Face
+completed the smoke run and all three full draws. The [replication report](../artifacts/removal-replication/report/report.md)
+includes 18 fresh ComplEx fits and 12 fresh AnyBURL inventories across six
+training graphs, evaluated on the same 1,828 test facts.
+
+Targeted removal shifted the ComplEx–AnyBURL Hits@1 gap by **+0.51 percentage
+points** relative to relation-matched random removal (exploratory 95% interval
+**−0.65 to +1.71**). This leaves the relative accuracy effect unresolved.
+Targeted removal eliminated a **4.01-point lower** mean per-fact share of
+frozen general-rule groundings (95% interval **3.17 to 4.91 points lower**).
+The groundings loss contrast was consistent across all three draws. These
+results concern the fixed CoDEx-S dataset and catalog, using the three new
+graph draws. A direct intervention on rule-body edges remains open.
+
+## Phase 5 replicated comparison complete
+
+The [Hugging Face CPU job](https://huggingface.co/jobs/ibrahimmi124/6b07f94eb6a90bbe997fafa5)
+completed on 26 November 2026. The [replicated report](../artifacts/phase5/replicated-report/report.md)
+includes 15 fresh ComplEx fits, 10 fresh AnyBURL mining and evaluation runs,
+and 10 frozen rule family evaluations across all five graph conditions.
+The [execution record](../artifacts/phase5/replicated-report/provenance/work-execution.json)
+certifies all 25 primary and 10 frozen cells. All 41 generated report files were
+copied to the project, and the report status hash matches the cloud execution
+record. The [cloud test suite](../artifacts/phase5/replicated-report/provenance/full-tests.xml)
+recorded zero failures and one skip, and the separate smoke run completed.
+
+Across the four 90% retention conditions, fresh ComplEx lost 2.74–3.23 percentage
+points in Hits@1 and fresh all-rule AnyBURL lost 2.24–2.86 points. The 95% intervals
+for changes in the ComplEx–AnyBURL gap each included zero. With the original rule
+catalog frozen, targeted removal reduced general-rule Hits@1 by 1.72 points and
+constant-bearing-rule Hits@1 by 0.55 points versus the original graph, with
+correct-answer generation coverage unchanged for both. The analysis is
+exploratory and uses one perturbation draw. Further draws and CoDEx-M replication
+remain open.
+
+## Earlier continuation: local matrix pending
 
 The user clarified that the configured SSH target named `work` is off-limits.
-Do not connect to it, transfer files there, or run experiments there. No
-alternate compute target has been authorized, and full-budget local training
-remains deferred due to the previous heat issue. The prepared 115-file handoff
-is local only; it has not been transferred or executed. See
+Do not connect to it, transfer files there, or run experiments there. At this
+earlier checkpoint, full-budget local training was deferred due to heat, and
+the prepared handoff had not yet been transferred or executed. See
 [WORK_EXECUTION.md](WORK_EXECUTION.md) for the corrected boundary and
 [the continuation report](../artifacts/phase5/remaining-report/report.md) for
 scientific completion details.
@@ -36,7 +121,7 @@ packaged inputs and pinned dependency versions. The training matrix remains
 unexecuted; preparation is not completion. The previous 81-test run remains
 archived separately.
 
-## Latest: controlled graph-structure follow-up
+## Earlier: local controlled graph-structure follow-up
 
 See the [Phase 5 report](../artifacts/phase5/report/report.md),
 [training-only graph audit](../artifacts/phase5/validation/validation-report.md),

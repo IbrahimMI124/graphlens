@@ -1,0 +1,92 @@
+{
+  "CoDEx-M": {
+    "model_replication": false,
+    "official_files_validated": true,
+    "validation": "artifacts/closeout-codex-m-validation.json"
+  },
+  "CoDEx-S": {
+    "baseline": {
+      "directional_queries": 3656,
+      "reference": "artifacts/next-phase/report.md",
+      "test_facts": 1828
+    },
+    "complementarity": {
+      "reference": "artifacts/next-phase/neural-rule-comparison.json"
+    },
+    "direct_rule_body_pilots": {
+      "completed_draws": 6,
+      "passed_gate": 0,
+      "reference": "artifacts/evidence-intervention/report.md"
+    },
+    "independent_graph_draws": [
+      {
+        "root": "artifacts/removal-replication/draw-1-6b084272b6a90bbe998096e3",
+        "status_sha256": "828f7a61fd4eb3e8e6bd2a5156dee5b77b1c0f51b67b1bde3cca52651db49be6"
+      },
+      {
+        "root": "artifacts/removal-replication/draw-2-6b084272d91f621b930b4388",
+        "status_sha256": "bd7cb87e8bb027910919781e07765684c746413e85d86bd84e7303015fefa01a"
+      },
+      {
+        "root": "artifacts/removal-replication/draw-3-6b084272b6a90bbe998096e5",
+        "status_sha256": "b68c3c45783e110f433e791e3f9dc89a1d2df34ca130733438a1f38aae3b24e6"
+      }
+    ],
+    "independent_rule_length_replications": [
+      {
+        "catalog": 0,
+        "job_id": "6b0986fb54072e8b7169e7ef",
+        "metrics": "artifacts/closeout/length-0/metrics.csv",
+        "paired_effects": "artifacts/closeout/length-0/paired-length-3-minus-1.csv",
+        "source_sha256": "0f915b8b9748576676e6c53f6a67a13ad4e441d213fdc841dabe00da74d4a31b"
+      },
+      {
+        "catalog": 1,
+        "job_id": "6b0986fb6c5d61fff1892713",
+        "metrics": "artifacts/closeout/length-1/metrics.csv",
+        "paired_effects": "artifacts/closeout/length-1/paired-length-3-minus-1.csv",
+        "source_sha256": "d9ff59114d1e3ff90fc6b858ae21ee2c438b93a3703e0c84cf2d76e98f4ca058"
+      }
+    ],
+    "last_proof_feasibility": {
+      "gate_passed": false,
+      "status": "artifacts/closeout/last-proof/status.json",
+      "summary": "artifacts/closeout/last-proof/verified-summary.csv"
+    },
+    "primary_retraining": {
+      "frozen_cells": 10,
+      "primary_cells": 25,
+      "reference": "artifacts/phase5/replicated-report/report-status.json",
+      "sha256": "583317d21aaca9c98ac611465d6b7ed820e2064f6aa36323ee7cbcfae367bc0f"
+    },
+    "relation_diagnostics": {
+      "interpretation": "descriptive",
+      "reference": "artifacts/next-phase/training-relation-properties.csv"
+    },
+    "rule_family_and_length_ablation": {
+      "certified_hits": true,
+      "exact_rule_mrr": false,
+      "reference": "artifacts/next-phase/rule-family-metrics.csv"
+    },
+    "verified_negatives": {
+      "reference": "artifacts/next-phase/classification-metrics.csv",
+      "task": "classification"
+    }
+  },
+  "scope": {
+    "final_course_report": "awaiting writing request",
+    "larger_retention_sweeps": "outside the completed cohort",
+    "medium_benchmark_replication": "outside the completed cohort",
+    "noise_proposals": {
+      "audit": "artifacts/closeout/noise-design-audit.csv",
+      "proposals": 18,
+      "rejected_for_split_overlap": 17,
+      "retraining": "not executed"
+    }
+  },
+  "tests": {
+    "artifact": "artifacts/closeout/tests.xml",
+    "sha256": "a870d2e0ff01cc4fd775bd02153d8342d5be6febf9a3d41bd5d02f6e1b5195c4",
+    "total_incl_subtests": 148
+  }
+}

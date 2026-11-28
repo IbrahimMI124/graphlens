@@ -1,0 +1,19 @@
+seed,strategy,fraction,added,heldout_positive_collisions,verified_negative_collisions,split_audit,training,type_constraint
+11,random,0.01,329,3,0,fail,not launched,none
+11,random,0.05,1644,8,2,fail,not launched,none
+11,random,0.1,3289,20,5,fail,not launched,none
+11,type_consistent,0.01,329,8,2,fail,not launched,empirical relation domain/range (weak type proxy)
+11,type_consistent,0.05,1644,35,6,fail,not launched,empirical relation domain/range (weak type proxy)
+11,type_consistent,0.1,3289,60,10,fail,not launched,empirical relation domain/range (weak type proxy)
+23,random,0.01,329,0,0,pass,not launched,none
+23,random,0.05,1644,3,3,fail,not launched,none
+23,random,0.1,3289,8,5,fail,not launched,none
+23,type_consistent,0.01,329,12,2,fail,not launched,empirical relation domain/range (weak type proxy)
+23,type_consistent,0.05,1644,37,5,fail,not launched,empirical relation domain/range (weak type proxy)
+23,type_consistent,0.1,3289,66,11,fail,not launched,empirical relation domain/range (weak type proxy)
+37,random,0.01,329,1,0,fail,not launched,none
+37,random,0.05,1644,6,3,fail,not launched,none
+37,random,0.1,3289,12,4,fail,not launched,none
+37,type_consistent,0.01,329,6,1,fail,not launched,empirical relation domain/range (weak type proxy)
+37,type_consistent,0.05,1644,29,8,fail,not launched,empirical relation domain/range (weak type proxy)
+37,type_consistent,0.1,3289,64,9,fail,not launched,empirical relation domain/range (weak type proxy)

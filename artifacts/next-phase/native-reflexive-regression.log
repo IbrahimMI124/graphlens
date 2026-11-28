@@ -1,0 +1,76 @@
+......................................s......F..                    [100%]
+=================================== FAILURES ===================================
+_______ FamilyTests.test_real_native_scoring_and_no_truncation_contract ________
+
+self = <test_next_phase.FamilyTests testMethod=test_real_native_scoring_and_no_truncation_contract>
+
+    @unittest.skipUnless(importlib.util.find_spec("c_clause"), "PyClause unavailable")
+    def test_real_native_scoring_and_no_truncation_contract(self):
+        from kgc.research.audit import native_probes
+>       p = native_probes()
+            ^^^^^^^^^^^^^^^
+
+tests/test_next_phase.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def native_probes():
+        from clause import Options
+        expected = {"B": .4, "Uc": .4, "Ud": .04, "Z": .004, "XXuc": .4, "XXud": .4}
+        expressions = {"B": "rel(X,Y) <= body(X,Y)", "Uc": "rel(X,bb) <= body(X,cc)",
+            "Ud": "rel(X,bb) <= body(X,A)", "Z": "rel(X,bb) <=", "XXuc": "rel(X,X) <= body(X,cc)",
+            "XXud": "rel(X,X) <= body(X,A)"}
+        graph = TrainGraph((("aa", "body", "bb"), ("aa", "body", "cc"), ("dd", "rel", "cc")),
+                           ("aa", "bb", "cc", "dd"), ("body", "rel"))
+        observations = {}
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for family, expression in expressions.items():
+                path = root / family
+                path.write_text(f"20\t10\t0.5\t{expression}\n")
+                b = AnyBURLBackend(graph, path, evidence_mode="none")
+                pred = b.predict(ModelQuery("aa", "rel", "tail"))
+                answer = "aa" if family.startswith("XX") else "bb"
+                qa_score = dict(pred.candidates).get(answer)
+                score = qa_score
+                if family == "XXuc" and score is None:
+                    score = float(b.score_triples((("aa", "rel", answer),))[0][0])
+>               assert math.isclose(score, expected[family], rel_tol=1e-6), (family, score)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               TypeError: must be real number, not NoneType
+
+kgc/research/audit.py:35: TypeError
+----------------------------- Captured stdout call -----------------------------
+Loading rules from /tmp/tmp7q57jsl9/B
+Loaded 1 rules.
+Loading rules from /tmp/tmp7q57jsl9/Uc
+Loaded 1 rules.
+Loading rules from /tmp/tmp7q57jsl9/Ud
+Loaded 1 rules.
+Loading rules from /tmp/tmp7q57jsl9/Z
+Loaded 1 rules.
+Loading rules from /tmp/tmp7q57jsl9/XXuc
+Loaded 1 rules.
+Loading rules from /tmp/tmp7q57jsl9/XXud
+Loaded 1 rules.
+=============================== warnings summary ===============================
+tests/test_integration.py::IntegrationTests::test_neural_training_scoring_checkpoint
+tests/test_integration.py::IntegrationTests::test_neural_training_scoring_checkpoint
+  /home/ibrahimmohammed/Downloads/Downloads/Work/Sem7/MR/Project/.backend-venv/lib/python3.11/site-packages/pykeen/training/slcwa.py:69: DeprecationWarning: Training instances are always shuffled.
+    dataset=cls.from_triples_factory(
+
+tests/test_integration.py::IntegrationTests::test_pyclause_qa_and_groundings
+tests/test_integration.py::IntegrationTests::test_pyclause_qa_and_groundings
+tests/test_integration.py::IntegrationTests::test_pyclause_qa_and_groundings
+tests/test_next_phase.py::FamilyTests::test_real_native_scoring_and_no_truncation_contract
+tests/test_next_phase.py::FamilyTests::test_real_native_scoring_and_no_truncation_contract
+tests/test_next_phase.py::FamilyTests::test_real_native_scoring_and_no_truncation_contract
+tests/test_next_phase.py::FamilyTests::test_real_native_scoring_and_no_truncation_contract
+tests/test_next_phase.py::FamilyTests::test_real_native_scoring_and_no_truncation_contract
+tests/test_next_phase.py::FamilyTests::test_real_native_scoring_and_no_truncation_contract
+  /home/ibrahimmohammed/Downloads/Downloads/Work/Sem7/MR/Project/.backend-venv/lib/python3.11/site-packages/clause/util/utils.py:53: DeprecationWarning: path is deprecated. Use files() instead. Refer to https://importlib-resources.readthedocs.io/en/latest/using.html#migrating-from-legacy for migration advice.
+    with pkg_resources.path(package, resource) as p:
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_next_phase.py::FamilyTests::test_real_native_scoring_and_no_truncation_contract
+1 failed, 46 passed, 1 skipped, 11 warnings, 5 subtests passed in 8.98s

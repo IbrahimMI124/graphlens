@@ -273,7 +273,8 @@ def execute_locked(project,manifest,verification,compute_host,hostname):
         "actual_python_version":platform.python_version(),"python_executable":sys.executable,
         "started_utc":datetime.now(timezone.utc).isoformat(),"stages":[],"plan":verification["planned_commands"],
         "resource_policy":"Serial one-thread CPU work; Java ActiveProcessorCount=1; no duty-cycle, SIGSTOP or mining-budget suspension",
-        "old_controls_reused":False,"paid_gpu_access":False,"installation_or_download_performed":False}
+        "old_controls_reused":False,"compute_provider":"Hugging Face Jobs",
+        "paid_compute":True,"paid_gpu_access":False,"installation_or_download_performed":False}
     save=lambda:atomic_json(path,record)
     previous={s:signal.getsignal(s) for s in CONTROL_SIGNALS}
     def interrupted(signum,frame):raise Interrupted(signum)

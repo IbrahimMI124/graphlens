@@ -1,0 +1,81 @@
+{
+  "bootstrap_draws": 2500,
+  "bootstrap_seed": 851,
+  "checkpoint_sha256": "a5fddbf3862448b649dce7207805dd9e34cd0e8c33bf355e98b592dd122be694",
+  "dataset": {
+    "counts": {
+      "test": 1828,
+      "test_negatives": 1828,
+      "train": 32888,
+      "valid": 1827,
+      "valid_negatives": 1827
+    },
+    "dataset": "CoDEx-S",
+    "excerpt": false,
+    "sha256": {
+      "test": "27127fcb34688c4778e88a39ef3c9b540807da846021e9d9685660ac1838aca1",
+      "test_negatives": "d3fb32c41f3be26d09484ace571965806f1ade0ca712551b0de684c283cdbb22",
+      "train": "64f93b7f314f3936a6f65739721429db3f6a7c8f5a1e1104ec3bb544f7434f59",
+      "valid": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+      "valid_negatives": "c1d84860d6ee786419f1f118d0e9479c6614283b3e267afc158734389036901f"
+    },
+    "source": {
+      "commit": "3132e426c2a6b643b70bad679905a3a6270be440",
+      "sha256": {
+        "test": "27127fcb34688c4778e88a39ef3c9b540807da846021e9d9685660ac1838aca1",
+        "test_negatives": "d3fb32c41f3be26d09484ace571965806f1ade0ca712551b0de684c283cdbb22",
+        "train": "64f93b7f314f3936a6f65739721429db3f6a7c8f5a1e1104ec3bb544f7434f59",
+        "valid": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+        "valid_negatives": "c1d84860d6ee786419f1f118d0e9479c6614283b3e267afc158734389036901f"
+      },
+      "size": "s",
+      "urls": {
+        "test": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/test.txt",
+        "test_negatives": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/test_negatives.txt",
+        "train": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/train.txt",
+        "valid": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/valid.txt",
+        "valid_negatives": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-s/valid_negatives.txt"
+      }
+    },
+    "training_graph_sha256": "06174716084ef88870e109b2f575344b0ed8398814d9e26234a02a1034d110f3"
+  },
+  "environment": {
+    "platform": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+    "python": "3.11.16",
+    "versions": {
+      "PyClause": "0.0.1",
+      "matplotlib": "3.11.2",
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "pykeen": "1.11.1",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "torch": "2.15.0+cpu"
+    }
+  },
+  "external_replication": "pending",
+  "files": {
+    "runs/evidence-advantage/all.json.gz": "421ae61295413d806db14569fb2df76cf42247fce408cb76af9be35b10a42598",
+    "runs/evidence-advantage/complex.json.gz": "838cf526f8eabad93975860a60df3fd61f789c15f1f1969a65b34d3774d1c2f5",
+    "runs/evidence-advantage/constants.json.gz": "05c5a82f9dc985da076674cebf9e2eb84258e3577d905850cc2aa28c04df5c07",
+    "runs/evidence-advantage/constants_general.json.gz": "c5acb755aa3eabaebcb133ca52eb810df4e1ab17c3b18da9c6d1ec627c7ef163",
+    "runs/evidence-advantage/entities.json": "6594fa4b3f74127ca95c90223846da6da14145373bc71de241aff3330f26083c",
+    "runs/evidence-advantage/general.json.gz": "a16cb7e9b7803fa94bf2f29a01ecebe0a81c9efb4613a75aeaf3f569f893d254",
+    "runs/evidence-advantage/relations.json": "2b467fab26430a0500e5fe82cdb9b3c4fbcfda01827ff3bfa833dc5470ad92f7",
+    "runs/next-phase-frozen/evaluations/all/queries.json.gz": "96b8f48cfb15acb99fe8ed12735f3e057da2cc5c53c3d63080740d1911c8e70b",
+    "runs/next-phase-frozen/evaluations/constants/queries.json.gz": "9fa2d2a2d52b9c7118d776028e8aa3003155c311099e759584f9ee8a822c6eed",
+    "runs/next-phase-frozen/evaluations/constants_general/queries.json.gz": "7f129096f0c029a78009fc76df1d31a19cbaccb4d65437b797d6dc1855a5e763",
+    "runs/next-phase-frozen/evaluations/general/queries.json.gz": "892d52cde08782a5b8bfacce0a2018c68f40febc3055f306eeb81471ab4f972a",
+    "runs/next-phase-frozen/subsets/all.rules": "073ef276d54f185f2c9001cc4c4c368616f86d9d0f7b7d8edac07f2d27bff362",
+    "runs/next-phase-frozen/subsets/constants.rules": "c73d876d4529a4fdf845103cc63e0a73864d8ebed38dbc483ca793bb15b63ea6",
+    "runs/next-phase-frozen/subsets/constants_general.rules": "7c4818f7934e29eedb1d511fa283568b2e3b8a847c0115106387ee310127667e",
+    "runs/next-phase-frozen/subsets/general.rules": "736dbc61ad5573209191ff551296271d20a0362f2f76c9c526c70b2c2ed3aada",
+    "runs/next-phase-neural/final/seed-0/test-queries.json.gz": "f3e74b6df81182ed0170bef0961b4dc2b23ea6fb28df68863550d92cca49c0db",
+    "runs/next-phase-neural/final/seed-1/test-queries.json.gz": "c62a66096a362f581ca09d588e79d8c563887bda369cb748557ede966fc22e65",
+    "runs/next-phase-neural/final/seed-2/best.pt": "a5fddbf3862448b649dce7207805dd9e34cd0e8c33bf355e98b592dd122be694",
+    "runs/next-phase-neural/final/seed-2/test-queries.json.gz": "2111b3f872c16716cead5b6eb68f2ff6a1ea5c5a854a380bf7413de98cc6a747"
+  },
+  "selected_seed": 2,
+  "verified_cases": 20,
+  "witness_count": 72
+}

@@ -1,0 +1,28 @@
+{
+  "certified_hits": true,
+  "completed": [
+    "fresh comparisons",
+    "frozen ranking",
+    "grounding loss",
+    "paired query outputs"
+  ],
+  "draw": 1,
+  "environment": {
+    "platform": "Linux-6.12.115-140.210.amzn2023.x86_64-x86_64-with-glibc2.41",
+    "python": "3.11.18",
+    "versions": {
+      "PyClause": "0.0.1",
+      "matplotlib": "3.11.2",
+      "numpy": "2.4.6",
+      "pandas": "3.1.1",
+      "pykeen": "1.11.1",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "torch": "2.15.0+cpu"
+    }
+  },
+  "outcomes_sha256": "117eb1dd11d6f047a321ac51ec0e9d98c8fffa9ea02d21ce39a505524ad2f16f",
+  "protocol_sha256": "c34afbdb5d22e768ca0086353a88f80a5f8fff8fb63c16578aaaf1c9c1bb4037",
+  "smoke": false,
+  "status": "complete"
+}

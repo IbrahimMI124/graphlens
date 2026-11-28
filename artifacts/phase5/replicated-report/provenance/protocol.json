@@ -1,0 +1,121 @@
+{
+  "compute_control": "capture fixed-update checkpoint as well as validation-best and last-epoch models; no extra training; different effective passes documented",
+  "conditions": [
+    "original",
+    "random_global",
+    "random_relation_stratified",
+    "targeted_local",
+    "targeted_relation_matched_control"
+  ],
+  "embedding_recipe": {
+    "batch_size": 1024,
+    "budgets": [
+      5,
+      10,
+      20,
+      40
+    ],
+    "device": "cpu",
+    "diagnostic_common_updates": 2320,
+    "early_stopping_checks": 3,
+    "embedding_dim": 256,
+    "entity_dropout": 0.07931799348443747,
+    "learning_rate": 0.003,
+    "loss": "CrossEntropyLoss",
+    "model": "ComplEx",
+    "model_kwargs": {
+      "entity_initializer": "xavier_normal_",
+      "regularizer": null,
+      "relation_initializer": "xavier_normal_"
+    },
+    "name": "reciprocal-ce-fast-lr",
+    "objective": "1vsAll",
+    "reciprocal": true,
+    "relation_dropout": 0.05643956921994686,
+    "seed": 0,
+    "threads": 1
+  },
+  "hypotheses": {
+    "H1": {
+      "confounds": "fewer examples, gradient updates, validation selection, mining stochasticity",
+      "control": "fresh original graph",
+      "intervention": "90% removal",
+      "measurement": "paired accuracy/gap/coverage and fixed-update sensitivity"
+    },
+    "H2": {
+      "confounds": "native frequency ties and binding constraints; raw typed walks are a structural proxy",
+      "control": "same catalog on original",
+      "intervention": "same frozen B catalog applied to missing-edge graphs",
+      "measurement": "candidate/gold-support losses, witnessed groundings lost"
+    },
+    "H3": {
+      "confounds": "changed inventories/confidence, entity-local frequencies; full frozen-constant evaluation deferred",
+      "control": "fresh original constant rules",
+      "intervention": "fresh constant-rule learning/application on each graph",
+      "measurement": "constant versus general coverage/quality and sampled anchored witnesses"
+    },
+    "H4": {
+      "confounds": "single target/removal draw; degree/entity distributions intentionally differ; independent miner samples",
+      "control": "targeted_relation_matched_control",
+      "intervention": "targeted_local",
+      "measurement": "paired outcomes, difference in embedding-rule gap and paths"
+    },
+    "H5": {
+      "confounds": "observational effect heterogeneity, graph dependence, repeated CoDEx-S inspection",
+      "control": "same test facts/original-graph strata",
+      "intervention": "same removal conditions",
+      "measurement": "original known-node degree/frequency strata and target incidence"
+    }
+  },
+  "java_randomness": "not controlled by Python seed; graph differences confounded with learning realization in the primary rule comparison",
+  "later_replication": "CoDEx-M after protocol freeze; never launch automatically",
+  "mining_config": {
+    "heap": "2G",
+    "jar": "vendor/AnyBURL-23-1x.jar",
+    "max_length": 3,
+    "min_support": 2,
+    "seconds": 60,
+    "threads": 1,
+    "zero_rules": true
+  },
+  "mining_realizations": [
+    0,
+    1
+  ],
+  "native_index_policy": "explicit original training-loader token order before loading modified positive edges; no removed or held-out edges inserted",
+  "neural_seeds": [
+    0,
+    1,
+    2
+  ],
+  "official_split_hashes": {
+    "test": "27127fcb34688c4778e88a39ef3c9b540807da846021e9d9685660ac1838aca1",
+    "test_negatives": "d3fb32c41f3be26d09484ace571965806f1ade0ca712551b0de684c283cdbb22",
+    "train": "64f93b7f314f3936a6f65739721429db3f6a7c8f5a1e1104ec3bb544f7434f59",
+    "valid": "3831c0e57daef03c3a18cdd1a72e370b496f696c5218883d35c7d2ab8a6a772c",
+    "valid_negatives": "c1d84860d6ee786419f1f118d0e9479c6614283b3e267afc158734389036901f"
+  },
+  "perturbation_seed": 11,
+  "query_limit_facts": null,
+  "replication": "declared 3 paired neural seeds and 2 independent graph-specific mining realizations; one prepared removal/target draw",
+  "resource_policy": "serial jobs, configurable torch threads; Java ActiveProcessorCount=1; cooling before/after mining (never SIGSTOP during wall-clock mining)",
+  "rule_families": [
+    "all",
+    "general",
+    "constants"
+  ],
+  "secondary_frozen_families": [
+    "general"
+  ],
+  "selection": "unchanged earlier validated recipe; same epoch ceiling/checkpoints/mining seconds across graphs; no intervention-result tuning",
+  "source_graph_sha256": {
+    "original": "06174716084ef88870e109b2f575344b0ed8398814d9e26234a02a1034d110f3",
+    "random_global": "f0dccb0503b55301a297586499cc74dd15f2532f38ff01a611d09e8d0a63d668",
+    "random_relation_stratified": "a25b0fc294970624a5269890eb2271ee786cd4f0b6d9e0c16565015abddcbfee",
+    "targeted_local": "c3d9e0ba444fb4e276e8ae83fffa4d0508dacabb5594cd7a968fa2bd56c3a05c",
+    "targeted_relation_matched_control": "8c21457059ae7752adbc0fc1f1bef49d2b00b00af93923b428543e230794dd9b"
+  },
+  "stage": "exploratory first 90%-retention paired comparison",
+  "target_seed": 101,
+  "test_used_for_selection": false
+}

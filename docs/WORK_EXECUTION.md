@@ -1,11 +1,11 @@
 # Phase 5 compute status
 
-**The configured SSH target named `work` is off-limits. Do not connect to it,
-transfer files there, restore its key for this project, or launch experiments
-there.** The earlier server plan has been withdrawn per the user's clarification.
-No alternate compute destination has been authorized. The laptop is also not
-being used for the remaining full-budget matrix because of the previous heat
-issue. No additional training was started.
+**The configured SSH target named `work` remains off-limits. Do not connect to
+it, transfer files there, restore its key for this project, or launch experiments
+there.** The user has now designated Hugging Face Jobs as the alternate compute
+destination. The laptop is still not being used for the remaining full-budget
+matrix because of the previous heat issue. The HF environment is prepared but no
+remote Job has been submitted; see [Hugging Face Jobs setup](HUGGINGFACE_JOBS.md).
 
 ## Local handoff artifact
 
@@ -26,10 +26,10 @@ applications. The four modified-graph frozen-constant applications also remain
 pending. No primary intervention conclusion can be drawn from this unexecuted
 cohort.
 
-If a different compute target is designated later, reassess its authorization,
-resource limits and access before transferring or executing anything. Do not
-run `scripts/run_phase5_work.py --execute` on the off-limits host. The launcher
-is not permission to use a machine.
+The Hugging Face setup is specifically scoped to a serial CPU XL Job, with a
+unique writable output directory and explicit 3-day timeout. Do not run
+`scripts/run_phase5_work.py --execute` on the off-limits SSH target. The Job
+submission command is the explicit paid-compute launch point.
 
 ## Previously completed local inference work
 

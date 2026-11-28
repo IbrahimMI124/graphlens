@@ -1,0 +1,24 @@
+{
+  "namespace": "ibrahimmi124",
+  "hardware": "cpu-upgrade",
+  "last_proof": {
+    "id": "6b0986d854072e8b7169e7e1",
+    "status": "complete",
+    "overlay_sha256": "624a616c3eeb3ef04e016678ed28c334e7eb43155705147841488f744af5d5be",
+    "elapsed_running_seconds": 126
+  },
+  "length_catalogs": [
+    {
+      "id": "6b0986fb54072e8b7169e7ef",
+      "catalog": 0,
+      "status": "complete",
+      "elapsed_running_seconds": 534
+    },
+    {
+      "id": "6b0986fb6c5d61fff1892713",
+      "catalog": 1,
+      "status": "complete",
+      "elapsed_running_seconds": 477
+    }
+  ]
+}

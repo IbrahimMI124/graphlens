@@ -1,0 +1,41 @@
+{
+  "draws": [
+    {
+      "audit": {
+        "difference": -0.018040858175096153,
+        "matched": 0.27298847040770385,
+        "n_facts": 384,
+        "n_supported": 384,
+        "passed": false,
+        "targeted": 0.2549476122326077
+      },
+      "draw": 0,
+      "plan_sha256": "fa6f9201b39bb7c92a7d063c58d389356e9639f967bec3737332084af363ab83"
+    },
+    {
+      "audit": {
+        "difference": -0.024431701770526754,
+        "matched": 0.2725240136820138,
+        "n_facts": 384,
+        "n_supported": 384,
+        "passed": false,
+        "targeted": 0.24809231191148703
+      },
+      "draw": 1,
+      "plan_sha256": "e3c09dc33c4099af684be7b50343963f2228b88b74df769910545be6e313b590"
+    },
+    {
+      "audit": {
+        "difference": 0.012088623882353433,
+        "matched": 0.2671165366868118,
+        "n_facts": 384,
+        "n_supported": 384,
+        "passed": false,
+        "targeted": 0.2792051605691652
+      },
+      "draw": 2,
+      "plan_sha256": "84cb7c48b39515b30dd212ca057991ced0b448195e26f474cfe2e58e7846f03c"
+    }
+  ],
+  "status": "complete"
+}

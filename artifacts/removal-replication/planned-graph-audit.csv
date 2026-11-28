@@ -1,0 +1,7 @@
+draw,condition,seed,target_seed,n_edges,n_isolated,target_incident_removed,directed_two_hop_walks,degree_quantiles,training_graph_sha256
+1,targeted_local,231,940,29599,0,3289,579786,"[3.0, 14.0, 16.0, 23.0, 944.0]",8d1e8d852e5baa592e1aff1109cde817b2eb52fdb6e7a61b5bff2eaf73073c18
+1,targeted_relation_matched_control,231,940,29599,0,620,561588,"[7.0, 13.0, 16.0, 22.0, 922.0]",6f0d7d2dbe985a83b2f5937ca67d89b2b9575253f6cdfe3d14ca3835515a19cd
+2,targeted_local,232,941,29599,0,3289,583035,"[2.0, 14.0, 16.0, 23.0, 942.0]",52c8dfc85d7faef831ac8ca6e885162511cd6c0da0658527d445162073da674d
+2,targeted_relation_matched_control,232,941,29599,0,666,569648,"[6.0, 14.0, 16.0, 23.0, 933.0]",59568caf5d7983a0d4552906d783bf13b19cbe492752feb3502bf3a7f543c71f
+3,targeted_local,233,942,29599,0,3289,571733,"[1.0, 14.0, 16.0, 23.0, 954.0]",98b1e245139be34cc6800aecf7bebf569bec35771b100b288f354f5daad47515
+3,targeted_relation_matched_control,233,942,29599,0,649,556301,"[6.0, 13.0, 16.0, 23.0, 920.0]",331d39b1b84446cc929360c9e770d58e7e9e55780772513d492449115f0a372f

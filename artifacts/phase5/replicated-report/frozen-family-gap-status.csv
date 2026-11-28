@@ -1,0 +1,6 @@
+treatment,control,status,reason
+random_global,original,complete,Four certified paired query sequences; fixed catalog subsets
+random_relation_stratified,original,complete,Four certified paired query sequences; fixed catalog subsets
+targeted_local,original,complete,Four certified paired query sequences; fixed catalog subsets
+targeted_relation_matched_control,original,complete,Four certified paired query sequences; fixed catalog subsets
+targeted_local,targeted_relation_matched_control,complete,Four certified paired query sequences; fixed catalog subsets

@@ -1,0 +1,13 @@
+group,deciding_evidence,n,count,rate,lo,hi
+all generated misranks,higher leading score,2402,2158,0.8984179850124896,0.8844986438751221,0.9104789406061172
+all generated misranks,later score breaks tie,2402,243,0.10116569525395504,0.08925914652645588,0.1149790020659566
+all generated misranks,"same prefix, more rules",2402,0,0.0,0.0,0.0
+all generated misranks,same confidence sequence,2402,1,0.00041631973355537054,0.0,0.001266891835257411
+ComplEx succeeds,higher leading score,280,233,0.8321428571428572,0.7850597381591797,0.8765184208750725
+ComplEx succeeds,later score breaks tie,280,47,0.16785714285714284,0.12348156068474055,0.21494026333093647
+ComplEx succeeds,"same prefix, more rules",280,0,0.0,0.0,0.0
+ComplEx succeeds,same confidence sequence,280,0,0.0,0.0,0.0
+both miss,higher leading score,2122,1925,0.907163053722903,0.8938309386372566,0.9194551855325699
+both miss,later score breaks tie,2122,196,0.09236569274269557,0.08007445689290763,0.10576736647635698
+both miss,"same prefix, more rules",2122,0,0.0,0.0,0.0
+both miss,same confidence sequence,2122,1,0.000471253534401508,0.0,0.0014378318417584523

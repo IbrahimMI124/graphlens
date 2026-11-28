@@ -1,0 +1,4 @@
+draw,audit_supported_facts,edges_removed_per_arm,removed_edges_in_both_arms,targeted_loss_pct,matched_loss_pct,targeted_facts_losing_all,matched_facts_losing_all,targeted_score_positive_removed,matched_score_positive_removed,targeted_isolated,matched_isolated,conditional_ci_low_pp,conditional_ci_high_pp,difference_pp,passed
+1,384,3289,343,27.33543715444772,26.246657347618786,0,0,3289,3237,0,0,-0.7997127965622383,3.076486760412558,1.0887798068289378,False
+2,384,3289,349,25.716889220907053,27.73726913642,0,0,3288,3249,0,0,-4.115964412378367,0.04975041055370014,-2.0203799155129487,False
+3,383,3289,322,24.884328717979372,26.753086774575657,0,0,3288,3249,0,0,-3.705632856125497,-0.020831597890588607,-1.8687580565962842,False

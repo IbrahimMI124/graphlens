@@ -1,0 +1,2437 @@
+[
+  {
+    "all_near": 2,
+    "all_score": 0.5377358490566038,
+    "degree": 14,
+    "direction": "tail",
+    "disagreement": "disagree",
+    "fact": 6,
+    "official_answers": {
+      "all top": "Q33999",
+      "complex top": "Q214917",
+      "constants top": "Q33999",
+      "constants_general top": "Q33999",
+      "frequency top": "Q33999",
+      "general top": "Q1930187",
+      "held-out answer": "Q214917"
+    },
+    "ordering": "higher leading score",
+    "query_id": "test:6:tail",
+    "title": "ComplEx rescues an AnyBURL misrank",
+    "train_only_tops": {
+      "all": "Q33999",
+      "complex": "Q214917",
+      "constants": "Q33999",
+      "constants_general": "Q33999",
+      "frequency": "Q33999",
+      "general": "Q1930187"
+    },
+    "triple": [
+      "Q34970",
+      "P106",
+      "Q214917"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q214917",
+        "expression": "P106(Q34970,Y) <= P106(Q47243,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q47243",
+            "P106",
+            "Q214917"
+          ]
+        ],
+        "length": 1,
+        "predictions": 7,
+        "raw": 0.7142857142857143,
+        "roles": [
+          "complex top",
+          "held-out answer"
+        ],
+        "score": 0.4166666666666667,
+        "structure": null,
+        "support": 5
+      },
+      {
+        "candidate": "Q33999",
+        "expression": "P106(X,Q33999) <= P106(X,Q28389)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q34970",
+            "P106",
+            "Q28389"
+          ]
+        ],
+        "length": 1,
+        "predictions": 313,
+        "raw": 0.5463258785942492,
+        "roles": [
+          "all top",
+          "constants top",
+          "constants_general top",
+          "frequency top"
+        ],
+        "score": 0.5377358490566038,
+        "structure": null,
+        "support": 171
+      },
+      {
+        "candidate": "Q1930187",
+        "expression": "P106(X,Y) <= P737(A,X), P106(A,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q76409",
+            "P737",
+            "Q34970"
+          ],
+          [
+            "Q76409",
+            "P106",
+            "Q1930187"
+          ]
+        ],
+        "length": 2,
+        "predictions": 1359,
+        "raw": 0.33259749816041206,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.3313782991202346,
+        "structure": "two-hop composition",
+        "support": 452
+      }
+    ]
+  },
+  {
+    "all_near": 22,
+    "all_score": 0.7162162162162162,
+    "degree": 325,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 0,
+    "official_answers": {
+      "all top": "Q8772",
+      "complex top": "Q12807",
+      "constants top": "Q8772",
+      "constants_general top": "Q8772",
+      "frequency top": "Q57535",
+      "general top": "Q216913",
+      "held-out answer": "Q206832"
+    },
+    "ordering": "later score breaks tie",
+    "query_id": "test:0:head",
+    "title": "Both miss despite a generated answer",
+    "train_only_tops": {
+      "all": "Q8772",
+      "complex": "Q9364",
+      "constants": "Q8772",
+      "constants_general": "Q8772",
+      "frequency": "Q57535",
+      "general": "Q216913"
+    },
+    "triple": [
+      "Q206832",
+      "P27",
+      "Q142"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q12807",
+        "expression": "P27(X,Q142) <= P108(X,Q202660)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q12807",
+            "P108",
+            "Q202660"
+          ]
+        ],
+        "length": 1,
+        "predictions": 22,
+        "raw": 0.8636363636363636,
+        "roles": [
+          "complex top"
+        ],
+        "score": 0.7037037037037037,
+        "structure": null,
+        "support": 19
+      },
+      {
+        "candidate": "Q8772",
+        "expression": "P27(X,Q142) <= P20(X,Q90)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q8772",
+            "P20",
+            "Q90"
+          ]
+        ],
+        "length": 1,
+        "predictions": 69,
+        "raw": 0.7681159420289855,
+        "roles": [
+          "all top",
+          "constants top",
+          "constants_general top"
+        ],
+        "score": 0.7162162162162162,
+        "structure": null,
+        "support": 53
+      },
+      {
+        "candidate": "Q216913",
+        "expression": "P27(X,Y) <= P26(A,X), P27(A,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q30449",
+            "P26",
+            "Q216913"
+          ],
+          [
+            "Q30449",
+            "P27",
+            "Q142"
+          ]
+        ],
+        "length": 2,
+        "predictions": 50,
+        "raw": 0.7,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.6363636363636364,
+        "structure": "two-hop composition",
+        "support": 35
+      },
+      {
+        "candidate": "Q57535",
+        "expression": "P27(Q57535,Y) <= P17(Q1055,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q1055",
+            "P17",
+            "Q142"
+          ]
+        ],
+        "length": 1,
+        "predictions": 7,
+        "raw": 0.7142857142857143,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.4166666666666667,
+        "structure": null,
+        "support": 5
+      },
+      {
+        "candidate": "Q206832",
+        "expression": "P27(X,Q142) <= P20(X,Q90)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q206832",
+            "P20",
+            "Q90"
+          ]
+        ],
+        "length": 1,
+        "predictions": 69,
+        "raw": 0.7681159420289855,
+        "roles": [
+          "held-out answer"
+        ],
+        "score": 0.7162162162162162,
+        "structure": null,
+        "support": 53
+      }
+    ]
+  },
+  {
+    "all_near": 1,
+    "all_score": 0.8453237410071942,
+    "degree": 14,
+    "direction": "tail",
+    "disagreement": "disagree",
+    "fact": 2,
+    "official_answers": {
+      "all top": "Q177220",
+      "complex top": "Q177220",
+      "constants top": "Q177220",
+      "constants_general top": "Q177220",
+      "frequency top": "Q36180",
+      "general top": "Q36180",
+      "held-out answer": "Q177220"
+    },
+    "ordering": null,
+    "query_id": "test:2:tail",
+    "title": "Adding constants corrects the general prediction",
+    "train_only_tops": {
+      "all": "Q177220",
+      "complex": "Q177220",
+      "constants": "Q177220",
+      "constants_general": "Q177220",
+      "frequency": "Q36180",
+      "general": "Q36180"
+    },
+    "triple": [
+      "Q38875",
+      "P106",
+      "Q177220"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q177220",
+        "expression": "P106(X,Q177220) <= P1303(X,Q17172850)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q38875",
+            "P1303",
+            "Q17172850"
+          ]
+        ],
+        "length": 1,
+        "predictions": 551,
+        "raw": 0.852994555353902,
+        "roles": [
+          "complex top",
+          "all top",
+          "constants top",
+          "constants_general top",
+          "held-out answer"
+        ],
+        "score": 0.8453237410071942,
+        "structure": null,
+        "support": 470
+      },
+      {
+        "candidate": "Q36180",
+        "expression": "P106(X,Y) <= P136(X,A), P136(B,A), P106(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q38875",
+            "P136",
+            "Q11401"
+          ],
+          [
+            "Q1093318",
+            "P136",
+            "Q11401"
+          ],
+          [
+            "Q1093318",
+            "P106",
+            "Q36180"
+          ]
+        ],
+        "length": 3,
+        "predictions": 2000,
+        "raw": 0.302,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.3012468827930175,
+        "structure": "three-hop composition",
+        "support": 604
+      },
+      {
+        "candidate": "Q36180",
+        "expression": "P106(X,Q36180) <= P106(X,Q3282637)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q38875",
+            "P106",
+            "Q3282637"
+          ]
+        ],
+        "length": 1,
+        "predictions": 207,
+        "raw": 0.3719806763285024,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.3632075471698113,
+        "structure": null,
+        "support": 77
+      }
+    ]
+  },
+  {
+    "all_near": 1,
+    "all_score": 0.4,
+    "degree": 20,
+    "direction": "tail",
+    "disagreement": "disagree",
+    "fact": 3,
+    "official_answers": {
+      "all top": "Q12799318",
+      "complex top": "Q8261",
+      "constants top": "Q12799318",
+      "constants_general top": "Q12799318",
+      "frequency top": "Q37073",
+      "general top": "Q676",
+      "held-out answer": "Q676"
+    },
+    "ordering": "higher leading score",
+    "query_id": "test:3:tail",
+    "title": "Adding constants overrides a correct general prediction",
+    "train_only_tops": {
+      "all": "Q12799318",
+      "complex": "Q8261",
+      "constants": "Q12799318",
+      "constants_general": "Q12799318",
+      "frequency": "Q37073",
+      "general": "Q676"
+    },
+    "triple": [
+      "Q115483",
+      "P136",
+      "Q676"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q8261",
+        "expression": "P136(X,Q8261) <= P136(X,Q25379)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q115483",
+            "P136",
+            "Q25379"
+          ]
+        ],
+        "length": 1,
+        "predictions": 15,
+        "raw": 0.4,
+        "roles": [
+          "complex top"
+        ],
+        "score": 0.3,
+        "structure": null,
+        "support": 6
+      },
+      {
+        "candidate": "Q12799318",
+        "expression": "P136(X,Q12799318) <= P136(X,Q25379)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q115483",
+            "P136",
+            "Q25379"
+          ]
+        ],
+        "length": 1,
+        "predictions": 15,
+        "raw": 0.5333333333333333,
+        "roles": [
+          "all top",
+          "constants top",
+          "constants_general top"
+        ],
+        "score": 0.4,
+        "structure": null,
+        "support": 8
+      },
+      {
+        "candidate": "Q676",
+        "expression": "P136(X,Y) <= P136(X,A), P136(B,A), P136(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q115483",
+            "P136",
+            "Q25379"
+          ],
+          [
+            "Q191480",
+            "P136",
+            "Q25379"
+          ],
+          [
+            "Q191480",
+            "P136",
+            "Q676"
+          ]
+        ],
+        "length": 3,
+        "predictions": 2000,
+        "raw": 0.155,
+        "roles": [
+          "general top",
+          "held-out answer"
+        ],
+        "score": 0.1546134663341646,
+        "structure": "three-hop composition",
+        "support": 310
+      },
+      {
+        "candidate": "Q37073",
+        "expression": "P136(X,Q37073) <= P1412(X,Q652)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q115483",
+            "P1412",
+            "Q652"
+          ]
+        ],
+        "length": 1,
+        "predictions": 70,
+        "raw": 0.12857142857142856,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.12,
+        "structure": null,
+        "support": 9
+      }
+    ]
+  },
+  {
+    "all_near": 7,
+    "all_score": 0.5,
+    "degree": 34,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 7,
+    "official_answers": {
+      "all top": "Q289003",
+      "complex top": "Q289003",
+      "constants top": "Q289003",
+      "constants_general top": "Q289003",
+      "frequency top": "Q935369",
+      "general top": "Q185465",
+      "held-out answer": "Q289003"
+    },
+    "ordering": null,
+    "query_id": "test:7:head",
+    "title": "Constants beat the marginal frequency prediction",
+    "train_only_tops": {
+      "all": "Q289003",
+      "complex": "Q289003",
+      "constants": "Q289003",
+      "constants_general": "Q289003",
+      "frequency": "Q935369",
+      "general": "Q185465"
+    },
+    "triple": [
+      "Q289003",
+      "P136",
+      "Q83270"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q289003",
+        "expression": "P136(X,Q83270) <= P136(X,Q1133657)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q289003",
+            "P136",
+            "Q1133657"
+          ]
+        ],
+        "length": 1,
+        "predictions": 15,
+        "raw": 0.6666666666666666,
+        "roles": [
+          "complex top",
+          "all top",
+          "constants top",
+          "constants_general top",
+          "held-out answer"
+        ],
+        "score": 0.5,
+        "structure": null,
+        "support": 10
+      },
+      {
+        "candidate": "Q185465",
+        "expression": "P136(X,Y) <= P451(A,X), P3373(A,B), P136(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q44855",
+            "P451",
+            "Q185465"
+          ],
+          [
+            "Q44855",
+            "P3373",
+            "Q2831"
+          ],
+          [
+            "Q2831",
+            "P136",
+            "Q83270"
+          ]
+        ],
+        "length": 3,
+        "predictions": 24,
+        "raw": 0.5833333333333334,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.4827586206896552,
+        "structure": "three-hop composition",
+        "support": 14
+      },
+      {
+        "candidate": "Q935369",
+        "expression": "P136(Q935369,Y) <= P136(Q1203,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q1203",
+            "P136",
+            "Q83270"
+          ]
+        ],
+        "length": 1,
+        "predictions": 8,
+        "raw": 0.625,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.38461538461538464,
+        "structure": null,
+        "support": 5
+      }
+    ]
+  },
+  {
+    "all_near": 42,
+    "all_score": 0.8461538461538461,
+    "degree": 160,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 19,
+    "official_answers": {
+      "all top": "Q865",
+      "complex top": "Q32",
+      "constants top": "Q865",
+      "constants_general top": "Q865",
+      "frequency top": "Q32",
+      "general top": "Q219060",
+      "held-out answer": "Q32"
+    },
+    "ordering": "higher leading score",
+    "query_id": "test:19:head",
+    "title": "Frequency wins where constants miss",
+    "train_only_tops": {
+      "all": "Q865",
+      "complex": "Q114",
+      "constants": "Q865",
+      "constants_general": "Q865",
+      "frequency": "Q32",
+      "general": "Q117"
+    },
+    "triple": [
+      "Q32",
+      "P463",
+      "Q17495"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q32",
+        "expression": "P463(X,Q17495) <= P530(X,Q38)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q32",
+            "P530",
+            "Q38"
+          ]
+        ],
+        "length": 1,
+        "predictions": 72,
+        "raw": 0.8888888888888888,
+        "roles": [
+          "complex top",
+          "frequency top",
+          "held-out answer"
+        ],
+        "score": 0.8311688311688312,
+        "structure": null,
+        "support": 64
+      },
+      {
+        "candidate": "Q865",
+        "expression": "P463(X,Q17495) <= P530(X,Q41)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q865",
+            "P530",
+            "Q41"
+          ]
+        ],
+        "length": 1,
+        "predictions": 73,
+        "raw": 0.9041095890410958,
+        "roles": [
+          "all top",
+          "constants top",
+          "constants_general top"
+        ],
+        "score": 0.8461538461538461,
+        "structure": null,
+        "support": 66
+      },
+      {
+        "candidate": "Q219060",
+        "expression": "P463(X,Y) <= P361(X,A), P361(B,A), P463(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q219060",
+            "P361",
+            "Q7204"
+          ],
+          [
+            "Q398",
+            "P361",
+            "Q7204"
+          ],
+          [
+            "Q398",
+            "P463",
+            "Q17495"
+          ]
+        ],
+        "length": 3,
+        "predictions": 784,
+        "raw": 0.6887755102040817,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.6844106463878327,
+        "structure": "three-hop composition",
+        "support": 540
+      }
+    ]
+  },
+  {
+    "all_near": 1,
+    "all_score": 0.6666666666666666,
+    "degree": 21,
+    "direction": "tail",
+    "disagreement": "agree",
+    "fact": 5,
+    "official_answers": {
+      "all top": "Q6607",
+      "complex top": "Q6607",
+      "constants top": "Q6607",
+      "constants_general top": "Q6607",
+      "frequency top": "Q6607",
+      "general top": "Q6607",
+      "held-out answer": "Q6607"
+    },
+    "ordering": null,
+    "query_id": "test:5:tail",
+    "title": "Strong and decisive all-rule evidence",
+    "train_only_tops": {
+      "all": "Q6607",
+      "complex": "Q6607",
+      "constants": "Q6607",
+      "constants_general": "Q6607",
+      "frequency": "Q6607",
+      "general": "Q6607"
+    },
+    "triple": [
+      "Q122003",
+      "P1303",
+      "Q6607"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q6607",
+        "expression": "P1303(X,Q6607) <= P136(X,Q217191)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q122003",
+            "P136",
+            "Q217191"
+          ]
+        ],
+        "length": 1,
+        "predictions": 25,
+        "raw": 0.8,
+        "roles": [
+          "complex top",
+          "all top",
+          "constants top",
+          "constants_general top",
+          "frequency top",
+          "held-out answer"
+        ],
+        "score": 0.6666666666666666,
+        "structure": null,
+        "support": 20
+      },
+      {
+        "candidate": "Q6607",
+        "expression": "P1303(X,Y) <= P40(X,A), P1303(A,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q122003",
+            "P40",
+            "Q47122"
+          ],
+          [
+            "Q47122",
+            "P1303",
+            "Q6607"
+          ]
+        ],
+        "length": 2,
+        "predictions": 33,
+        "raw": 0.45454545454545453,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.39473684210526316,
+        "structure": "two-hop composition",
+        "support": 15
+      }
+    ]
+  },
+  {
+    "all_near": 8,
+    "all_score": 0.5714285714285714,
+    "degree": 16,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 1,
+    "official_answers": {
+      "all top": "Q219631",
+      "complex top": "Q465636",
+      "constants top": "Q219631",
+      "constants_general top": "Q219631",
+      "frequency top": "Q5879",
+      "general top": "Q83287",
+      "held-out answer": "Q319374"
+    },
+    "ordering": "higher leading score",
+    "query_id": "test:1:head",
+    "title": "Strong but crowded all-rule evidence",
+    "train_only_tops": {
+      "all": "Q219631",
+      "complex": "Q465636",
+      "constants": "Q219631",
+      "constants_general": "Q219631",
+      "frequency": "Q5879",
+      "general": "Q83287"
+    },
+    "triple": [
+      "Q319374",
+      "P106",
+      "Q19723482"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q465636",
+        "expression": "P106(Q465636,Y) <= P106(Q1373347,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q1373347",
+            "P106",
+            "Q19723482"
+          ]
+        ],
+        "length": 1,
+        "predictions": 7,
+        "raw": 0.5714285714285714,
+        "roles": [
+          "complex top"
+        ],
+        "score": 0.3333333333333333,
+        "structure": null,
+        "support": 4
+      },
+      {
+        "candidate": "Q219631",
+        "expression": "P106(Q219631,Y) <= P106(Q233946,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q233946",
+            "P106",
+            "Q19723482"
+          ]
+        ],
+        "length": 1,
+        "predictions": 9,
+        "raw": 0.8888888888888888,
+        "roles": [
+          "all top",
+          "constants top",
+          "constants_general top"
+        ],
+        "score": 0.5714285714285714,
+        "structure": null,
+        "support": 8
+      },
+      {
+        "candidate": "Q83287",
+        "expression": "P106(X,Y) <= P451(A,X), P3373(B,A), P106(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q201656",
+            "P451",
+            "Q83287"
+          ],
+          [
+            "Q210172",
+            "P3373",
+            "Q201656"
+          ],
+          [
+            "Q210172",
+            "P106",
+            "Q19723482"
+          ]
+        ],
+        "length": 3,
+        "predictions": 71,
+        "raw": 0.4788732394366197,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.4473684210526316,
+        "structure": "three-hop composition",
+        "support": 34
+      },
+      {
+        "candidate": "Q5879",
+        "expression": "P106(X,Y) <= P106(X,A), P106(B,A), P106(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q5879",
+            "P106",
+            "Q36180"
+          ],
+          [
+            "Q42775",
+            "P106",
+            "Q36180"
+          ],
+          [
+            "Q42775",
+            "P106",
+            "Q19723482"
+          ]
+        ],
+        "length": 3,
+        "predictions": 2000,
+        "raw": 0.2015,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.20099750623441395,
+        "structure": "three-hop composition",
+        "support": 403
+      },
+      {
+        "candidate": "Q319374",
+        "expression": "P106(Q319374,Y) <= P106(Q272031,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q272031",
+            "P106",
+            "Q19723482"
+          ]
+        ],
+        "length": 1,
+        "predictions": 8,
+        "raw": 0.625,
+        "roles": [
+          "held-out answer"
+        ],
+        "score": 0.38461538461538464,
+        "structure": null,
+        "support": 5
+      }
+    ]
+  },
+  {
+    "all_near": 22,
+    "all_score": 0.5714285714285714,
+    "degree": 60,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 8,
+    "official_answers": {
+      "all top": "Q228792",
+      "complex top": "Q174843",
+      "constants top": "Q228792",
+      "constants_general top": "Q228792",
+      "frequency top": "Q5879",
+      "general top": "Q228787",
+      "held-out answer": "Q188137"
+    },
+    "ordering": "higher leading score",
+    "query_id": "test:8:head",
+    "title": "High confidence backed by at most ten training facts",
+    "train_only_tops": {
+      "all": "Q228792",
+      "complex": "Q484523",
+      "constants": "Q228792",
+      "constants_general": "Q228792",
+      "frequency": "Q5879",
+      "general": "Q228787"
+    },
+    "triple": [
+      "Q188137",
+      "P106",
+      "Q13235160"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q174843",
+        "expression": "P106(Q174843,Y) <= P106(Q171363,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q171363",
+            "P106",
+            "Q13235160"
+          ]
+        ],
+        "length": 1,
+        "predictions": 12,
+        "raw": 0.6666666666666666,
+        "roles": [
+          "complex top"
+        ],
+        "score": 0.47058823529411764,
+        "structure": null,
+        "support": 8
+      },
+      {
+        "candidate": "Q228792",
+        "expression": "P106(Q228792,Y) <= P106(Q37876,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q37876",
+            "P106",
+            "Q13235160"
+          ]
+        ],
+        "length": 1,
+        "predictions": 9,
+        "raw": 0.8888888888888888,
+        "roles": [
+          "all top",
+          "constants top",
+          "constants_general top"
+        ],
+        "score": 0.5714285714285714,
+        "structure": null,
+        "support": 8
+      },
+      {
+        "candidate": "Q228787",
+        "expression": "P106(X,Y) <= P40(X,A), P40(B,A), P106(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q228787",
+            "P40",
+            "Q221364"
+          ],
+          [
+            "Q40096",
+            "P40",
+            "Q221364"
+          ],
+          [
+            "Q40096",
+            "P106",
+            "Q13235160"
+          ]
+        ],
+        "length": 3,
+        "predictions": 66,
+        "raw": 0.5757575757575758,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.5352112676056338,
+        "structure": "three-hop composition",
+        "support": 38
+      },
+      {
+        "candidate": "Q5879",
+        "expression": "P106(Q5879,Y) <= P106(Q51094,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q51094",
+            "P106",
+            "Q13235160"
+          ]
+        ],
+        "length": 1,
+        "predictions": 9,
+        "raw": 0.3333333333333333,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.21428571428571427,
+        "structure": null,
+        "support": 3
+      },
+      {
+        "candidate": "Q188137",
+        "expression": "P106(Q188137,Y) <= P106(Q36949,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q36949",
+            "P106",
+            "Q13235160"
+          ]
+        ],
+        "length": 1,
+        "predictions": 10,
+        "raw": 0.6,
+        "roles": [
+          "held-out answer"
+        ],
+        "score": 0.4,
+        "structure": null,
+        "support": 6
+      }
+    ]
+  },
+  {
+    "all_near": 2,
+    "all_score": 0.3793103448275862,
+    "degree": 15,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 12,
+    "official_answers": {
+      "all top": "Q210172",
+      "complex top": "Q242792",
+      "constants top": "Q294144",
+      "constants_general top": "Q210172",
+      "frequency top": "Q12003",
+      "general top": "Q210172",
+      "held-out answer": "Q210172"
+    },
+    "ordering": null,
+    "query_id": "test:12:head",
+    "title": "Selector improves the train-only prediction",
+    "train_only_tops": {
+      "all": "Q210172",
+      "complex": "Q4235",
+      "constants": "Q4235",
+      "constants_general": "Q210172",
+      "frequency": "Q12003",
+      "general": "Q210172"
+    },
+    "triple": [
+      "Q210172",
+      "P264",
+      "Q387539"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q242792",
+        "expression": "P264(X,Q387539) <= P264(X,Q54860)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q242792",
+            "P264",
+            "Q54860"
+          ]
+        ],
+        "length": 1,
+        "predictions": 14,
+        "raw": 0.35714285714285715,
+        "roles": [
+          "complex top"
+        ],
+        "score": 0.2631578947368421,
+        "structure": null,
+        "support": 5
+      },
+      {
+        "candidate": "Q210172",
+        "expression": "P264(X,Y) <= P3373(A,X), P451(A,B), P264(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q201656",
+            "P3373",
+            "Q210172"
+          ],
+          [
+            "Q201656",
+            "P451",
+            "Q83287"
+          ],
+          [
+            "Q83287",
+            "P264",
+            "Q387539"
+          ]
+        ],
+        "length": 3,
+        "predictions": 24,
+        "raw": 0.4583333333333333,
+        "roles": [
+          "all top",
+          "general top",
+          "constants_general top",
+          "held-out answer"
+        ],
+        "score": 0.3793103448275862,
+        "structure": "three-hop composition",
+        "support": 11
+      },
+      {
+        "candidate": "Q294144",
+        "expression": "P264(X,Q387539) <= P264(X,Q54860)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q294144",
+            "P264",
+            "Q54860"
+          ]
+        ],
+        "length": 1,
+        "predictions": 14,
+        "raw": 0.35714285714285715,
+        "roles": [
+          "constants top"
+        ],
+        "score": 0.2631578947368421,
+        "structure": null,
+        "support": 5
+      },
+      {
+        "candidate": "Q12003",
+        "expression": "P264(Q12003,Y) <= P17(Y,Q30)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q387539",
+            "P17",
+            "Q30"
+          ]
+        ],
+        "length": 1,
+        "predictions": 35,
+        "raw": 0.14285714285714285,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.125,
+        "structure": null,
+        "support": 5
+      }
+    ]
+  },
+  {
+    "all_near": 33,
+    "all_score": 0.8757396449704142,
+    "degree": 480,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 31,
+    "official_answers": {
+      "all top": "Q17",
+      "complex top": "Q17",
+      "constants top": "Q17",
+      "constants_general top": "Q17",
+      "frequency top": "Q183",
+      "general top": "Q17",
+      "held-out answer": "Q17"
+    },
+    "ordering": null,
+    "query_id": "test:31:head",
+    "title": "Selector harms the train-only prediction",
+    "train_only_tops": {
+      "all": "Q29",
+      "complex": "Q17",
+      "constants": "Q29",
+      "constants_general": "Q29",
+      "frequency": "Q183",
+      "general": "Q17"
+    },
+    "triple": [
+      "Q17",
+      "P530",
+      "Q183"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q17",
+        "expression": "P530(X,Q183) <= P530(Q183,X)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q183",
+            "P530",
+            "Q17"
+          ]
+        ],
+        "length": 1,
+        "predictions": 164,
+        "raw": 0.9024390243902439,
+        "roles": [
+          "complex top",
+          "all top",
+          "constants top",
+          "constants_general top",
+          "held-out answer"
+        ],
+        "score": 0.8757396449704142,
+        "structure": null,
+        "support": 148
+      },
+      {
+        "candidate": "Q17",
+        "expression": "P530(X,Y) <= P530(Y,X)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q183",
+            "P530",
+            "Q17"
+          ]
+        ],
+        "length": 1,
+        "predictions": 1762,
+        "raw": 0.8694665153234961,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.8670062252405206,
+        "structure": "symmetry",
+        "support": 1532
+      }
+    ]
+  },
+  {
+    "all_near": 4,
+    "all_score": 0.8670062252405206,
+    "degree": 60,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 9,
+    "official_answers": {
+      "all top": "Q833",
+      "complex top": "Q833",
+      "constants top": "Q833",
+      "constants_general top": "Q833",
+      "frequency top": "Q30",
+      "general top": "Q833",
+      "held-out answer": "Q833"
+    },
+    "ordering": null,
+    "query_id": "test:9:head",
+    "title": "Applicable symmetry rule",
+    "train_only_tops": {
+      "all": "Q159",
+      "complex": "Q159",
+      "constants": "Q159",
+      "constants_general": "Q159",
+      "frequency": "Q183",
+      "general": "Q183"
+    },
+    "triple": [
+      "Q833",
+      "P530",
+      "Q869"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q833",
+        "expression": "P530(X,Y) <= P530(Y,X)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q869",
+            "P530",
+            "Q833"
+          ]
+        ],
+        "length": 1,
+        "predictions": 1762,
+        "raw": 0.8694665153234961,
+        "roles": [
+          "complex top",
+          "all top",
+          "general top",
+          "constants_general top",
+          "held-out answer"
+        ],
+        "score": 0.8670062252405206,
+        "structure": "symmetry",
+        "support": 1532
+      },
+      {
+        "candidate": "Q833",
+        "expression": "P530(Q833,Y) <= P530(Y,Q833)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q869",
+            "P530",
+            "Q833"
+          ]
+        ],
+        "length": 1,
+        "predictions": 77,
+        "raw": 0.8701298701298701,
+        "roles": [
+          "constants top"
+        ],
+        "score": 0.8170731707317073,
+        "structure": null,
+        "support": 67
+      },
+      {
+        "candidate": "Q30",
+        "expression": "P530(Q30,Y) <= P530(Q148,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q148",
+            "P530",
+            "Q869"
+          ]
+        ],
+        "length": 1,
+        "predictions": 132,
+        "raw": 0.8257575757575758,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.7956204379562044,
+        "structure": null,
+        "support": 109
+      },
+      {
+        "candidate": "Q159",
+        "expression": "P530(X,Y) <= P530(Y,X)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q869",
+            "P530",
+            "Q159"
+          ]
+        ],
+        "length": 1,
+        "predictions": 1762,
+        "raw": 0.8694665153234961,
+        "roles": [
+          "symmetry"
+        ],
+        "score": 0.8670062252405206,
+        "structure": "symmetry",
+        "support": 1532
+      }
+    ]
+  },
+  {
+    "all_near": 5,
+    "all_score": 0.3333333333333333,
+    "degree": 32,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 13,
+    "official_answers": {
+      "all top": "Q40912",
+      "complex top": "Q130742",
+      "constants top": "Q40912",
+      "constants_general top": "Q40912",
+      "frequency top": "Q1203",
+      "general top": "Q126399",
+      "held-out answer": "Q217160"
+    },
+    "ordering": "higher leading score",
+    "query_id": "test:13:head",
+    "title": "Applicable inversion rule",
+    "train_only_tops": {
+      "all": "Q12003",
+      "complex": "Q12003",
+      "constants": "Q12003",
+      "constants_general": "Q12003",
+      "frequency": "Q12003",
+      "general": "Q126399"
+    },
+    "triple": [
+      "Q217160",
+      "P264",
+      "Q21077"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q130742",
+        "expression": "P264(Q130742,Y) <= P264(Q286022,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q286022",
+            "P264",
+            "Q21077"
+          ]
+        ],
+        "length": 1,
+        "predictions": 5,
+        "raw": 0.4,
+        "roles": [
+          "complex top"
+        ],
+        "score": 0.2,
+        "structure": null,
+        "support": 2
+      },
+      {
+        "candidate": "Q40912",
+        "expression": "P264(Q40912,Y) <= P264(Q310300,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q310300",
+            "P264",
+            "Q21077"
+          ]
+        ],
+        "length": 1,
+        "predictions": 4,
+        "raw": 0.75,
+        "roles": [
+          "all top",
+          "constants top",
+          "constants_general top"
+        ],
+        "score": 0.3333333333333333,
+        "structure": null,
+        "support": 3
+      },
+      {
+        "candidate": "Q126399",
+        "expression": "P264(X,Y) <= P112(Y,X)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q21077",
+            "P112",
+            "Q126399"
+          ]
+        ],
+        "length": 1,
+        "predictions": 7,
+        "raw": 0.42857142857142855,
+        "roles": [
+          "general top",
+          "inversion"
+        ],
+        "score": 0.25,
+        "structure": "inversion",
+        "support": 3
+      },
+      {
+        "candidate": "Q1203",
+        "expression": "P264(Q1203,Y) <= P264(Q11998,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q11998",
+            "P264",
+            "Q21077"
+          ]
+        ],
+        "length": 1,
+        "predictions": 5,
+        "raw": 0.6,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.3,
+        "structure": null,
+        "support": 3
+      },
+      {
+        "candidate": "Q217160",
+        "expression": "P264(Q217160,Y) <= P264(Q310300,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q310300",
+            "P264",
+            "Q21077"
+          ]
+        ],
+        "length": 1,
+        "predictions": 4,
+        "raw": 0.5,
+        "roles": [
+          "held-out answer"
+        ],
+        "score": 0.2222222222222222,
+        "structure": null,
+        "support": 2
+      }
+    ]
+  },
+  {
+    "all_near": 3,
+    "all_score": 0.014925373134328358,
+    "degree": 140,
+    "direction": "head",
+    "disagreement": "general only",
+    "fact": 4,
+    "official_answers": {
+      "all top": "Q649",
+      "complex top": "Q645889",
+      "constants top": null,
+      "constants_general top": "Q649",
+      "frequency top": "Q11617",
+      "general top": "Q649",
+      "held-out answer": "Q239652"
+    },
+    "ordering": null,
+    "query_id": "test:4:head",
+    "title": "Applicable subsumption rule",
+    "train_only_tops": {
+      "all": "Q649",
+      "complex": "Q645889",
+      "constants": null,
+      "constants_general": "Q649",
+      "frequency": "Q11617",
+      "general": "Q649"
+    },
+    "triple": [
+      "Q239652",
+      "P740",
+      "Q15180"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q649",
+        "expression": "P740(X,Y) <= P17(X,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q649",
+            "P17",
+            "Q15180"
+          ]
+        ],
+        "length": 1,
+        "predictions": 129,
+        "raw": 0.015503875968992248,
+        "roles": [
+          "all top",
+          "general top",
+          "constants_general top",
+          "subsumption"
+        ],
+        "score": 0.014925373134328358,
+        "structure": "subsumption",
+        "support": 2
+      }
+    ]
+  },
+  {
+    "all_near": 23,
+    "all_score": 0.6666666666666666,
+    "degree": 144,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 18,
+    "official_answers": {
+      "all top": "Q349461",
+      "complex top": "Q243639",
+      "constants top": "Q243639",
+      "constants_general top": "Q349461",
+      "frequency top": "Q104000",
+      "general top": "Q349461",
+      "held-out answer": "Q1067043"
+    },
+    "ordering": "higher leading score",
+    "query_id": "test:18:head",
+    "title": "Applicable two-hop composition rule",
+    "train_only_tops": {
+      "all": "Q44855",
+      "complex": "Q243639",
+      "constants": "Q243639",
+      "constants_general": "Q44855",
+      "frequency": "Q104000",
+      "general": "Q44855"
+    },
+    "triple": [
+      "Q1067043",
+      "P172",
+      "Q49085"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q243639",
+        "expression": "P172(X,Q49085) <= P106(X,Q2252262)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q243639",
+            "P106",
+            "Q2252262"
+          ]
+        ],
+        "length": 1,
+        "predictions": 63,
+        "raw": 0.6666666666666666,
+        "roles": [
+          "complex top",
+          "constants top"
+        ],
+        "score": 0.6176470588235294,
+        "structure": null,
+        "support": 42
+      },
+      {
+        "candidate": "Q349461",
+        "expression": "P172(X,Y) <= P3373(A,X), P40(B,A), P172(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q44855",
+            "P3373",
+            "Q349461"
+          ],
+          [
+            "Q361297",
+            "P40",
+            "Q44855"
+          ],
+          [
+            "Q361297",
+            "P172",
+            "Q49085"
+          ]
+        ],
+        "length": 3,
+        "predictions": 16,
+        "raw": 0.875,
+        "roles": [
+          "all top",
+          "general top",
+          "constants_general top"
+        ],
+        "score": 0.6666666666666666,
+        "structure": "three-hop composition",
+        "support": 14
+      },
+      {
+        "candidate": "Q104000",
+        "expression": "P172(X,Q49085) <= P106(X,Q4610556)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q104000",
+            "P106",
+            "Q4610556"
+          ]
+        ],
+        "length": 1,
+        "predictions": 91,
+        "raw": 0.25274725274725274,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.23958333333333334,
+        "structure": null,
+        "support": 23
+      },
+      {
+        "candidate": "Q1067043",
+        "expression": "P172(X,Q49085) <= P136(X,Q131272)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q1067043",
+            "P136",
+            "Q131272"
+          ]
+        ],
+        "length": 1,
+        "predictions": 74,
+        "raw": 0.5675675675675675,
+        "roles": [
+          "held-out answer"
+        ],
+        "score": 0.5316455696202531,
+        "structure": null,
+        "support": 42
+      },
+      {
+        "candidate": "Q44855",
+        "expression": "P172(X,Y) <= P40(A,X), P172(A,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q361297",
+            "P40",
+            "Q44855"
+          ],
+          [
+            "Q361297",
+            "P172",
+            "Q49085"
+          ]
+        ],
+        "length": 2,
+        "predictions": 17,
+        "raw": 0.7647058823529411,
+        "roles": [
+          "two-hop composition"
+        ],
+        "score": 0.5909090909090909,
+        "structure": "two-hop composition",
+        "support": 13
+      }
+    ]
+  },
+  {
+    "all_near": 35,
+    "all_score": 0.875,
+    "degree": 165,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 10,
+    "official_answers": {
+      "all top": "Q1019",
+      "complex top": "Q1019",
+      "constants top": "Q1019",
+      "constants_general top": "Q1019",
+      "frequency top": "Q55",
+      "general top": "Q1019",
+      "held-out answer": "Q1019"
+    },
+    "ordering": null,
+    "query_id": "test:10:head",
+    "title": "Applicable three-hop composition rule",
+    "train_only_tops": {
+      "all": "Q114",
+      "complex": "Q244",
+      "constants": "Q114",
+      "constants_general": "Q114",
+      "frequency": "Q38",
+      "general": "Q924"
+    },
+    "triple": [
+      "Q1019",
+      "P463",
+      "Q656801"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q1019",
+        "expression": "P463(X,Q656801) <= P463(X,Q340195)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q1019",
+            "P463",
+            "Q340195"
+          ]
+        ],
+        "length": 1,
+        "predictions": 75,
+        "raw": 0.9333333333333333,
+        "roles": [
+          "complex top",
+          "all top",
+          "constants top",
+          "constants_general top",
+          "held-out answer"
+        ],
+        "score": 0.875,
+        "structure": null,
+        "support": 70
+      },
+      {
+        "candidate": "Q1019",
+        "expression": "P463(X,Y) <= P361(X,A), P361(B,A), P463(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q1019",
+            "P361",
+            "Q27407"
+          ],
+          [
+            "Q1020",
+            "P361",
+            "Q27407"
+          ],
+          [
+            "Q1020",
+            "P463",
+            "Q656801"
+          ]
+        ],
+        "length": 3,
+        "predictions": 784,
+        "raw": 0.6887755102040817,
+        "roles": [
+          "general top",
+          "three-hop composition"
+        ],
+        "score": 0.6844106463878327,
+        "structure": "three-hop composition",
+        "support": 540
+      },
+      {
+        "candidate": "Q55",
+        "expression": "P463(X,Q656801) <= P463(X,Q340195)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q55",
+            "P463",
+            "Q340195"
+          ]
+        ],
+        "length": 1,
+        "predictions": 75,
+        "raw": 0.9333333333333333,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.875,
+        "structure": null,
+        "support": 70
+      }
+    ]
+  },
+  {
+    "all_near": 21,
+    "all_score": 0.7555555555555555,
+    "degree": 210,
+    "direction": "head",
+    "disagreement": "agree",
+    "fact": 30,
+    "official_answers": {
+      "all top": "Q57382",
+      "complex top": "Q93401",
+      "constants top": "Q57382",
+      "constants_general top": "Q57382",
+      "frequency top": "Q170515",
+      "general top": "Q57382",
+      "held-out answer": "Q57382"
+    },
+    "ordering": null,
+    "query_id": "test:30:head",
+    "title": "Exclusive success on languages spoken, written, or signed (P1412)",
+    "train_only_tops": {
+      "all": "Q57382",
+      "complex": "Q94701",
+      "constants": "Q57382",
+      "constants_general": "Q57382",
+      "frequency": "Q57106",
+      "general": "Q57382"
+    },
+    "triple": [
+      "Q57382",
+      "P1412",
+      "Q188"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q93401",
+        "expression": "P1412(X,Q188) <= P27(X,Q40)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q93401",
+            "P27",
+            "Q40"
+          ]
+        ],
+        "length": 1,
+        "predictions": 22,
+        "raw": 0.7727272727272727,
+        "roles": [
+          "complex top"
+        ],
+        "score": 0.6296296296296297,
+        "structure": null,
+        "support": 17
+      },
+      {
+        "candidate": "Q57382",
+        "expression": "P1412(X,Q188) <= P27(X,Q183)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q57382",
+            "P27",
+            "Q183"
+          ]
+        ],
+        "length": 1,
+        "predictions": 85,
+        "raw": 0.8,
+        "roles": [
+          "all top",
+          "constants top",
+          "constants_general top",
+          "held-out answer"
+        ],
+        "score": 0.7555555555555555,
+        "structure": null,
+        "support": 68
+      },
+      {
+        "candidate": "Q57382",
+        "expression": "P1412(X,Y) <= P27(X,A), P17(B,A), P37(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q57382",
+            "P27",
+            "Q183"
+          ],
+          [
+            "Q64",
+            "P17",
+            "Q183"
+          ],
+          [
+            "Q64",
+            "P37",
+            "Q188"
+          ]
+        ],
+        "length": 3,
+        "predictions": 335,
+        "raw": 0.7134328358208956,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.7029411764705882,
+        "structure": "three-hop composition",
+        "support": 239
+      },
+      {
+        "candidate": "Q170515",
+        "expression": "P1412(Q170515,Y) <= P1412(Q156774,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q156774",
+            "P1412",
+            "Q188"
+          ]
+        ],
+        "length": 1,
+        "predictions": 7,
+        "raw": 0.7142857142857143,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.4166666666666667,
+        "structure": null,
+        "support": 5
+      }
+    ]
+  },
+  {
+    "all_near": 3,
+    "all_score": 0.8670062252405206,
+    "degree": 50,
+    "direction": "tail",
+    "disagreement": "disagree",
+    "fact": 17,
+    "official_answers": {
+      "all top": "Q252",
+      "complex top": "Q230",
+      "constants top": "Q252",
+      "constants_general top": "Q252",
+      "frequency top": "Q148",
+      "general top": "Q230",
+      "held-out answer": "Q252"
+    },
+    "ordering": null,
+    "query_id": "test:17:tail",
+    "title": "Exclusive success on diplomatic relation (P530)",
+    "train_only_tops": {
+      "all": "Q252",
+      "complex": "Q230",
+      "constants": "Q252",
+      "constants_general": "Q252",
+      "frequency": "Q148",
+      "general": "Q230"
+    },
+    "triple": [
+      "Q225",
+      "P530",
+      "Q252"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q230",
+        "expression": "P530(X,Y) <= P530(Y,X)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q230",
+            "P530",
+            "Q225"
+          ]
+        ],
+        "length": 1,
+        "predictions": 1762,
+        "raw": 0.8694665153234961,
+        "roles": [
+          "complex top",
+          "general top"
+        ],
+        "score": 0.8670062252405206,
+        "structure": "symmetry",
+        "support": 1532
+      },
+      {
+        "candidate": "Q252",
+        "expression": "P530(X,Y) <= P530(Y,X)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q252",
+            "P530",
+            "Q225"
+          ]
+        ],
+        "length": 1,
+        "predictions": 1762,
+        "raw": 0.8694665153234961,
+        "roles": [
+          "all top",
+          "constants_general top",
+          "held-out answer"
+        ],
+        "score": 0.8670062252405206,
+        "structure": "symmetry",
+        "support": 1532
+      },
+      {
+        "candidate": "Q252",
+        "expression": "P530(X,Q252) <= P530(Q252,X)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q252",
+            "P530",
+            "Q225"
+          ]
+        ],
+        "length": 1,
+        "predictions": 67,
+        "raw": 0.8955223880597015,
+        "roles": [
+          "constants top"
+        ],
+        "score": 0.8333333333333334,
+        "structure": null,
+        "support": 60
+      },
+      {
+        "candidate": "Q148",
+        "expression": "P530(X,Q148) <= P530(Q35,X)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q35",
+            "P530",
+            "Q225"
+          ]
+        ],
+        "length": 1,
+        "predictions": 87,
+        "raw": 0.8045977011494253,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.7608695652173914,
+        "structure": null,
+        "support": 70
+      }
+    ]
+  },
+  {
+    "all_near": 4,
+    "all_score": 0.5333333333333333,
+    "degree": 27,
+    "direction": "head",
+    "disagreement": "disagree",
+    "fact": 37,
+    "official_answers": {
+      "all top": "Q61597",
+      "complex top": "Q44086",
+      "constants top": "Q44086",
+      "constants_general top": "Q61597",
+      "frequency top": "Q18391",
+      "general top": "Q61597",
+      "held-out answer": "Q44086"
+    },
+    "ordering": "higher leading score",
+    "query_id": "test:37:head",
+    "title": "Exclusive success on country of citizenship (P27)",
+    "train_only_tops": {
+      "all": "Q61597",
+      "complex": "Q44086",
+      "constants": "Q44086",
+      "constants_general": "Q61597",
+      "frequency": "Q18391",
+      "general": "Q61597"
+    },
+    "triple": [
+      "Q44086",
+      "P27",
+      "Q43287"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q44086",
+        "expression": "P27(X,Q43287) <= P27(X,Q7318)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q44086",
+            "P27",
+            "Q7318"
+          ]
+        ],
+        "length": 1,
+        "predictions": 10,
+        "raw": 0.7,
+        "roles": [
+          "complex top",
+          "constants top",
+          "held-out answer"
+        ],
+        "score": 0.4666666666666667,
+        "structure": null,
+        "support": 7
+      },
+      {
+        "candidate": "Q61597",
+        "expression": "P27(X,Y) <= P40(A,X), P27(A,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q37030",
+            "P40",
+            "Q61597"
+          ],
+          [
+            "Q37030",
+            "P27",
+            "Q43287"
+          ]
+        ],
+        "length": 2,
+        "predictions": 25,
+        "raw": 0.64,
+        "roles": [
+          "all top",
+          "general top",
+          "constants_general top"
+        ],
+        "score": 0.5333333333333333,
+        "structure": "two-hop composition",
+        "support": 16
+      },
+      {
+        "candidate": "Q18391",
+        "expression": "P27(X,Y) <= P1412(X,A), P1412(B,A), P27(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q18391",
+            "P1412",
+            "Q1860"
+          ],
+          [
+            "Q4612",
+            "P1412",
+            "Q1860"
+          ],
+          [
+            "Q4612",
+            "P27",
+            "Q43287"
+          ]
+        ],
+        "length": 3,
+        "predictions": 2000,
+        "raw": 0.1765,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.17605985037406482,
+        "structure": "three-hop composition",
+        "support": 353
+      }
+    ]
+  },
+  {
+    "all_near": 1,
+    "all_score": 0.7088607594936709,
+    "degree": 15,
+    "direction": "tail",
+    "disagreement": "disagree",
+    "fact": 14,
+    "official_answers": {
+      "all top": "Q329464",
+      "complex top": "Q543804",
+      "constants top": "Q329464",
+      "constants_general top": "Q329464",
+      "frequency top": "Q1065",
+      "general top": "Q1425328",
+      "held-out answer": "Q543804"
+    },
+    "ordering": "higher leading score",
+    "query_id": "test:14:tail",
+    "title": "Exclusive success on member of (P463)",
+    "train_only_tops": {
+      "all": "Q463303",
+      "complex": "Q543804",
+      "constants": "Q463303",
+      "constants_general": "Q463303",
+      "frequency": "Q463303",
+      "general": "Q1425328"
+    },
+    "triple": [
+      "Q164396",
+      "P463",
+      "Q543804"
+    ],
+    "witnesses": [
+      {
+        "candidate": "Q543804",
+        "expression": "P463(Q164396,Y) <= P463(Q48990,Y)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q48990",
+            "P463",
+            "Q543804"
+          ]
+        ],
+        "length": 1,
+        "predictions": 6,
+        "raw": 0.8333333333333334,
+        "roles": [
+          "complex top",
+          "held-out answer"
+        ],
+        "score": 0.45454545454545453,
+        "structure": null,
+        "support": 5
+      },
+      {
+        "candidate": "Q329464",
+        "expression": "P463(X,Q329464) <= P463(X,Q188771)",
+        "family": "Uc",
+        "grounding": [
+          [
+            "Q164396",
+            "P463",
+            "Q188771"
+          ]
+        ],
+        "length": 1,
+        "predictions": 56,
+        "raw": 0.6071428571428571,
+        "roles": [
+          "all top",
+          "constants top",
+          "constants_general top"
+        ],
+        "score": 0.5573770491803278,
+        "structure": null,
+        "support": 34
+      },
+      {
+        "candidate": "Q1425328",
+        "expression": "P463(X,Y) <= P463(X,A), P463(B,A), P463(B,Y)",
+        "family": "B",
+        "grounding": [
+          [
+            "Q164396",
+            "P463",
+            "Q83172"
+          ],
+          [
+            "Q42398",
+            "P463",
+            "Q83172"
+          ],
+          [
+            "Q42398",
+            "P463",
+            "Q1425328"
+          ]
+        ],
+        "length": 3,
+        "predictions": 2000,
+        "raw": 0.3755,
+        "roles": [
+          "general top"
+        ],
+        "score": 0.3745635910224439,
+        "structure": "three-hop composition",
+        "support": 751
+      },
+      {
+        "candidate": "Q1065",
+        "expression": "P463(X,Q1065) <= P463(X,A)",
+        "family": "Ud",
+        "grounding": [
+          [
+            "Q164396",
+            "P463",
+            "Q49738"
+          ]
+        ],
+        "length": 1,
+        "predictions": 631,
+        "raw": 0.2836767036450079,
+        "roles": [
+          "frequency top"
+        ],
+        "score": 0.028144654088050315,
+        "structure": null,
+        "support": 179
+      }
+    ]
+  }
+]

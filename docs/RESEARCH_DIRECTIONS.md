@@ -4,9 +4,9 @@ This study asks when embedding models and symbolic rules are reliable for
 completing missing facts in a knowledge graph, and how graph structure changes
 that reliability. The work has established CoDEx-S baselines, separated several
 rule families, and tested how a fixed rule catalog responds to training-edge
-removal. The central retraining comparison across altered graphs remains
-unfinished, so the current evidence does not yet show which approach is more
-robust to structural change.
+removal. The completed cloud retraining comparison and three follow-up draws
+measure absolute degradation and changes in the relative gap. These bounded
+CoDEx-S experiments leave general model-family superiority unresolved.
 
 ## Background and terms
 
@@ -58,9 +58,7 @@ CoDEx-S has 2,034 entities and 42 relations. Its official positive splits
 contain 32,888 training, 1,827 validation, and 1,828 test triples. CoDEx also
 provides verified validation and test negatives for a separate classification
 task. They are never inserted as graph edges. The test set has been inspected
-repeatedly during this development, so CoDEx-S findings are exploratory. The
-planned CoDEx-M replication has not run because its complete data is unavailable
-in this workspace.
+repeatedly during this development, so CoDEx-S findings are exploratory. The original CoDEx-M replication remains a separate dataset-scale study.
 
 ## How to read the coverage diagnostics
 
@@ -183,12 +181,12 @@ it does not prove that the numerically dominant rule count caused the all-rule
 score. Unconditional zero-body priors are treated separately from conditional
 rules that mention entity constants.
 
-**Progress:** The original-graph frozen-constant evaluation completed all 3,656
-directional test queries. Its candidate lists, scores, ranks, and Hits exactly
-match the prior constant-rule baseline, with Hits@1 **0.3206** and Hits@10
-**0.6187**. Four modified-graph constant applications remain incomplete. Thus,
-the current evidence does not yet show how constant rules respond to edge
-removal compared with general relational rules.
+**Progress:** The original frozen-constant control reproduced previous ranks
+exactly. Frozen constant and general subsets were then reapplied to all five
+graphs and compared with freshly mined rule catalogs. Under targeted local
+removal versus original, the frozen general subset lost **1.72 percentage
+points** of Hits@1 and the constants subset lost **0.55 points**. Both still
+generated the true answer as often. See the [replicated comparison](../artifacts/phase5/replicated-report/report.md).
 
 The family and query-level analyses are documented in the
 [rule-family report](../artifacts/next-phase/report.md) and the
@@ -220,11 +218,13 @@ triples). This interval conditions on one learned catalog. The longer
 relational rules are useful on their own in this catalog, but show little net
 gain on top of constants.
 
-**Progress:** The inference-time fixed-inventory ablation is complete for the
-available catalog. It does not establish that longer rules are generally
-better, nor that the result is stable across independently mined inventories.
-Independent mining replications are still needed. The initial short-budget
-sweep remains exploratory.
+**Progress:** The inference-time ablation was repeated on two independent
+60-second catalogs. Across three catalogs, moving the general-rule cap
+from one to three added 14.72–15.34 percentage points of Hits@1 for general
+rules alone and 0.08–0.19 points with constants included and held fixed.
+Per-catalog intervals for the latter differences included zero. The initial
+short-budget sweep remains a distinct exploratory experiment. See the
+[three-catalog comparison](../artifacts/closeout/rule-length-comparison.csv).
 
 See the [rule-length report](../artifacts/rule-length-pilot-report/report.md)
 and [corrected analysis](../artifacts/next-phase/report.md).
@@ -265,7 +265,7 @@ There are two different questions:
   on each modified training graph. This includes both changed evidence and
   changed learning.
 
-Only the first question is complete for general relational rules. In the
+Both questions were tested on the five initial graphs. In the
 fixed-catalog experiment, Hits@1 changed from **0.2749** on the original graph
 to **0.2653** after global random removal, **0.2623** after relation-stratified
 removal, **0.2577** after targeted removal, and **0.2604** after the
@@ -280,15 +280,18 @@ removal draw. Candidate support and native graph-frequency tie-breaking both
 change, so the Hits differences cannot be assigned solely to missing rule
 bodies. They do not compare retrained embedding and rule systems.
 
-**Progress:** The graph audit, frozen-general reapplication, paired tables,
-and training-only witness checks are complete. The retrained five-graph
-comparison is not. A corrected-index CPU smoke ran six cells using one epoch,
-two seconds of mining, and 32 directional queries per condition. It checks
-execution only and is not scientific evidence about relative reliability.
+**Progress:** The cloud study completed 15 neural fits, 10 fresh rule
+inventories, and 10 fixed-catalog cells across the initial five graphs. The
+independent matched removal study added 18 neural fits and 12 fresh rule
+inventories across three new pairs. Targeting shifted the ComplEx–AnyBURL
+Hits@1 gap by **+0.51 points** relative to matched removal, with 95% interval
+**−0.65 to +1.71**. Targeted removal destroyed a smaller share of original
+frozen general-rule groundings in each new draw.
 
 See the [graph audit](../artifacts/phase5/validation/validation-report.md),
-[Phase 5 report](../artifacts/phase5/report/report.md), and
-[continuation report](../artifacts/phase5/remaining-report/report.md).
+[completed Phase 5 report](../artifacts/phase5/replicated-report/report.md), and
+[matched removal replication](../artifacts/removal-replication/report/report.md).
+The 70% and 50% retention sweeps remain outside this completed cohort.
 
 ## 7. Relation properties
 
@@ -339,11 +342,13 @@ under random and type-consistent corruption protocols while leaving the
 evaluation graph untouched. Injected edges are intervention inputs, not
 verified facts.
 
-**Progress:** Split handling, classification code, validation-only calibration
-logic, and unit/smoke coverage are present; pilot classification outputs are
-preserved. The complete noise-level by corruption-strategy retraining matrix
-has not run. Results from the existing pilot should not be interpreted as a
-full robustness study.
+**Progress:** The validation-calibrated hard-negative comparison is complete on
+CoDEx-S. The closeout checked the 18 configured noise graph proposals at the
+three fractions and three perturbation seeds. Seventeen failed the split check
+because they contained held-out benchmark triples. No noise model fits were
+launched, as retaining only the clean cell would change the planned comparison.
+See [classification metrics](../artifacts/next-phase/classification-metrics.csv)
+and the [noise design audit](../artifacts/closeout/noise-design-audit.csv).
 
 ## 9. Error complementarity
 
@@ -360,10 +365,9 @@ rule miss can be classified.
 
 **Progress:** Query-level aggregation, complementary-success categories,
 winner changes, and representative case selection are implemented and tested.
-Exploratory baseline cases have been produced. The fresh Phase 5 comparison
-cannot yet characterize which structures predict complementary success because
-the perturbed-model predictions are missing. Any present correlation between
-graph features and errors is descriptive, not a causal explanation.
+Exploratory baseline cases have been produced. Fresh Phase 5 cases and query joins now link complementary successes to
+observed training graph properties. Any association between graph features
+and errors remains descriptive.
 
 ## 10. Statistics and reporting
 
@@ -387,46 +391,28 @@ changes from hypotheses about why an embedding changed.
 
 **Progress:** Paired bootstrap and reporting code are implemented and tested.
 The baseline reports include three ComplEx seeds and query-level comparisons.
-For Phase 5, learning/mining uncertainty is not estimable until the fresh
-replicated matrix runs. Since CoDEx-S test outcomes have already been examined
-repeatedly, all follow-up results remain exploratory; CoDEx-M should be used
-for replication after the protocol is frozen.
+The Phase 5 reports handle paired neural seeds and independent rule-mining
+draws separately. The matched removal follow-up also resamples graph draws.
+CoDEx-S test outcomes were examined repeatedly, so follow-up results remain
+exploratory and independent dataset replication stays separate.
 
 ## 11. Phase 5 mechanism hypotheses
 
-These hypotheses concern the full retrained intervention, not just fixed-rule
-reapplication:
-
-| Hypothesis | Planned test | Progress and current limit |
-| --- | --- | --- |
-| **H1: Neighborhood removal affects embeddings and rules differently.** | Retrain both systems on each removal graph; compare paired Hits, coverage, degrees, and paths against fresh original-graph controls. | Graph conditions and the original ComplEx control exist. The modified-graph primary fits are missing, so differential sensitivity is untested. |
-| **H2: General rules depend on edges that instantiate their bodies.** | Reapply the same general-rule catalog to graphs with removed edges; track candidate-support and verified grounding loss, then compare with fresh-mined rules. | Fixed-catalog candidate support loss and witness checks are measured. Native frequency tie-breaking also changes; the fresh mining comparison is pending. |
-| **H3: Constant-bearing rules respond differently from general rules.** | Compare their coverage, correctness, and training-grounding changes under the same interventions, first with fixed inventories and then with fresh mining. | The original frozen-constant control is complete. Four modified frozen-constant applications and fresh retraining comparisons are pending. |
-| **H4: Targeted removal differs from a relation-matched random control.** | Compare targeted-local removal with a control that removes the same number of edges per relation. | The graph manipulation is exactly relation-count-matched. The frozen-general Hits difference is small and uncertain; entity degrees and paths also differ, and only one target/removal draw exists. |
-| **H5: Relative robustness varies by query structure.** | Join each query across conditions and compare outcomes by original training degree, relation frequency, path availability, and target incidence. | Train-observable features and frozen-rule joins exist. Fresh paired neural/rule outcomes are missing; any current strata cannot identify causal mechanisms or a deployable selector. |
-
-The prospective full cohort declares three ComplEx seeds and two independent
-AnyBURL mining realizations across five graph conditions. It has not run. The
-earlier Phase 5 process was stopped after the host CPU reached 87°C; the
-configured SSH target is off-limits, and no alternate compute destination has
-been authorized. The project therefore has no completed retrained
-embedding-versus-rule structural comparison yet.
+| Hypothesis | Completed evidence and boundary |
+| --- | --- |
+| **H1: Neighbourhood removal affects embeddings and rules differently.** | Both retrained systems lost Hits@1 against fresh original controls. The relative gap intervals included zero. |
+| **H2: General rules depend on edges that instantiate their bodies.** | Frozen-catalog groundings were verified on altered graphs. Broad rule-body targeting missed its training audit threshold in six draws. The final scarce two-hop proof audit also missed its threshold. Other proofs remained after the selected support was exhausted. |
+| **H3: Constant-bearing rules respond differently from general rules.** | Fresh and frozen family comparisons are complete across the initial graphs. Different frozen-family responses are specific to the tested inventories and deletion process. |
+| **H4: Targeted removal differs from a relation-matched random control.** | The paired performance gap change remains uncertain over three new draws. Measured grounding loss favored targeted removal in the sense that it retained more general evidence. |
+| **H5: Relative robustness varies by query structure.** | Query joins and degree/relation strata are available. They support descriptive comparisons and case studies. |
 
 ## Overall answer so far
 
-The strongest direct structural evidence is about **fixed general rules**:
-under the tested 90%-retention edge removals, answer generation remained high,
-but ranking declined. Separate frozen-family results show that constant-bearing
-rules perform well on the original graph, and fixed-inventory length tests show
-that longer relational rules add little beyond those constants in that catalog.
-These facts do not yet explain the relative performance of freshly trained
-embeddings and freshly mined rules under changed graph structure.
-
-To answer the main question, the next research result must come from paired,
-freshly trained models on the same original and perturbed graphs, with repeated
-neural seeds and independent rule-mining realizations. Until then, claims about
-which model family is more robust, or why, remain unresolved. Graph neural
-network/GAT comparisons are outside this phase's scope.
+Embeddings and rules both respond to removing observed training edges. The
+strength of rule families and the survival of rule support depend on the
+available catalog and intervention. These experiments detect ranking and
+grounding changes, while the relative accuracy change under matched deletion
+and the effect of destroying the final usable evidence remain unresolved.
 
 ## Relationship to earlier research
 

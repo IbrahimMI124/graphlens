@@ -1,0 +1,25 @@
+{
+  "count_scope": "n_queries is a compatibility alias for family-condition-query records, not an independent sample size; inference is paired separately within each family",
+  "families": [
+    {
+      "family": "general",
+      "n_candidate_support_monotonicity_violations": 0,
+      "n_condition_query_records": 18280,
+      "n_triples": 1828,
+      "n_unique_queries": 3656
+    },
+    {
+      "family": "constants",
+      "n_candidate_support_monotonicity_violations": 0,
+      "n_condition_query_records": 18280,
+      "n_triples": 1828,
+      "n_unique_queries": 3656
+    }
+  ],
+  "interpretation": "positive-body rule candidate support should not increase under deletions; violations require backend investigation before interpreting grounding loss",
+  "n_candidate_support_monotonicity_violations": 0,
+  "n_family_condition_query_records": 36560,
+  "n_queries": 36560,
+  "n_triples": 1828,
+  "n_unique_queries": 3656
+}

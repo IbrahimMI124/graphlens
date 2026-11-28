@@ -1,0 +1,10 @@
+setting,agreement,eligible_pairs,selected
+"unseen=5, B × 1, Uc/Ud × 1",0.625,1408,False
+"unseen=5, B × 0.7, Uc/Ud × 1",0.6402698863636364,1408,True
+"unseen=5, B × 1, Uc/Ud × 0.7",0.6203835227272727,1408,False
+"unseen=20, B × 1, Uc/Ud × 1",0.6331676136363636,1408,False
+"unseen=20, B × 0.7, Uc/Ud × 1",0.6281960227272727,1408,False
+"unseen=20, B × 1, Uc/Ud × 0.7",0.6392045454545454,1408,False
+"unseen=50, B × 1, Uc/Ud × 1",0.6207386363636364,1408,False
+"unseen=50, B × 0.7, Uc/Ud × 1",0.6264204545454546,1408,False
+"unseen=50, B × 1, Uc/Ud × 0.7",0.6324573863636364,1408,False

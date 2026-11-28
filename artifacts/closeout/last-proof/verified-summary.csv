@@ -1,0 +1,4 @@
+draw,n_eligible_audit,n_removed,targeted_all_lost,matched_all_lost,difference,passed,targeted_general_remaining,targeted_constants_remaining,matched_general_remaining,matched_constants_remaining
+1,133,187,26,23,0.022556390977443608,False,26,26,23,23
+2,143,181,25,16,0.06293706293706294,False,25,25,16,16
+3,121,181,23,19,0.03305785123966942,False,23,23,19,19

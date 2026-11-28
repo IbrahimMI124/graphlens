@@ -5,46 +5,26 @@ Research question: **which measurable graph conditions favor embeddings or relat
 For a first-principles walkthrough of the study directions and current evidence,
 see the [research directions and progress guide](docs/RESEARCH_DIRECTIONS.md).
 
-The latest continuation is in the [remaining-work report](artifacts/phase5/remaining-report/report.md)
-and [Phase 5 compute status](docs/WORK_EXECUTION.md). The original constant-rule
-control reproduces all 3,656 prior candidate lists/ranks/scores exactly, with
-answer-blind caching and metadata-light application. The remaining replicated
-training matrix is incomplete. The configured `work` SSH target is off-limits,
-and the laptop is not being used for full-budget training because of the earlier
-heat issue. No alternate compute destination is authorized. The prospective
-three-seed/two-miner cohort remains unexecuted in
-`runs/phase5-replicated-prepared`; previous reports and results are preserved.
+See [current execution status](docs/STATUS.md) for completed runs and scope.
+The CoDEx-S study includes the [validated baseline and frozen rule ablations](artifacts/next-phase/report.md),
+the [five-condition cloud retraining comparison](artifacts/phase5/replicated-report/report.md),
+and the [three independent matched graph draws](artifacts/removal-replication/report/report.md).
+The [query evidence analysis](artifacts/evidence-advantage/report.md) compares
+native ranking errors, rule-family disagreement, and a validation-trained
+selector on the frozen CoDEx-S models.
+The [final answer-blind comparison](artifacts/answer-blind-closeout/report.md)
+tests whether rule evidence helps choose which model to trust before the
+correct answer is known.
+[Training-only evidence pilots](artifacts/evidence-intervention/report.md) and the
+[last-proof protocol](docs/LAST_PROOF_PROTOCOL.md) document the checks used to
+decide when a new perturbation warrants model fitting. The last-proof check
+completed below its audit threshold. See the [verified evidence index](artifacts/closeout/verified-evidence.json).
 
-The controlled graph-structure follow-up is documented in the
-[Phase 5 report](artifacts/phase5/report/report.md),
-[graph validation table](artifacts/phase5/validation/validation-report.md), and
-[execution and resume instructions](docs/PHASE5.md). Its frozen-general-catalog
-evidence experiment is complete on all five prepared graphs, with
-[training-only witness cases](artifacts/phase5/report/frozen-cases.md).
-The full retraining cohort was **stopped after the CPU reached 87°C**: the original
-ComplEx control completed 40 epochs and three checkpoint evaluations; fresh
-AnyBURL mining produced 320,347 rules, but application is incomplete. No modified
-graph completed full-budget training. The corrected-index
-[paired smoke report](artifacts/phase5/smoke-indexed-report/report.md) covers six
-completed cells across original, targeted, and relation-matched graphs; it is an
-execution check, not a reliability result. Partial checkpoints never replace
-trained baselines. All previous reports remain available.
-
-The next-phase CoDEx-S study is complete for the bounded three-seed ComplEx
-baseline and frozen rule-family/length ablations. Read the
-[research report](artifacts/next-phase/report.md),
-[training-checked cases](artifacts/next-phase/cases.md), and
-[reproduction commands and audit corrections](docs/NEXT_PHASE.md).
-Selected ComplEx mean test MRR is 0.4535. Independent mining replication and
-CoDEx-M remain pending. Previous pilot artifacts are preserved.
-
-This repository contains a working data/evaluation/analysis core and optional real
-PyKEEN and AnyBURL/PyClause adapters. Real CPU smoke tests and bounded CoDEx-S
-benchmark evaluations pass; the final-budget, multi-dataset study remains
-**unexecuted**. See the
-[audit](docs/AUDIT.md), [methodology](docs/METHODOLOGY.md), and
-[execution status](docs/STATUS.md). No full training jobs run automatically.
-See [contribution guidance](CONTRIBUTING.md) for shared-work and experiment hygiene.
+The data, evaluation and analysis code uses real PyKEEN and AnyBURL/PyClause
+backends. See the [repository audit](docs/AUDIT.md), the
+[methodology](docs/METHODOLOGY.md), and [contribution guidance](CONTRIBUTING.md).
+Reports distinguish development checks from benchmark runs and record native
+rule ranking certification. CoDEx-S follow-up results are exploratory.
 
 The completed exploratory CoDEx-S pilot uses three neural seeds, full official
 evaluation splits, and a fixed mined rule model. Its report is at
@@ -58,6 +38,9 @@ separately; classification scores do not collect all groundings. A 256-entry
 answer-blind prediction cache is enabled in supplied configurations, and its hits
 and timing scope are recorded. Controlled experiments remove any pretrained-rule
 setting and retrain both backends for each graph or rule-length variant.
+
+The [HF compute setup](docs/HUGGINGFACE_JOBS.md) documents the cloud execution
+environment used for the completed Phase 5 cohort. Training jobs require an explicit launch.
 
 ## Quick checks
 
